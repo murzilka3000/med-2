@@ -189,6 +189,12 @@ table {
   margin: 0 auto;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 body {
   font-family: var(--font-family);
   color: #3c3c3b;
@@ -992,3 +998,399 @@ h2 {
 }
 
 /* rating end */
+
+/* news start */
+
+.news {
+  padding: 100px 0;
+}
+
+.news-card {
+  background: #f8f8fa;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.news-card__image {
+  min-height: 278px;
+}
+
+.news-card__content {
+  padding: 20px 40px;
+}
+
+.news-card__link-wrapper {
+  text-decoration: none;
+}
+
+.news-card__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  color: #000;
+  margin-bottom: 12px;
+}
+
+.news-card__excerpt {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 24px;
+  min-height: 128px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+.news-card__footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.btn-news {
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  border-radius: 12px;
+  background: #67bec1;
+  padding: 14px 34px;
+}
+
+.news-card__date {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  color: #8a8a8a;
+}
+
+/* news end */
+
+/* contacts start */
+
+.contacts {
+  padding: 100px 0;
+  background: #f8f8fa;
+}
+
+.contacts__container {
+  display: flex;
+  gap: 16px;
+}
+
+.contacts__info-card {
+  flex: 1;
+}
+
+.contacts__map {
+  flex: 2;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.contacts__title {
+  margin-bottom: 40px;
+}
+
+.contacts__info-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 24px 40px 40px 40px;
+}
+
+.contacts__group-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.contacts__address {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 14px;
+}
+
+.contacts__metro {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.contacts__metro div {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.contacts__metro span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.contacts__metro,
+.contacts__group {
+  margin-bottom: 32px;
+}
+
+.contacts__schedule span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: #000;
+}
+
+.contacts__details-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.contacts__details-list {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  margin-bottom: 155px;
+}
+
+.contacts__details-item a {
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+}
+
+.contacts__cta-btn {
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 12px;
+  padding: 14px 0;
+  background: #67bec1;
+  border: none;
+  width: 100%;
+}
+
+/* contacts end */
+
+/* consultation-form start */
+
+.consultation-form {
+  padding: 100px 0;
+}
+
+.consultation-form__content {
+  flex: 1;
+}
+
+.consultation-form__image {
+  flex: 1.5;
+}
+
+.consultation-form__container {
+  display: flex;
+  gap: 35px;
+  background: #f8f8fa;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.consultation-form__image img {
+  width: 100%;
+  margin-bottom: -5px;
+  margin-right: -5px;
+}
+
+.consultation-form__content {
+  padding: 40px;
+}
+
+.consultation-form__title {
+  margin-bottom: 16px;
+}
+
+.consultation-form__subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: #000;
+  margin-bottom: 40px;
+}
+
+.consultation-form__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.consultation-form__input-1 {
+  margin-bottom: 16px;
+}
+
+.consultation-form__input {
+  border: 1px solid #8a8a8a;
+  border-radius: 8px;
+  padding: 18px 26px;
+  width: 100%;
+  max-width: 484px;
+  outline: none;
+}
+
+.consultation-form__input,
+.consultation-form__input::placeholder {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  color: #8a8a8a;
+}
+
+.consultation-form__policy {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin-top: 24px;
+}
+
+.consultation-form__label,
+.consultation-form__label a {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  color: #3c3c3b;
+  text-decoration: none;
+}
+
+.consultation-form__submit-btn {
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 12px;
+  padding: 18px;
+  background: #67bec1;
+  border: none;
+  width: 100%;
+  margin-top: 40px;
+  max-width: 484px;
+}
+
+/* consultation-form end */
+
+/* partners start */
+
+.partners {
+  padding: 100px 0;
+  background: #f8f8fa;
+}
+
+.partners h2 {
+  margin-bottom: 40px;
+}
+
+.partners-cont {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.partners-cont a {
+  border-radius: 20px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 13px;
+}
+
+/* partners end */
+
+/* lichenion start */
+
+.lichenion {
+  padding: 193px 0 84px 0;
+}
+
+.lichenion h2 {
+  margin-bottom: 40px;
+}
+
+.lichenion__cont {
+  position: relative;
+  display: flex;
+  border-radius: 12px;
+  background: #f8f8fa;
+  gap: 41px;
+  padding: 60px 40px 40px 54px;
+}
+
+.doc-abs {
+  position: absolute;
+  bottom: 0;
+  right: 77px;
+  width: 100%;
+  max-width: 321px;
+}
+
+.lichenion__cont p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  color: #000;
+  max-width: 540px;
+}
+
+.li-links > :first-child {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  text-align: center;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  padding: 18px 31px;
+  background: #67bec1;
+  text-decoration: none;
+}
+
+.li-links {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.li-links > :last-child {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-align: center;
+  color: #000;
+}
+
+.lichenion__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 36px;
+}
+
+/* lichenion end */
+
+
+
+/* footer start */
+
+
+
+
+/* footer end */
+
+
