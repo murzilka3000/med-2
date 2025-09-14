@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -226,21 +230,1728 @@
         </div>
       </section>
       <section class="doctors">
-        <div class="wrapper">
+        <div class="wrapper2">
           <div class="section__top">
             <div>
               <h2>Врачи клиники</h2>
               <a href="" class="all-link">
                 Все врачи
-                <img src="./images/arr.svg" alt="">
+                <img src="./images/arr.svg" alt="" />
               </a>
             </div>
             <button>Записаться на приём</button>
+          </div>
+
+          <div class="tabs-slider">
+            <ul class="tabs-slider__nav">
+              <li class="tabs-slider__nav-item">
+                <button
+                  type="button"
+                  class="tabs-slider__tab-button tabs-slider__tab-button--active"
+                  data-tab-target="#tab-all-content"
+                >
+                  Все
+                </button>
+              </li>
+              <li class="tabs-slider__nav-item">
+                <button
+                  type="button"
+                  class="tabs-slider__tab-button"
+                  data-tab-target="#tab-pediatric-content"
+                >
+                  Детские стоматологи
+                </button>
+              </li>
+              <li class="tabs-slider__nav-item">
+                <button
+                  type="button"
+                  class="tabs-slider__tab-button"
+                  data-tab-target="#tab-therapists-content"
+                >
+                  Терапевты
+                </button>
+              </li>
+              <li class="tabs-slider__nav-item">
+                <button
+                  type="button"
+                  class="tabs-slider__tab-button"
+                  data-tab-target="#tab-orthopedists-content"
+                >
+                  Ортопеды
+                </button>
+              </li>
+              <li class="tabs-slider__nav-item">
+                <button
+                  type="button"
+                  class="tabs-slider__tab-button"
+                  data-tab-target="#tab-hygienists-content"
+                >
+                  Гигиенисты
+                </button>
+              </li>
+              <li class="tabs-slider__nav-item">
+                <button
+                  type="button"
+                  class="tabs-slider__tab-button"
+                  data-tab-target="#tab-surgeons-content"
+                >
+                  Хирурги
+                </button>
+              </li>
+              <li class="tabs-slider__nav-item">
+                <button
+                  type="button"
+                  class="tabs-slider__tab-button"
+                  data-tab-target="#tab-implantologists-content"
+                >
+                  Имплантологи
+                </button>
+              </li>
+            </ul>
+
+            <div class="tabs-slider__content">
+              <div
+                class="tabs-slider__panel tabs-slider__panel--active"
+                id="tab-all-content"
+              >
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <article class="swiper-slide doctor-card">
+                      <div
+                        class="doctor-card__photo"
+                        style="
+                          background: url('./images/doc.png');
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          background-position: center;
+                        "
+                      ></div>
+                      <div class="doctor-card__info">
+                        <div>
+                          <h3 class="doctor-card__name">
+                            Агапова Марина Сергеевна
+                          </h3>
+                          <div class="doctor-card__specialty-cont">
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-терапевт,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >имплантолог,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-хирург,</a
+                            >
+                          </div>
+                        </div>
+                        <div class="doctor-card__meta">
+                          <span class="doctor-card__experience"
+                            >Стаж: 32 года</span
+                          >
+                          <a href="#" class="doctor-card__reviews">
+                            <img src="./images/rev.svg" alt="" />
+                            <span>1 отзыв</span>
+                          </a>
+                        </div>
+                        <div class="doctor-card__actions">
+                          <button type="button" class="doctor-card__btn btn">
+                            Записаться
+                          </button>
+                          <a href="#" class="doctor-card__link">Подробнее</a>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="swiper-slide doctor-card">
+                      <div
+                        class="doctor-card__photo"
+                        style="
+                          background: url('./images/doc.png');
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          background-position: center;
+                        "
+                      ></div>
+                      <div class="doctor-card__info">
+                        <div>
+                          <h3 class="doctor-card__name">
+                            Агапова Марина Сергеевна
+                          </h3>
+                          <div class="doctor-card__specialty-cont">
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-терапевт,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >имплантолог,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-хирург,</a
+                            >
+                          </div>
+                        </div>
+                        <div class="doctor-card__meta">
+                          <span class="doctor-card__experience"
+                            >Стаж: 32 года</span
+                          >
+                          <a href="#" class="doctor-card__reviews">
+                            <img src="./images/rev.svg" alt="" />
+                            <span>1 отзыв</span>
+                          </a>
+                        </div>
+                        <div class="doctor-card__actions">
+                          <button type="button" class="doctor-card__btn btn">
+                            Записаться
+                          </button>
+                          <a href="#" class="doctor-card__link">Подробнее</a>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="swiper-slide doctor-card">
+                      <div
+                        class="doctor-card__photo"
+                        style="
+                          background: url('./images/doc.png');
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          background-position: center;
+                        "
+                      ></div>
+                      <div class="doctor-card__info">
+                        <div>
+                          <h3 class="doctor-card__name">
+                            Агапова Марина Сергеевна
+                          </h3>
+                          <div class="doctor-card__specialty-cont">
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-терапевт,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >имплантолог,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-хирург,</a
+                            >
+                          </div>
+                        </div>
+                        <div class="doctor-card__meta">
+                          <span class="doctor-card__experience"
+                            >Стаж: 32 года</span
+                          >
+                          <a href="#" class="doctor-card__reviews">
+                            <img src="./images/rev.svg" alt="" />
+                            <span>1 отзыв</span>
+                          </a>
+                        </div>
+                        <div class="doctor-card__actions">
+                          <button type="button" class="doctor-card__btn btn">
+                            Записаться
+                          </button>
+                          <a href="#" class="doctor-card__link">Подробнее</a>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="swiper-slide doctor-card">
+                      <div
+                        class="doctor-card__photo"
+                        style="
+                          background: url('./images/doc.png');
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          background-position: center;
+                        "
+                      ></div>
+                      <div class="doctor-card__info">
+                        <div>
+                          <h3 class="doctor-card__name">
+                            Агапова Марина Сергеевна
+                          </h3>
+                          <div class="doctor-card__specialty-cont">
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-терапевт,</a
+                            >
+                          </div>
+                        </div>
+                        <div class="doctor-card__meta">
+                          <span class="doctor-card__experience"
+                            >Стаж: 32 года</span
+                          >
+                          <a href="#" class="doctor-card__reviews">
+                            <img src="./images/rev.svg" alt="" />
+                            <span>1 отзыв</span>
+                          </a>
+                        </div>
+                        <div class="doctor-card__actions">
+                          <button type="button" class="doctor-card__btn btn">
+                            Записаться
+                          </button>
+                          <a href="#" class="doctor-card__link">Подробнее</a>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div class="swiper-button-prev">
+                  <img src="./images/left-img.svg" alt="" />
+                </div>
+                <div class="swiper-button-next">
+                  <img src="./images/right-img.svg" alt="" />
+                </div>
+              </div>
+
+              <div class="tabs-slider__panel" id="tab-pediatric-content">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <article class="swiper-slide doctor-card">
+                      <div
+                        class="doctor-card__photo"
+                        style="
+                          background: url('./images/doc.png');
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          background-position: center;
+                        "
+                      ></div>
+                      <div class="doctor-card__info">
+                        <div>
+                          <h3 class="doctor-card__name">
+                            Агапова Марина Сергеевна
+                          </h3>
+                          <div class="doctor-card__specialty-cont">
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-терапевт,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >имплантолог,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-хирург,</a
+                            >
+                          </div>
+                        </div>
+                        <div class="doctor-card__meta">
+                          <span class="doctor-card__experience"
+                            >Стаж: 32 года</span
+                          >
+                          <a href="#" class="doctor-card__reviews">
+                            <img src="./images/rev.svg" alt="" />
+                            <span>1 отзыв</span>
+                          </a>
+                        </div>
+                        <div class="doctor-card__actions">
+                          <button type="button" class="doctor-card__btn btn">
+                            Записаться
+                          </button>
+                          <a href="#" class="doctor-card__link">Подробнее</a>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="swiper-slide doctor-card">
+                      <div
+                        class="doctor-card__photo"
+                        style="
+                          background: url('./images/doc.png');
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          background-position: center;
+                        "
+                      ></div>
+                      <div class="doctor-card__info">
+                        <div>
+                          <h3 class="doctor-card__name">
+                            Агапова Марина Сергеевна
+                          </h3>
+                          <div class="doctor-card__specialty-cont">
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-терапевт,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >имплантолог,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-хирург,</a
+                            >
+                          </div>
+                        </div>
+                        <div class="doctor-card__meta">
+                          <span class="doctor-card__experience"
+                            >Стаж: 32 года</span
+                          >
+                          <a href="#" class="doctor-card__reviews">
+                            <img src="./images/rev.svg" alt="" />
+                            <span>1 отзыв</span>
+                          </a>
+                        </div>
+                        <div class="doctor-card__actions">
+                          <button type="button" class="doctor-card__btn btn">
+                            Записаться
+                          </button>
+                          <a href="#" class="doctor-card__link">Подробнее</a>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="swiper-slide doctor-card">
+                      <div
+                        class="doctor-card__photo"
+                        style="
+                          background: url('./images/doc.png');
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          background-position: center;
+                        "
+                      ></div>
+                      <div class="doctor-card__info">
+                        <div>
+                          <h3 class="doctor-card__name">
+                            Агапова Марина Сергеевна
+                          </h3>
+                          <div class="doctor-card__specialty-cont">
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-терапевт,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >имплантолог,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-хирург,</a
+                            >
+                          </div>
+                        </div>
+                        <div class="doctor-card__meta">
+                          <span class="doctor-card__experience"
+                            >Стаж: 32 года</span
+                          >
+                          <a href="#" class="doctor-card__reviews">
+                            <img src="./images/rev.svg" alt="" />
+                            <span>1 отзыв</span>
+                          </a>
+                        </div>
+                        <div class="doctor-card__actions">
+                          <button type="button" class="doctor-card__btn btn">
+                            Записаться
+                          </button>
+                          <a href="#" class="doctor-card__link">Подробнее</a>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="swiper-slide doctor-card">
+                      <div
+                        class="doctor-card__photo"
+                        style="
+                          background: url('./images/doc.png');
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          background-position: center;
+                        "
+                      ></div>
+                      <div class="doctor-card__info">
+                        <div>
+                          <h3 class="doctor-card__name">
+                            Агапова Марина Сергеевна
+                          </h3>
+                          <div class="doctor-card__specialty-cont">
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-терапевт,</a
+                            >
+                          </div>
+                        </div>
+                        <div class="doctor-card__meta">
+                          <span class="doctor-card__experience"
+                            >Стаж: 32 года</span
+                          >
+                          <a href="#" class="doctor-card__reviews">
+                            <img src="./images/rev.svg" alt="" />
+                            <span>1 отзыв</span>
+                          </a>
+                        </div>
+                        <div class="doctor-card__actions">
+                          <button type="button" class="doctor-card__btn btn">
+                            Записаться
+                          </button>
+                          <a href="#" class="doctor-card__link">Подробнее</a>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>
+
+              <div class="tabs-slider__panel" id="tab-therapists-content">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <article class="swiper-slide doctor-card">
+                      <div
+                        class="doctor-card__photo"
+                        style="
+                          background: url('./images/doc.png');
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          background-position: center;
+                        "
+                      ></div>
+                      <div class="doctor-card__info">
+                        <div>
+                          <h3 class="doctor-card__name">
+                            Агапова Марина Сергеевна
+                          </h3>
+                          <div class="doctor-card__specialty-cont">
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-терапевт,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >имплантолог,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-хирург,</a
+                            >
+                          </div>
+                        </div>
+                        <div class="doctor-card__meta">
+                          <span class="doctor-card__experience"
+                            >Стаж: 32 года</span
+                          >
+                          <a href="#" class="doctor-card__reviews">
+                            <img src="./images/rev.svg" alt="" />
+                            <span>1 отзыв</span>
+                          </a>
+                        </div>
+                        <div class="doctor-card__actions">
+                          <button type="button" class="doctor-card__btn btn">
+                            Записаться
+                          </button>
+                          <a href="#" class="doctor-card__link">Подробнее</a>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="swiper-slide doctor-card">
+                      <div
+                        class="doctor-card__photo"
+                        style="
+                          background: url('./images/doc.png');
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          background-position: center;
+                        "
+                      ></div>
+                      <div class="doctor-card__info">
+                        <div>
+                          <h3 class="doctor-card__name">
+                            Агапова Марина Сергеевна
+                          </h3>
+                          <div class="doctor-card__specialty-cont">
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-терапевт,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >имплантолог,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-хирург,</a
+                            >
+                          </div>
+                        </div>
+                        <div class="doctor-card__meta">
+                          <span class="doctor-card__experience"
+                            >Стаж: 32 года</span
+                          >
+                          <a href="#" class="doctor-card__reviews">
+                            <img src="./images/rev.svg" alt="" />
+                            <span>1 отзыв</span>
+                          </a>
+                        </div>
+                        <div class="doctor-card__actions">
+                          <button type="button" class="doctor-card__btn btn">
+                            Записаться
+                          </button>
+                          <a href="#" class="doctor-card__link">Подробнее</a>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="swiper-slide doctor-card">
+                      <div
+                        class="doctor-card__photo"
+                        style="
+                          background: url('./images/doc.png');
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          background-position: center;
+                        "
+                      ></div>
+                      <div class="doctor-card__info">
+                        <div>
+                          <h3 class="doctor-card__name">
+                            Агапова Марина Сергеевна
+                          </h3>
+                          <div class="doctor-card__specialty-cont">
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-терапевт,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >имплантолог,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-хирург,</a
+                            >
+                          </div>
+                        </div>
+                        <div class="doctor-card__meta">
+                          <span class="doctor-card__experience"
+                            >Стаж: 32 года</span
+                          >
+                          <a href="#" class="doctor-card__reviews">
+                            <img src="./images/rev.svg" alt="" />
+                            <span>1 отзыв</span>
+                          </a>
+                        </div>
+                        <div class="doctor-card__actions">
+                          <button type="button" class="doctor-card__btn btn">
+                            Записаться
+                          </button>
+                          <a href="#" class="doctor-card__link">Подробнее</a>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="swiper-slide doctor-card">
+                      <div
+                        class="doctor-card__photo"
+                        style="
+                          background: url('./images/doc.png');
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          background-position: center;
+                        "
+                      ></div>
+                      <div class="doctor-card__info">
+                        <div>
+                          <h3 class="doctor-card__name">
+                            Агапова Марина Сергеевна
+                          </h3>
+                          <div class="doctor-card__specialty-cont">
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-терапевт,</a
+                            >
+                          </div>
+                        </div>
+                        <div class="doctor-card__meta">
+                          <span class="doctor-card__experience"
+                            >Стаж: 32 года</span
+                          >
+                          <a href="#" class="doctor-card__reviews">
+                            <img src="./images/rev.svg" alt="" />
+                            <span>1 отзыв</span>
+                          </a>
+                        </div>
+                        <div class="doctor-card__actions">
+                          <button type="button" class="doctor-card__btn btn">
+                            Записаться
+                          </button>
+                          <a href="#" class="doctor-card__link">Подробнее</a>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>
+
+              <div class="tabs-slider__panel" id="tab-orthopedists-content">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <article class="swiper-slide doctor-card">
+                      <div
+                        class="doctor-card__photo"
+                        style="
+                          background: url('./images/doc.png');
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          background-position: center;
+                        "
+                      ></div>
+                      <div class="doctor-card__info">
+                        <div>
+                          <h3 class="doctor-card__name">
+                            Агапова Марина Сергеевна
+                          </h3>
+                          <div class="doctor-card__specialty-cont">
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-терапевт,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >имплантолог,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-хирург,</a
+                            >
+                          </div>
+                        </div>
+                        <div class="doctor-card__meta">
+                          <span class="doctor-card__experience"
+                            >Стаж: 32 года</span
+                          >
+                          <a href="#" class="doctor-card__reviews">
+                            <img src="./images/rev.svg" alt="" />
+                            <span>1 отзыв</span>
+                          </a>
+                        </div>
+                        <div class="doctor-card__actions">
+                          <button type="button" class="doctor-card__btn btn">
+                            Записаться
+                          </button>
+                          <a href="#" class="doctor-card__link">Подробнее</a>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="swiper-slide doctor-card">
+                      <div
+                        class="doctor-card__photo"
+                        style="
+                          background: url('./images/doc.png');
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          background-position: center;
+                        "
+                      ></div>
+                      <div class="doctor-card__info">
+                        <div>
+                          <h3 class="doctor-card__name">
+                            Агапова Марина Сергеевна
+                          </h3>
+                          <div class="doctor-card__specialty-cont">
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-терапевт,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >имплантолог,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-хирург,</a
+                            >
+                          </div>
+                        </div>
+                        <div class="doctor-card__meta">
+                          <span class="doctor-card__experience"
+                            >Стаж: 32 года</span
+                          >
+                          <a href="#" class="doctor-card__reviews">
+                            <img src="./images/rev.svg" alt="" />
+                            <span>1 отзыв</span>
+                          </a>
+                        </div>
+                        <div class="doctor-card__actions">
+                          <button type="button" class="doctor-card__btn btn">
+                            Записаться
+                          </button>
+                          <a href="#" class="doctor-card__link">Подробнее</a>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="swiper-slide doctor-card">
+                      <div
+                        class="doctor-card__photo"
+                        style="
+                          background: url('./images/doc.png');
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          background-position: center;
+                        "
+                      ></div>
+                      <div class="doctor-card__info">
+                        <div>
+                          <h3 class="doctor-card__name">
+                            Агапова Марина Сергеевна
+                          </h3>
+                          <div class="doctor-card__specialty-cont">
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-терапевт,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >имплантолог,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-хирург,</a
+                            >
+                          </div>
+                        </div>
+                        <div class="doctor-card__meta">
+                          <span class="doctor-card__experience"
+                            >Стаж: 32 года</span
+                          >
+                          <a href="#" class="doctor-card__reviews">
+                            <img src="./images/rev.svg" alt="" />
+                            <span>1 отзыв</span>
+                          </a>
+                        </div>
+                        <div class="doctor-card__actions">
+                          <button type="button" class="doctor-card__btn btn">
+                            Записаться
+                          </button>
+                          <a href="#" class="doctor-card__link">Подробнее</a>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="swiper-slide doctor-card">
+                      <div
+                        class="doctor-card__photo"
+                        style="
+                          background: url('./images/doc.png');
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          background-position: center;
+                        "
+                      ></div>
+                      <div class="doctor-card__info">
+                        <div>
+                          <h3 class="doctor-card__name">
+                            Агапова Марина Сергеевна
+                          </h3>
+                          <div class="doctor-card__specialty-cont">
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-терапевт,</a
+                            >
+                          </div>
+                        </div>
+                        <div class="doctor-card__meta">
+                          <span class="doctor-card__experience"
+                            >Стаж: 32 года</span
+                          >
+                          <a href="#" class="doctor-card__reviews">
+                            <img src="./images/rev.svg" alt="" />
+                            <span>1 отзыв</span>
+                          </a>
+                        </div>
+                        <div class="doctor-card__actions">
+                          <button type="button" class="doctor-card__btn btn">
+                            Записаться
+                          </button>
+                          <a href="#" class="doctor-card__link">Подробнее</a>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>
+
+              <div class="tabs-slider__panel" id="tab-hygienists-content">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <article class="swiper-slide doctor-card">
+                      <div
+                        class="doctor-card__photo"
+                        style="
+                          background: url('./images/doc.png');
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          background-position: center;
+                        "
+                      ></div>
+                      <div class="doctor-card__info">
+                        <div>
+                          <h3 class="doctor-card__name">
+                            Агапова Марина Сергеевна
+                          </h3>
+                          <div class="doctor-card__specialty-cont">
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-терапевт,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >имплантолог,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-хирург,</a
+                            >
+                          </div>
+                        </div>
+                        <div class="doctor-card__meta">
+                          <span class="doctor-card__experience"
+                            >Стаж: 32 года</span
+                          >
+                          <a href="#" class="doctor-card__reviews">
+                            <img src="./images/rev.svg" alt="" />
+                            <span>1 отзыв</span>
+                          </a>
+                        </div>
+                        <div class="doctor-card__actions">
+                          <button type="button" class="doctor-card__btn btn">
+                            Записаться
+                          </button>
+                          <a href="#" class="doctor-card__link">Подробнее</a>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="swiper-slide doctor-card">
+                      <div
+                        class="doctor-card__photo"
+                        style="
+                          background: url('./images/doc.png');
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          background-position: center;
+                        "
+                      ></div>
+                      <div class="doctor-card__info">
+                        <div>
+                          <h3 class="doctor-card__name">
+                            Агапова Марина Сергеевна
+                          </h3>
+                          <div class="doctor-card__specialty-cont">
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-терапевт,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >имплантолог,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-хирург,</a
+                            >
+                          </div>
+                        </div>
+                        <div class="doctor-card__meta">
+                          <span class="doctor-card__experience"
+                            >Стаж: 32 года</span
+                          >
+                          <a href="#" class="doctor-card__reviews">
+                            <img src="./images/rev.svg" alt="" />
+                            <span>1 отзыв</span>
+                          </a>
+                        </div>
+                        <div class="doctor-card__actions">
+                          <button type="button" class="doctor-card__btn btn">
+                            Записаться
+                          </button>
+                          <a href="#" class="doctor-card__link">Подробнее</a>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="swiper-slide doctor-card">
+                      <div
+                        class="doctor-card__photo"
+                        style="
+                          background: url('./images/doc.png');
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          background-position: center;
+                        "
+                      ></div>
+                      <div class="doctor-card__info">
+                        <div>
+                          <h3 class="doctor-card__name">
+                            Агапова Марина Сергеевна
+                          </h3>
+                          <div class="doctor-card__specialty-cont">
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-терапевт,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >имплантолог,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-хирург,</a
+                            >
+                          </div>
+                        </div>
+                        <div class="doctor-card__meta">
+                          <span class="doctor-card__experience"
+                            >Стаж: 32 года</span
+                          >
+                          <a href="#" class="doctor-card__reviews">
+                            <img src="./images/rev.svg" alt="" />
+                            <span>1 отзыв</span>
+                          </a>
+                        </div>
+                        <div class="doctor-card__actions">
+                          <button type="button" class="doctor-card__btn btn">
+                            Записаться
+                          </button>
+                          <a href="#" class="doctor-card__link">Подробнее</a>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="swiper-slide doctor-card">
+                      <div
+                        class="doctor-card__photo"
+                        style="
+                          background: url('./images/doc.png');
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          background-position: center;
+                        "
+                      ></div>
+                      <div class="doctor-card__info">
+                        <div>
+                          <h3 class="doctor-card__name">
+                            Агапова Марина Сергеевна
+                          </h3>
+                          <div class="doctor-card__specialty-cont">
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-терапевт,</a
+                            >
+                          </div>
+                        </div>
+                        <div class="doctor-card__meta">
+                          <span class="doctor-card__experience"
+                            >Стаж: 32 года</span
+                          >
+                          <a href="#" class="doctor-card__reviews">
+                            <img src="./images/rev.svg" alt="" />
+                            <span>1 отзыв</span>
+                          </a>
+                        </div>
+                        <div class="doctor-card__actions">
+                          <button type="button" class="doctor-card__btn btn">
+                            Записаться
+                          </button>
+                          <a href="#" class="doctor-card__link">Подробнее</a>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>
+
+              <div class="tabs-slider__panel" id="tab-surgeons-content">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <article class="swiper-slide doctor-card">
+                      <div
+                        class="doctor-card__photo"
+                        style="
+                          background: url('./images/doc.png');
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          background-position: center;
+                        "
+                      ></div>
+                      <div class="doctor-card__info">
+                        <div>
+                          <h3 class="doctor-card__name">
+                            Агапова Марина Сергеевна
+                          </h3>
+                          <div class="doctor-card__specialty-cont">
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-терапевт,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >имплантолог,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-хирург,</a
+                            >
+                          </div>
+                        </div>
+                        <div class="doctor-card__meta">
+                          <span class="doctor-card__experience"
+                            >Стаж: 32 года</span
+                          >
+                          <a href="#" class="doctor-card__reviews">
+                            <img src="./images/rev.svg" alt="" />
+                            <span>1 отзыв</span>
+                          </a>
+                        </div>
+                        <div class="doctor-card__actions">
+                          <button type="button" class="doctor-card__btn btn">
+                            Записаться
+                          </button>
+                          <a href="#" class="doctor-card__link">Подробнее</a>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="swiper-slide doctor-card">
+                      <div
+                        class="doctor-card__photo"
+                        style="
+                          background: url('./images/doc.png');
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          background-position: center;
+                        "
+                      ></div>
+                      <div class="doctor-card__info">
+                        <div>
+                          <h3 class="doctor-card__name">
+                            Агапова Марина Сергеевна
+                          </h3>
+                          <div class="doctor-card__specialty-cont">
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-терапевт,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >имплантолог,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-хирург,</a
+                            >
+                          </div>
+                        </div>
+                        <div class="doctor-card__meta">
+                          <span class="doctor-card__experience"
+                            >Стаж: 32 года</span
+                          >
+                          <a href="#" class="doctor-card__reviews">
+                            <img src="./images/rev.svg" alt="" />
+                            <span>1 отзыв</span>
+                          </a>
+                        </div>
+                        <div class="doctor-card__actions">
+                          <button type="button" class="doctor-card__btn btn">
+                            Записаться
+                          </button>
+                          <a href="#" class="doctor-card__link">Подробнее</a>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="swiper-slide doctor-card">
+                      <div
+                        class="doctor-card__photo"
+                        style="
+                          background: url('./images/doc.png');
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          background-position: center;
+                        "
+                      ></div>
+                      <div class="doctor-card__info">
+                        <div>
+                          <h3 class="doctor-card__name">
+                            Агапова Марина Сергеевна
+                          </h3>
+                          <div class="doctor-card__specialty-cont">
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-терапевт,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >имплантолог,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-хирург,</a
+                            >
+                          </div>
+                        </div>
+                        <div class="doctor-card__meta">
+                          <span class="doctor-card__experience"
+                            >Стаж: 32 года</span
+                          >
+                          <a href="#" class="doctor-card__reviews">
+                            <img src="./images/rev.svg" alt="" />
+                            <span>1 отзыв</span>
+                          </a>
+                        </div>
+                        <div class="doctor-card__actions">
+                          <button type="button" class="doctor-card__btn btn">
+                            Записаться
+                          </button>
+                          <a href="#" class="doctor-card__link">Подробнее</a>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="swiper-slide doctor-card">
+                      <div
+                        class="doctor-card__photo"
+                        style="
+                          background: url('./images/doc.png');
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          background-position: center;
+                        "
+                      ></div>
+                      <div class="doctor-card__info">
+                        <div>
+                          <h3 class="doctor-card__name">
+                            Агапова Марина Сергеевна
+                          </h3>
+                          <div class="doctor-card__specialty-cont">
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-терапевт,</a
+                            >
+                          </div>
+                        </div>
+                        <div class="doctor-card__meta">
+                          <span class="doctor-card__experience"
+                            >Стаж: 32 года</span
+                          >
+                          <a href="#" class="doctor-card__reviews">
+                            <img src="./images/rev.svg" alt="" />
+                            <span>1 отзыв</span>
+                          </a>
+                        </div>
+                        <div class="doctor-card__actions">
+                          <button type="button" class="doctor-card__btn btn">
+                            Записаться
+                          </button>
+                          <a href="#" class="doctor-card__link">Подробнее</a>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>
+
+              <div class="tabs-slider__panel" id="tab-implantologists-content">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <article class="swiper-slide doctor-card">
+                      <div
+                        class="doctor-card__photo"
+                        style="
+                          background: url('./images/doc.png');
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          background-position: center;
+                        "
+                      ></div>
+                      <div class="doctor-card__info">
+                        <div>
+                          <h3 class="doctor-card__name">
+                            Агапова Марина Сергеевна
+                          </h3>
+                          <div class="doctor-card__specialty-cont">
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-терапевт,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >имплантолог,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-хирург,</a
+                            >
+                          </div>
+                        </div>
+                        <div class="doctor-card__meta">
+                          <span class="doctor-card__experience"
+                            >Стаж: 32 года</span
+                          >
+                          <a href="#" class="doctor-card__reviews">
+                            <img src="./images/rev.svg" alt="" />
+                            <span>1 отзыв</span>
+                          </a>
+                        </div>
+                        <div class="doctor-card__actions">
+                          <button type="button" class="doctor-card__btn btn">
+                            Записаться
+                          </button>
+                          <a href="#" class="doctor-card__link">Подробнее</a>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="swiper-slide doctor-card">
+                      <div
+                        class="doctor-card__photo"
+                        style="
+                          background: url('./images/doc.png');
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          background-position: center;
+                        "
+                      ></div>
+                      <div class="doctor-card__info">
+                        <div>
+                          <h3 class="doctor-card__name">
+                            Агапова Марина Сергеевна
+                          </h3>
+                          <div class="doctor-card__specialty-cont">
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-терапевт,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >имплантолог,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-хирург,</a
+                            >
+                          </div>
+                        </div>
+                        <div class="doctor-card__meta">
+                          <span class="doctor-card__experience"
+                            >Стаж: 32 года</span
+                          >
+                          <a href="#" class="doctor-card__reviews">
+                            <img src="./images/rev.svg" alt="" />
+                            <span>1 отзыв</span>
+                          </a>
+                        </div>
+                        <div class="doctor-card__actions">
+                          <button type="button" class="doctor-card__btn btn">
+                            Записаться
+                          </button>
+                          <a href="#" class="doctor-card__link">Подробнее</a>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="swiper-slide doctor-card">
+                      <div
+                        class="doctor-card__photo"
+                        style="
+                          background: url('./images/doc.png');
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          background-position: center;
+                        "
+                      ></div>
+                      <div class="doctor-card__info">
+                        <div>
+                          <h3 class="doctor-card__name">
+                            Агапова Марина Сергеевна
+                          </h3>
+                          <div class="doctor-card__specialty-cont">
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-терапевт,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >имплантолог,</a
+                            >
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-хирург,</a
+                            >
+                          </div>
+                        </div>
+                        <div class="doctor-card__meta">
+                          <span class="doctor-card__experience"
+                            >Стаж: 32 года</span
+                          >
+                          <a href="#" class="doctor-card__reviews">
+                            <img src="./images/rev.svg" alt="" />
+                            <span>1 отзыв</span>
+                          </a>
+                        </div>
+                        <div class="doctor-card__actions">
+                          <button type="button" class="doctor-card__btn btn">
+                            Записаться
+                          </button>
+                          <a href="#" class="doctor-card__link">Подробнее</a>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="swiper-slide doctor-card">
+                      <div
+                        class="doctor-card__photo"
+                        style="
+                          background: url('./images/doc.png');
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          background-position: center;
+                        "
+                      ></div>
+                      <div class="doctor-card__info">
+                        <div>
+                          <h3 class="doctor-card__name">
+                            Агапова Марина Сергеевна
+                          </h3>
+                          <div class="doctor-card__specialty-cont">
+                            <a href="#" class="doctor-card__specialty"
+                              >Врач стоматолог-терапевт,</a
+                            >
+                          </div>
+                        </div>
+                        <div class="doctor-card__meta">
+                          <span class="doctor-card__experience"
+                            >Стаж: 32 года</span
+                          >
+                          <a href="#" class="doctor-card__reviews">
+                            <img src="./images/rev.svg" alt="" />
+                            <span>1 отзыв</span>
+                          </a>
+                        </div>
+                        <div class="doctor-card__actions">
+                          <button type="button" class="doctor-card__btn btn">
+                            Записаться
+                          </button>
+                          <a href="#" class="doctor-card__link">Подробнее</a>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="usl">
+        <div class="wrapper">
+          <div class="section__top">
+            <div>
+              <h2>Услуги клиники</h2>
+              <a href="" class="all-link">
+                Все услуги
+                <img src="./images/arr.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="usl__grid">
+            <a href="">Стомотология</a>
+            <a href="">
+              Детская <br />
+              стоматология
+            </a>
+            <a href="">
+              Лечение <br />
+              под наркозом
+            </a>
+            <a href="">
+              Врачебная<br />
+              косметология
+            </a>
+            <a href="">Дерматология</a>
+            <a href="">Лаборатория</a>
+            <a href="">Массаж</a>
+            <a href="">Мануальная терапия</a>
+            <a href="">Ультразвуковая диагностика</a>
+            <a href="">Процедурный кабинет</a>
+          </div>
+        </div>
+      </section>
+      <section class="preim">
+        <div class="wrapper">
+          <div class="preim__cont">
+            <div class="preim-grid">
+              <div>
+                <img src="./images/preim-1.svg" alt="" />
+                <h3>40 лет доверия</h3>
+                <p>
+                  Нам доверяют здоровье с 1985 года — десятки тысяч довольных
+                  пациентов.
+                </p>
+              </div>
+              <div>
+                <img src="./images/preim-2.svg" alt="" />
+                <h3>Опытные врачи</h3>
+                <p>
+                  Только квалифицированные специалисты с многолетней практикой.
+                </p>
+              </div>
+              <div>
+                <img src="./images/preim-3.svg" alt="" />
+                <h3>Индивидуальный подход</h3>
+                <p>
+                  Лечение подбирается по показаниям, с учётом особенностей
+                  каждого пациента.
+                </p>
+              </div>
+              <div>
+                <img src="./images/preim-4.svg" alt="" />
+                <h3>Качество и безопасность</h3>
+                <p>Современное оборудование и строгие медицинские стандарты</p>
+              </div>
+              <div>
+                <img src="./images/preim-5.svg" alt="" />
+                <h3>Доступность услуг</h3>
+                <p>Программы лояльности, акции и честная ценовая политика</p>
+              </div>
+              <div>
+                <img src="./images/preim-6.svg" alt="" />
+              </div>
+            </div>
+            <div class="preim-bg"></div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="wrapper">
+          <div class="section__top">
+            <div class="section__header">
+              <h2 class="section__title">Отзывы</h2>
+              <a href="#" class="all-link">
+                Все отзывы
+                <img src="./images/arr.svg" alt="" />
+              </a>
+            </div>
+            <button type="button" class="btn">Оставить отзыв</button>
+          </div>
+
+          <div class="tabs-slider">
+            <ul class="tabs-slider__nav">
+              <li class="tabs-slider__nav-item">
+                <button
+                  type="button"
+                  class="tabs-slider__tab-button tabs-slider__tab-button--active"
+                  data-tab-target="#reviews-text"
+                >
+                  Текстовые
+                </button>
+              </li>
+              <li class="tabs-slider__nav-item">
+                <button
+                  type="button"
+                  class="tabs-slider__tab-button"
+                  data-tab-target="#reviews-works"
+                >
+                  Примеры работ
+                </button>
+              </li>
+              <li class="tabs-slider__nav-item">
+                <button
+                  type="button"
+                  class="tabs-slider__tab-button"
+                  data-tab-target="#reviews-video"
+                >
+                  Видеоотзывы
+                </button>
+              </li>
+              <li class="tabs-slider__nav-item">
+                <button
+                  type="button"
+                  class="tabs-slider__tab-button"
+                  data-tab-target="#reviews-filter"
+                >
+                  <img src="./images/filter-icon.svg" alt="" />
+                  Выбрать направление
+                </button>
+              </li>
+            </ul>
+
+            <div class="tabs-slider__content">
+              <div
+                class="tabs-slider__panel tabs-slider__panel--active"
+                id="reviews-text"
+              >
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <article class="swiper-slide review-card">
+                      <header class="review-card__header">
+                        <div class="review-card__header-div">
+                          <img
+                            class="review-card__avatar"
+                            src="./images/doc.png"
+                            alt="Аватар пользователя"
+                          />
+                          <div class="review-card__author">
+                            <span class="review-card__name">Иван Фёдоров</span>
+                            <span class="review-card__meta">Направление</span>
+                          </div>
+                        </div>
+                        <div class="review-card__source">
+                          <img src="./images/rev-1.svg" alt="Яндекс" />
+                        </div>
+                      </header>
+                      <p class="review-card__text">
+                        Отличная стоматология, хорошие врачи и стильный, уютный
+                        дизайн. При оплате процедур в клинике, есть возможность
+                        получить бесплатный массаж, что тоже очень порадовало!
+                        дизайн. При оплате процедур в клинике, есть возможность
+                        получить бесплатный массаж, что тоже очень порадовало!
+                      </p>
+                      <footer class="review-card__footer">
+                        <div class="review-card__doctor-info">
+                          <span class="review-card__doctor-label"
+                            >Отзыв о враче:</span
+                          >
+                          <a href="#" class="review-card__doctor-link"
+                            >Агапова Марина Сергеевна</a
+                          >
+                        </div>
+                        <time class="review-card__date" datetime="2025-05-18"
+                          >18 мая 2025</time
+                        >
+                      </footer>
+                    </article>
+                    <article class="swiper-slide review-card">
+                      <header class="review-card__header">
+                        <div class="review-card__header-div">
+                          <img
+                            class="review-card__avatar"
+                            src="./images/doc.png"
+                            alt="Аватар пользователя"
+                          />
+                          <div class="review-card__author">
+                            <span class="review-card__name">Иван Фёдоров</span>
+                            <span class="review-card__meta">Направление</span>
+                          </div>
+                        </div>
+                        <div class="review-card__source">
+                          <img src="./images/rev-1.svg" alt="Яндекс" />
+                        </div>
+                      </header>
+                      <p class="review-card__text">
+                        Отличная стоматология, хорошие врачи и стильный, уютный
+                        дизайн. При оплате процедур в клинике, есть возможность
+                      </p>
+                      <footer class="review-card__footer">
+                        <div class="review-card__doctor-info">
+                          <span class="review-card__doctor-label"
+                            >Отзыв о враче:</span
+                          >
+                          <a href="#" class="review-card__doctor-link"
+                            >Агапова Марина Сергеевна</a
+                          >
+                        </div>
+                        <time class="review-card__date" datetime="2025-05-18"
+                          >18 мая 2025</time
+                        >
+                      </footer>
+                    </article>
+                    <article class="swiper-slide review-card">
+                      <header class="review-card__header">
+                        <div class="review-card__header-div">
+                          <img
+                            class="review-card__avatar"
+                            src="./images/doc.png"
+                            alt="Аватар пользователя"
+                          />
+                          <div class="review-card__author">
+                            <span class="review-card__name">Иван Фёдоров</span>
+                            <span class="review-card__meta">Направление</span>
+                          </div>
+                        </div>
+                        <div class="review-card__source">
+                          <img src="./images/rev-1.svg" alt="Яндекс" />
+                        </div>
+                      </header>
+                      <p class="review-card__text">
+                        Отличная стоматология, хорошие врачи и стильный, уютный
+                        дизайн. При оплате процедур в клинике, есть возможность
+                        получить бесплатный массаж, что тоже очень порадовало!
+                        дизайн. При оплате процедур в клинике, есть возможность
+                        получить бесплатный массаж, что тоже очень порадовало!
+                      </p>
+                      <footer class="review-card__footer">
+                        <div class="review-card__doctor-info">
+                          <span class="review-card__doctor-label"
+                            >Отзыв о враче:</span
+                          >
+                          <a href="#" class="review-card__doctor-link"
+                            >Агапова Марина Сергеевна</a
+                          >
+                        </div>
+                        <time class="review-card__date" datetime="2025-05-18"
+                          >18 мая 2025</time
+                        >
+                      </footer>
+                    </article>
+                    <article class="swiper-slide review-card">
+                      <header class="review-card__header">
+                        <div class="review-card__header-div">
+                          <img
+                            class="review-card__avatar"
+                            src="./images/doc.png"
+                            alt="Аватар пользователя"
+                          />
+                          <div class="review-card__author">
+                            <span class="review-card__name">Иван Фёдоров</span>
+                            <span class="review-card__meta">Направление</span>
+                          </div>
+                        </div>
+                        <div class="review-card__source">
+                          <img src="./images/rev-1.svg" alt="Яндекс" />
+                        </div>
+                      </header>
+                      <p class="review-card__text">
+                        Отличная стоматология, хорошие врачи и стильный, уютный
+                        дизайн. При оплате процедур в клинике, есть возможность
+                        получить бесплатный массаж, что тоже очень порадовало!
+                        дизайн. При оплате процедур в клинике, есть возможность
+                        получить бесплатный массаж, что тоже очень порадовало!
+                      </p>
+                      <footer class="review-card__footer">
+                        <div class="review-card__doctor-info">
+                          <span class="review-card__doctor-label"
+                            >Отзыв о враче:</span
+                          >
+                          <a href="#" class="review-card__doctor-link"
+                            >Агапова Марина Сергеевна</a
+                          >
+                        </div>
+                        <time class="review-card__date" datetime="2025-05-18"
+                          >18 мая 2025</time
+                        >
+                      </footer>
+                    </article>
+                  </div>
+                </div>
+                <div class="swiper-button-prev">
+                  <img src="./images/left-img.svg" alt="" />
+                </div>
+                <div class="swiper-button-next">
+                  <img src="./images/right-img.svg" alt="" />
+                </div>
+              </div>
+
+              <div class="tabs-slider__panel" id="reviews-works">
+                <div class="swiper">
+                  <div class="swiper-wrapper"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>
+
+              <div class="tabs-slider__panel" id="reviews-video">
+                <div class="swiper">
+                  <div class="swiper-wrapper"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>
+
+              <div class="tabs-slider__panel" id="reviews-filter">
+                <div class="swiper">
+                  <div class="swiper-wrapper"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="rating">
+        <div class="wrapper">
+          <div class="rating__cont">
+            <h2>Рейтинги клиники</h2>
+            <div class="rating__cont-block">
+              <div class="rating__cont-block__first">
+                <img src="./images/yand.png" alt="" />
+              </div>
+              <div class="rating__cont-last">
+                <div class="rating-item">
+                  <div>
+                    <img src="./images/gis.svg" alt="" />
+                  </div>
+                  <div>
+                    <div class="stars-flex">
+                      <p>5,0</p>
+                      <img src="./images/full-stars.svg" alt="" />
+                    </div>
+                    <p class="rev-count">1440 отзывов</p>
+                  </div>
+                </div>
+                <div class="rating-item">
+                  <div>
+                    <img src="./images/google.svg" alt="" />
+                  </div>
+                  <div>
+                    <div class="stars-flex">
+                      <p>4,7</p>
+                      <img src="./images/stars.svg" alt="" />
+                    </div>
+                    <p class="rev-count">1440 отзывов</p>
+                  </div>
+                </div>
+                <div class="rating-item">
+                  <div>
+                    <img src="./images/zoon.svg" alt="" />
+                  </div>
+                  <div>
+                    <div class="stars-flex">
+                      <p>4,2</p>
+                      <img src="./images/stars.svg" alt="" />
+                    </div>
+                    <p class="rev-count">1440 отзывов</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
     <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>
