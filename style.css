@@ -1384,13 +1384,154 @@ h2 {
 
 /* lichenion end */
 
-
-
 /* footer start */
 
+.footer {
+  background: #67bec1;
+  padding-top: 105px;
+  padding-bottom: 135px;
+}
 
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  align-items: center;
+  padding-bottom: 31px;
+  border-bottom: 2px solid rgba(248, 248, 250, 0.5);
+  margin-bottom: 32px;
+}
 
+.footer__top-block {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.footer__contact-item a {
+  color: #fff;
+}
+
+.footer__contact-item p {
+  color: #fff;
+  margin-top: 6px;
+}
+
+.footer__cta-btn {
+  border: none;
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px 24px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #67bec1;
+}
+
+.footer__center {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 47px;
+  border-bottom: 2px solid rgba(248, 248, 250, 0.5);
+}
+
+.footer__column {
+  flex: 1;
+}
+
+.footer__column-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.footer-nav__list > :not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.footer-nav__link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.op {
+  opacity: 0;
+}
+
+.footer__schedule p,
+.footer__address {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  color: #fff;
+}
+
+.footer__address {
+  line-height: 135%;
+  margin-bottom: 8px;
+}
+
+.footer__info-block-1 {
+  margin-bottom: 40px;
+}
+
+.footer__legal-name {
+  margin-bottom: 8px;
+}
+
+.footer__legal-name,
+.footer__legal-address {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  color: #fff;
+}
+
+.footer__bottom {
+  display: flex;
+  padding-top: 37px;
+}
+
+.footer__copyright {
+  flex: 1;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  color: #fff;
+}
+
+.footer__bottom-right {
+  flex: 1;
+}
+
+.footer__bottom-right {
+  display: flex;
+  gap: 44px;
+}
+
+.footer__bottom-right img {
+  width: 100%;
+  max-width: 290px;
+}
+
+.footer__bottom-right a {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #fff;
+}
 
 /* footer end */
-
-
