@@ -26,7 +26,7 @@
                   Москва, ул. Вешняковская, д. 11А
                 </p>
                 <div class="location__schedule">
-                  <span>пн–пт: 8:00–21:00</span> <br>
+                  <span>пн–пт: 8:00–21:00</span> <br />
                   <span>сб–вс: 9:00–21:00</span>
                 </div>
               </div>
@@ -186,7 +186,12 @@
                   >
                     <h3>Врачи</h3>
                     <div>
-                      <input type="text" name="" id="" placeholder="Введите специальность">
+                      <input
+                        type="text"
+                        name=""
+                        id=""
+                        placeholder="Введите специальность"
+                      />
                       <div class="header-grid">
                         <div class="header-grid-item">
                           <div>
@@ -1974,15 +1979,97 @@
                   Видеоотзывы
                 </button>
               </li>
-              <li class="tabs-slider__nav-item">
-                <button
-                  type="button"
-                  class="tabs-slider__tab-button"
-                  data-tab-target="#reviews-filter"
-                >
+              <li
+                class="tabs-slider__nav-item tabs-slider__nav-item--filter js-filter-dropdown-wrapper"
+              >
+                <button type="button" class="btn btn--filter js-open-filters">
                   <img src="./images/filter-icon.svg" alt="" />
                   Выбрать направление
                 </button>
+
+                <div class="filter-dropdown">
+                  <form class="filter-dropdown__form">
+                    <div class="filter-dropdown__list">
+                      <label class="custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-checkbox__input"
+                          name="direction"
+                        />
+                        <span class="custom-checkbox__box"></span>
+                        <span class="custom-checkbox__label-text"
+                          >Стоматология</span
+                        >
+                      </label>
+                      <label class="custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-checkbox__input"
+                          name="direction"
+                        />
+                        <span class="custom-checkbox__box"></span>
+                        <span class="custom-checkbox__label-text"
+                          >Стоматология</span
+                        >
+                      </label>
+                      <label class="custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-checkbox__input"
+                          name="direction"
+                        />
+                        <span class="custom-checkbox__box"></span>
+                        <span class="custom-checkbox__label-text"
+                          >Стоматология</span
+                        >
+                      </label>
+                      <label class="custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-checkbox__input"
+                          name="direction"
+                        />
+                        <span class="custom-checkbox__box"></span>
+                        <span class="custom-checkbox__label-text"
+                          >Стоматология</span
+                        >
+                      </label>
+                      <label class="custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-checkbox__input"
+                          name="direction"
+                        />
+                        <span class="custom-checkbox__box"></span>
+                        <span class="custom-checkbox__label-text"
+                          >Стоматология</span
+                        >
+                      </label>
+                      <label class="custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-checkbox__input"
+                          name="direction"
+                        />
+                        <span class="custom-checkbox__box"></span>
+                        <span class="custom-checkbox__label-text"
+                          >Стоматология</span
+                        >
+                      </label>
+                      <label class="custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-checkbox__input"
+                          name="direction"
+                        />
+                        <span class="custom-checkbox__box"></span>
+                        <span class="custom-checkbox__label-text"
+                          >Стоматология</span
+                        >
+                      </label>
+                    </div>
+                  </form>
+                </div>
               </li>
             </ul>
 
@@ -2154,17 +2241,463 @@
 
               <div class="tabs-slider__panel" id="reviews-works">
                 <div class="swiper">
-                  <div class="swiper-wrapper"></div>
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-button-next"></div>
+                  <div class="swiper-wrapper">
+                    <article class="swiper-slide review-card">
+                      <header class="review-card__header">
+                        <div class="review-card__header-div">
+                          <img
+                            class="review-card__avatar"
+                            src="./images/doc.png"
+                            alt="Аватар пользователя"
+                          />
+                          <div class="review-card__author">
+                            <span class="review-card__name">Иван Фёдоров</span>
+                            <span class="review-card__meta">Направление</span>
+                          </div>
+                        </div>
+                      </header>
+                      <div class="bg-rev-wrapper">
+                        <div
+                          style="
+                            background: url('./images/bg-hero.png');
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                          "
+                          class="bg-rev"
+                        ></div>
+                      </div>
+                      <p class="review-card__text">
+                        Отличная стоматология, хорошие врачи и стильный, уютный
+                        дизайн. При оплате процедур в клинике, есть возможность
+                        получить бесплатный массаж, что тоже очень порадовало!
+                        дизайн. При оплате процедур в клинике, есть возможность
+                        получить бесплатный массаж, что тоже очень порадовало!
+                      </p>
+                      <footer class="review-card__footer">
+                        <div class="review-card__doctor-info">
+                          <span class="review-card__doctor-label"
+                            >Отзыв о враче:</span
+                          >
+                          <a href="#" class="review-card__doctor-link"
+                            >Агапова Марина Сергеевна</a
+                          >
+                        </div>
+                        <time class="review-card__date" datetime="2025-05-18"
+                          >18 мая 2025</time
+                        >
+                      </footer>
+                    </article>
+                    <article class="swiper-slide review-card">
+                      <header class="review-card__header">
+                        <div class="review-card__header-div">
+                          <img
+                            class="review-card__avatar"
+                            src="./images/doc.png"
+                            alt="Аватар пользователя"
+                          />
+                          <div class="review-card__author">
+                            <span class="review-card__name">Иван Фёдоров</span>
+                            <span class="review-card__meta">Направление</span>
+                          </div>
+                        </div>
+                      </header>
+                      <div class="bg-rev-wrapper">
+                        <div
+                          style="
+                            background: url('./images/bg-hero.png');
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                          "
+                          class="bg-rev"
+                        ></div>
+                      </div>
+                      <p class="review-card__text">
+                        Отличная стоматология, хорошие врачи и стильный, уютный
+                        дизайн. При оплате процедур в клинике, есть возможность
+                        получить бесплатный массаж, что тоже очень порадовало!
+                        дизайн. При оплате процедур в клинике, есть возможность
+                        получить бесплатный массаж, что тоже очень порадовало!
+                      </p>
+                      <footer class="review-card__footer">
+                        <div class="review-card__doctor-info">
+                          <span class="review-card__doctor-label"
+                            >Отзыв о враче:</span
+                          >
+                          <a href="#" class="review-card__doctor-link"
+                            >Агапова Марина Сергеевна</a
+                          >
+                        </div>
+                        <time class="review-card__date" datetime="2025-05-18"
+                          >18 мая 2025</time
+                        >
+                      </footer>
+                    </article>
+                    <article class="swiper-slide review-card">
+                      <header class="review-card__header">
+                        <div class="review-card__header-div">
+                          <img
+                            class="review-card__avatar"
+                            src="./images/doc.png"
+                            alt="Аватар пользователя"
+                          />
+                          <div class="review-card__author">
+                            <span class="review-card__name">Иван Фёдоров</span>
+                            <span class="review-card__meta">Направление</span>
+                          </div>
+                        </div>
+                      </header>
+                      <div class="bg-rev-wrapper">
+                        <div
+                          style="
+                            background: url('./images/bg-hero.png');
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                          "
+                          class="bg-rev"
+                        ></div>
+                      </div>
+                      <p class="review-card__text">
+                        Отличная стоматология, хорошие врачи и стильный, уютный
+                        дизайн. При оплате процедур в клинике, есть возможность
+                        получить бесплатный массаж, что тоже очень порадовало!
+                        дизайн. При оплате процедур в клинике, есть возможность
+                        получить бесплатный массаж, что тоже очень порадовало!
+                      </p>
+                      <footer class="review-card__footer">
+                        <div class="review-card__doctor-info">
+                          <span class="review-card__doctor-label"
+                            >Отзыв о враче:</span
+                          >
+                          <a href="#" class="review-card__doctor-link"
+                            >Агапова Марина Сергеевна</a
+                          >
+                        </div>
+                        <time class="review-card__date" datetime="2025-05-18"
+                          >18 мая 2025</time
+                        >
+                      </footer>
+                    </article>
+                    <article class="swiper-slide review-card">
+                      <header class="review-card__header">
+                        <div class="review-card__header-div">
+                          <img
+                            class="review-card__avatar"
+                            src="./images/doc.png"
+                            alt="Аватар пользователя"
+                          />
+                          <div class="review-card__author">
+                            <span class="review-card__name">Иван Фёдоров</span>
+                            <span class="review-card__meta">Направление</span>
+                          </div>
+                        </div>
+                      </header>
+                      <div class="bg-rev-wrapper">
+                        <div
+                          style="
+                            background: url('./images/bg-hero.png');
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                          "
+                          class="bg-rev"
+                        ></div>
+                      </div>
+                      <p class="review-card__text">
+                        Отличная стоматология, хорошие врачи и стильный, уютный
+                        дизайн. При оплате процедур в клинике, есть возможность
+                        получить бесплатный массаж, что тоже очень порадовало!
+                        дизайн. При оплате процедур в клинике, есть возможность
+                        получить бесплатный массаж, что тоже очень порадовало!
+                      </p>
+                      <footer class="review-card__footer">
+                        <div class="review-card__doctor-info">
+                          <span class="review-card__doctor-label"
+                            >Отзыв о враче:</span
+                          >
+                          <a href="#" class="review-card__doctor-link"
+                            >Агапова Марина Сергеевна</a
+                          >
+                        </div>
+                        <time class="review-card__date" datetime="2025-05-18"
+                          >18 мая 2025</time
+                        >
+                      </footer>
+                    </article>
+                  </div>
+                </div>
+                <div class="swiper-button-prev">
+                  <img src="./images/left-img.svg" alt="" />
+                </div>
+                <div class="swiper-button-next">
+                  <img src="./images/right-img.svg" alt="" />
                 </div>
               </div>
 
               <div class="tabs-slider__panel" id="reviews-video">
                 <div class="swiper">
-                  <div class="swiper-wrapper"></div>
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-button-next"></div>
+                  <div class="swiper-wrapper">
+                    <article class="swiper-slide review-card">
+                      <header class="review-card__header">
+                        <div class="review-card__header-div">
+                          <img
+                            class="review-card__avatar"
+                            src="./images/doc.png"
+                            alt="Аватар пользователя"
+                          />
+                          <div class="review-card__author">
+                            <span class="review-card__name">Иван Фёдоров</span>
+                            <span class="review-card__meta">Направление</span>
+                          </div>
+                        </div>
+                      </header>
+                      <div class="video-player-1">
+                        <div class="video-player">
+                          <video
+                            class="video-player__video"
+                            poster="./images/bg-hero.png"
+                            preload="metadata"
+                            muted
+                            playsinline
+                          >
+                            <source src="./images/video.mov" type="video/mp4" />
+                            Ваш браузер не поддерживает воспроизведение видео.
+                          </video>
+                          <div class="video-player__controls-overlay">
+                            <button
+                              type="button"
+                              class="video-player__play-btn"
+                              aria-label="Воспроизвести видео"
+                            >
+                              <span class="video-player__icon--play">
+                                <img src="./images/play.svg" alt="" />
+                              </span>
+                              <span class="video-player__icon--pause">
+                                <img src="./images/footer-tel.svg" alt="" />
+                              </span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="review-card__text">
+                        Отличная стоматология, хорошие врачи и стильный, уютный
+                        дизайн. При оплате процедур в клинике, есть возможность
+                        получить бесплатный массаж, что тоже очень порадовало!
+                        дизайн. При оплате процедур в клинике, есть возможность
+                        получить бесплатный массаж, что тоже очень порадовало!
+                      </p>
+                      <footer class="review-card__footer">
+                        <div class="review-card__doctor-info">
+                          <span class="review-card__doctor-label"
+                            >Отзыв о враче:</span
+                          >
+                          <a href="#" class="review-card__doctor-link"
+                            >Агапова Марина Сергеевна</a
+                          >
+                        </div>
+                        <time class="review-card__date" datetime="2025-05-18"
+                          >18 мая 2025</time
+                        >
+                      </footer>
+                    </article>
+                    <article class="swiper-slide review-card">
+                      <header class="review-card__header">
+                        <div class="review-card__header-div">
+                          <img
+                            class="review-card__avatar"
+                            src="./images/doc.png"
+                            alt="Аватар пользователя"
+                          />
+                          <div class="review-card__author">
+                            <span class="review-card__name">Иван Фёдоров</span>
+                            <span class="review-card__meta">Направление</span>
+                          </div>
+                        </div>
+                      </header>
+                      <div class="video-player-1">
+                        <div class="video-player">
+                          <video
+                            class="video-player__video"
+                            poster="./images/bg-hero.png"
+                            preload="metadata"
+                            muted
+                            playsinline
+                          >
+                            <source src="./images/video.mov" type="video/mp4" />
+                            Ваш браузер не поддерживает воспроизведение видео.
+                          </video>
+                          <div class="video-player__controls-overlay">
+                            <button
+                              type="button"
+                              class="video-player__play-btn"
+                              aria-label="Воспроизвести видео"
+                            >
+                              <span class="video-player__icon--play">
+                                <img src="./images/play.svg" alt="" />
+                              </span>
+                              <span class="video-player__icon--pause">
+                                <img src="./images/footer-tel.svg" alt="" />
+                              </span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="review-card__text">
+                        Отличная стоматология, хорошие врачи и стильный, уютный
+                        дизайн. При оплате процедур в клинике, есть возможность
+                        получить бесплатный массаж, что тоже очень порадовало!
+                        дизайн. При оплате процедур в клинике, есть возможность
+                        получить бесплатный массаж, что тоже очень порадовало!
+                      </p>
+                      <footer class="review-card__footer">
+                        <div class="review-card__doctor-info">
+                          <span class="review-card__doctor-label"
+                            >Отзыв о враче:</span
+                          >
+                          <a href="#" class="review-card__doctor-link"
+                            >Агапова Марина Сергеевна</a
+                          >
+                        </div>
+                        <time class="review-card__date" datetime="2025-05-18"
+                          >18 мая 2025</time
+                        >
+                      </footer>
+                    </article>
+                    <article class="swiper-slide review-card">
+                      <header class="review-card__header">
+                        <div class="review-card__header-div">
+                          <img
+                            class="review-card__avatar"
+                            src="./images/doc.png"
+                            alt="Аватар пользователя"
+                          />
+                          <div class="review-card__author">
+                            <span class="review-card__name">Иван Фёдоров</span>
+                            <span class="review-card__meta">Направление</span>
+                          </div>
+                        </div>
+                      </header>
+                      <div class="video-player-1">
+                        <div class="video-player">
+                          <video
+                            class="video-player__video"
+                            poster="./images/bg-hero.png"
+                            preload="metadata"
+                            muted
+                            playsinline
+                          >
+                            <source src="./images/video.mov" type="video/mp4" />
+                            Ваш браузер не поддерживает воспроизведение видео.
+                          </video>
+                          <div class="video-player__controls-overlay">
+                            <button
+                              type="button"
+                              class="video-player__play-btn"
+                              aria-label="Воспроизвести видео"
+                            >
+                              <span class="video-player__icon--play">
+                                <img src="./images/play.svg" alt="" />
+                              </span>
+                              <span class="video-player__icon--pause">
+                                <img src="./images/footer-tel.svg" alt="" />
+                              </span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="review-card__text">
+                        Отличная стоматология, хорошие врачи и стильный, уютный
+                        дизайн. При оплате процедур в клинике, есть возможность
+                        получить бесплатный массаж, что тоже очень порадовало!
+                        дизайн. При оплате процедур в клинике, есть возможность
+                        получить бесплатный массаж, что тоже очень порадовало!
+                      </p>
+                      <footer class="review-card__footer">
+                        <div class="review-card__doctor-info">
+                          <span class="review-card__doctor-label"
+                            >Отзыв о враче:</span
+                          >
+                          <a href="#" class="review-card__doctor-link"
+                            >Агапова Марина Сергеевна</a
+                          >
+                        </div>
+                        <time class="review-card__date" datetime="2025-05-18"
+                          >18 мая 2025</time
+                        >
+                      </footer>
+                    </article>
+                    <article class="swiper-slide review-card">
+                      <header class="review-card__header">
+                        <div class="review-card__header-div">
+                          <img
+                            class="review-card__avatar"
+                            src="./images/doc.png"
+                            alt="Аватар пользователя"
+                          />
+                          <div class="review-card__author">
+                            <span class="review-card__name">Иван Фёдоров</span>
+                            <span class="review-card__meta">Направление</span>
+                          </div>
+                        </div>
+                      </header>
+                      <div class="video-player-1">
+                        <div class="video-player">
+                          <video
+                            class="video-player__video"
+                            poster="./images/bg-hero.png"
+                            preload="metadata"
+                            muted
+                            playsinline
+                          >
+                            <source src="./images/video.mov" type="video/mp4" />
+                            Ваш браузер не поддерживает воспроизведение видео.
+                          </video>
+                          <div class="video-player__controls-overlay">
+                            <button
+                              type="button"
+                              class="video-player__play-btn"
+                              aria-label="Воспроизвести видео"
+                            >
+                              <span class="video-player__icon--play">
+                                <img src="./images/play.svg" alt="" />
+                              </span>
+                              <span class="video-player__icon--pause">
+                                <img src="./images/footer-tel.svg" alt="" />
+                              </span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="review-card__text">
+                        Отличная стоматология, хорошие врачи и стильный, уютный
+                        дизайн. При оплате процедур в клинике, есть возможность
+                        получить бесплатный массаж, что тоже очень порадовало!
+                        дизайн. При оплате процедур в клинике, есть возможность
+                        получить бесплатный массаж, что тоже очень порадовало!
+                      </p>
+                      <footer class="review-card__footer">
+                        <div class="review-card__doctor-info">
+                          <span class="review-card__doctor-label"
+                            >Отзыв о враче:</span
+                          >
+                          <a href="#" class="review-card__doctor-link"
+                            >Агапова Марина Сергеевна</a
+                          >
+                        </div>
+                        <time class="review-card__date" datetime="2025-05-18"
+                          >18 мая 2025</time
+                        >
+                      </footer>
+                    </article>
+                  </div>
+                </div>
+                <div class="swiper-button-prev">
+                  <img src="./images/left-img.svg" alt="" />
+                </div>
+                <div class="swiper-button-next">
+                  <img src="./images/right-img.svg" alt="" />
                 </div>
               </div>
 

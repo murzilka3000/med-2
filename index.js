@@ -107,3 +107,87 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const allVideoPlayers = document.querySelectorAll('.video-player');
+
+  allVideoPlayers.forEach(player => {
+    const video = player.querySelector('.video-player__video');
+    const playButton = player.querySelector('.video-player__play-btn');
+
+    const togglePlay = () => {
+      if (video.paused || video.ended) {
+        const playPromise = video.play();
+        if (playPromise !== undefined) {
+          playPromise.catch(error => {
+            console.error("Ошибка воспроизведения видео:", error);
+          });
+        }
+      } else {
+        video.pause();
+      }
+    };
+    
+    playButton.addEventListener('click', (e) => {
+      e.stopPropagation(); // Останавливаем "всплытие" клика, чтобы не сработал клик по оверлею
+      togglePlay();
+    });
+    
+    // Клик по самому видео также ставит на паузу
+    video.addEventListener('click', (e) => {
+      e.preventDefault();
+      togglePlay();
+    });
+
+    video.addEventListener('play', () => {
+      player.classList.add('--is-playing');
+      playButton.setAttribute('aria-label', 'Поставить на паузу');
+    });
+
+    video.addEventListener('pause', () => {
+      player.classList.remove('--is-playing');
+      playButton.setAttribute('aria-label', 'Воспроизвести видео');
+    });
+
+    video.addEventListener('ended', () => {
+      player.classList.remove('--is-playing');
+    });
+  });
+});
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const dropdownWrapper = document.querySelector('.js-filter-dropdown-wrapper');
+  
+  if (!dropdownWrapper) {
+    return;
+  }
+  
+  const openButton = dropdownWrapper.querySelector('.js-open-filters');
+  const dropdown = dropdownWrapper.querySelector('.filter-dropdown');
+  
+  // Функция для закрытия, чтобы не дублировать код
+  const closeDropdown = () => {
+    dropdown.classList.remove('--is-open');
+    openButton.classList.remove('btn--filter-active'); // Убираем активный класс с кнопки
+  };
+
+  openButton.addEventListener('click', (event) => {
+    event.stopPropagation(); 
+    dropdown.classList.toggle('--is-open');
+    openButton.classList.toggle('btn--filter-active'); // Переключаем активный класс на кнопке
+  });
+  
+  document.addEventListener('click', (event) => {
+    if (dropdown.classList.contains('--is-open') && !dropdownWrapper.contains(event.target)) {
+      closeDropdown();
+    }
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && dropdown.classList.contains('--is-open')) {
+      closeDropdown();
+    }
+  });
+});
