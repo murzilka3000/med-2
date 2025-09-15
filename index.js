@@ -191,3 +191,30 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const allToggles = document.querySelectorAll('.js-nav-toggle');
+
+  allToggles.forEach(toggle => {
+    toggle.addEventListener('click', (event) => {
+      event.preventDefault();
+
+      const parentItem = toggle.closest('.footer-nav__item--has-submenu');
+
+      if (parentItem) {
+        parentItem.classList.toggle('--is-open');
+        
+        const isOpen = parentItem.classList.contains('--is-open');
+        toggle.setAttribute('aria-expanded', isOpen);
+      }
+    });
+  });
+});
