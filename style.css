@@ -1324,6 +1324,7 @@ h2 {
   width: 100%;
   max-width: 484px;
   outline: none;
+  background: #f8f8fa;
 }
 
 .consultation-form__input,
@@ -2321,18 +2322,14 @@ h2 {
   }
 }
 
-
 .consultation-form {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-
-
 .consultation-form__container {
   align-items: flex-end;
 }
-
 
 @media screen and (max-width: 1020px) {
   .consultation-form__container {
@@ -2340,12 +2337,93 @@ h2 {
   }
 }
 
-@media screen and (max-width: 949px) { 
+@media screen and (max-width: 949px) {
   .consultation-form__container {
     flex-direction: column;
   }
 
   .consultation-form__content {
     width: 100%;
+  }
+
+  .consultation-form__content {
+    padding: 40px 24px;
+  }
+
+  .consultation-form__subtitle {
+    margin-bottom: 27px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .consultation-form {
+    padding-top: 66px;
+    padding-bottom: 71px;
+  }
+}
+
+.partners {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.partners-cont img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1072px) {
+  .partners-cont {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .partners-cont {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .partners {
+    padding-top: 63px;
+    padding-bottom: 84px;
+  }
+}
+
+
+.lichenion {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 1235px) {
+    .doc-abs {
+      display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+  .lichenion__cont {
+    flex-direction: column;
+  }
+
+  .lichenion__cont > :first-child {
+    display: flex;
+    justify-content: center;
+  }
+
+  .lichenion__cont {
+    padding: 43px 23px 40px 23px;
+  }
+
+  .lichenion__right {
+    gap: 24px;
+  }
+
+  .lichenion__cont {
+    gap: 29px;
+  }
+
+  .lichenion {
+    padding-top: 52px;
+    padding-bottom: 114px;
   }
 }
