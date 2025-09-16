@@ -2745,11 +2745,11 @@
                     </div>
                     <div class="rating-item__mob-2">
                       <p>4,9</p>
-                      <img src="./images/black-stars.svg" alt="">
+                      <img src="./images/black-stars.svg" alt="" />
                     </div>
                   </div>
                   <div>
-                    <img src="./images/yand-2.svg" alt="">
+                    <img src="./images/yand-2.svg" alt="" />
                   </div>
                 </div>
                 <div class="rating-item">
@@ -3172,7 +3172,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer" style="display: none">
+    <footer class="footer">
       <div class="wrapper">
         <div class="footer__container">
           <div class="footer__top">
@@ -3180,18 +3180,54 @@
               <img src="./images/footer-logo.svg" alt="Логотип Вешняки Мед" />
             </a>
             <div class="footer__top-block">
-              <div class="footer__contact-item contacts__item">
-                <img
-                  class="contacts__icon"
-                  src="./images/footer-tel.svg"
-                  alt=""
-                />
-                <div class="contacts__details">
-                  <a href="tel:+74953701300" class="contacts__link"
-                    >+7 495 370-13-00</a
-                  >
-                  <p class="contacts__description">Звоните по любым вопросам</p>
+              <div class="footer-mob-000">
+                <div class="footer__contact-item contacts__item">
+                  <img
+                    class="contacts__icon"
+                    src="./images/footer-tel.svg"
+                    alt=""
+                  />
+                  <div class="contacts__details">
+                    <a href="tel:+74953701300" class="contacts__link"
+                      >+7 495 370-13-00</a
+                    >
+                    <p class="contacts__description">
+                      Звоните по любым вопросам
+                    </p>
+                  </div>
                 </div>
+                <ul class="footer__socials socials__list">
+                  <li class="socials__item">
+                    <a
+                      href="#"
+                      class="socials__link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Наша страница Вконтакте"
+                    >
+                      <img
+                        src="./images/footer-vk.svg"
+                        alt="Вконтакте"
+                        class="socials__icon"
+                      />
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a
+                      href="#"
+                      class="socials__link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Наш канал в Телеграм"
+                    >
+                      <img
+                        src="./images/footer-tg.svg"
+                        alt="Телеграм"
+                        class="socials__icon"
+                      />
+                    </a>
+                  </li>
+                </ul>
               </div>
               <div class="footer__contact-item contacts__item">
                 <img
@@ -3373,6 +3409,197 @@
                 <p class="footer__legal-address">
                   Юридический адрес: Москва, ул. Вешняковская, д. 11А
                 </p>
+              </div>
+            </div>
+            <div class="mobile-accordion js-mobile-accordion-item">
+              <h3 class="mobile-accordion__header">
+                <button
+                  type="button"
+                  class="mobile-accordion__toggle js-mobile-accordion-toggle"
+                  aria-expanded="true"
+                >
+                  Навигация
+                  <img
+                    class="mobile-accordion__icon"
+                    src="./images/arr-down.svg"
+                    alt=""
+                  />
+                </button>
+              </h3>
+              <div class="mobile-accordion__panel js-mobile-accordion-panel">
+                <nav class="footer-nav">
+                  <ul class="footer-nav__list">
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link">О клинике</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link">Услуги</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link">Врачи</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link">Акции</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link">Отзывы</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link">Контакты</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="mobile-accordion js-mobile-accordion-item">
+              <h3 class="mobile-accordion__header">
+                <button
+                  type="button"
+                  class="mobile-accordion__toggle js-mobile-accordion-toggle"
+                  aria-expanded="true"
+                >
+                  Направления
+                  <img
+                    class="mobile-accordion__icon"
+                    src="./images/arr-down.svg"
+                    alt=""
+                  />
+                </button>
+              </h3>
+              <div class="mobile-accordion__panel js-mobile-accordion-panel">
+                <nav class="footer-nav">
+                  <ul class="footer-nav__list">
+                    <li class="footer-nav__item footer-nav__item--has-submenu">
+                      <a
+                        href="#"
+                        class="footer-nav__link footer-nav__link--toggle js-nav-toggle"
+                        aria-expanded="false"
+                        aria-controls="submenu-stomatology"
+                      >
+                        Стоматология
+                        <img
+                          src="./images/arr-down.svg"
+                          alt=""
+                          class="footer-nav__toggle-icon"
+                        />
+                      </a>
+                      <ul class="footer-nav__sublist" id="submenu-stomatology">
+                        <li class="footer-nav__sublist-item">
+                          <a href="#" class="footer-nav__sublist-link"
+                            >Терапия</a
+                          >
+                        </li>
+                        <li class="footer-nav__sublist-item">
+                          <a href="#" class="footer-nav__sublist-link"
+                            >Хирургия</a
+                          >
+                        </li>
+                        <li class="footer-nav__sublist-item">
+                          <a href="#" class="footer-nav__sublist-link"
+                            >Ортопедия</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link"
+                        >Детская стоматология</a
+                      >
+                    </li>
+
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link"
+                        >Лечение под наркозом</a
+                      >
+                    </li>
+
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link">Дерматология</a>
+                    </li>
+                  </ul>
+                </nav>
+                <nav class="footer-nav footer-nav--no-title">
+                  <ul class="footer-nav__list">
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link"
+                        >Врачебная косметология</a
+                      >
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link"
+                        >Ультразвуковая диагностика</a
+                      >
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link">Массаж</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link"
+                        >Мануальная терапия</a
+                      >
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link">Лаборатория</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link"
+                        >Процедурный кабинет</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="mobile-accordion js-mobile-accordion-item">
+              <h3 class="mobile-accordion__header">
+                <button
+                  type="button"
+                  class="mobile-accordion__toggle js-mobile-accordion-toggle"
+                  aria-expanded="true"
+                >
+                  Адрес клиники
+                  <img
+                    class="mobile-accordion__icon"
+                    src="./images/arr-down.svg"
+                    alt=""
+                  />
+                </button>
+              </h3>
+              <div class="mobile-accordion__panel js-mobile-accordion-panel">
+                <address class="footer__address">
+                  Москва, ул. Вешняковская, д. 11А
+                </address>
+                <div class="footer__schedule">
+                  <p>
+                    пн–пт: 8:00–21:00 <br />
+                    сб–вс: 9:00–21:00
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="mobile-accordion js-mobile-accordion-item">
+              <h3 class="mobile-accordion__header">
+                <button
+                  type="button"
+                  class="mobile-accordion__toggle js-mobile-accordion-toggle"
+                  aria-expanded="true"
+                >
+                  Информация об организации
+                  <img
+                    class="mobile-accordion__icon"
+                    src="./images/arr-down.svg"
+                    alt=""
+                  />
+                </button>
+              </h3>
+              <div class="mobile-accordion__panel js-mobile-accordion-panel">
+                <div class="footer__info-block">
+                  <p class="footer__legal-name">АО «Стоматология № 2»</p>
+                  <p class="footer__legal-address">
+                    Юридический адрес: Москва, ул. Вешняковская, д. 11А
+                  </p>
+                </div>
               </div>
             </div>
           </div>

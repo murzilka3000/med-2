@@ -218,3 +218,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const allAccordionItems = document.querySelectorAll('.js-mobile-accordion-item');
+
+  allAccordionItems.forEach(item => {
+    const toggle = item.querySelector('.js-mobile-accordion-toggle');
+    if (toggle) {
+      toggle.addEventListener('click', () => {
+        item.classList.toggle('--is-open');
+        const isOpen = item.classList.contains('--is-open');
+        toggle.setAttribute('aria-expanded', isOpen);
+      });
+    }
+  });
+});
