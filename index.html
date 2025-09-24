@@ -85,17 +85,21 @@
               </li>
               <li class="header-mob">
                 <a href="">
-                  <img src="./images/tel-mob.svg" alt="" />
-                </a>
-              </li>
-              <li class="header-mob">
-                <a href="">
-                  <img src="./images/email-mob.svg" alt="" />
+                  <img src="./images/s.svg" alt="" />
                 </a>
               </li>
               <li>
-                <button class="burger">
-                  <img src="./images/burger-mob.svg" alt="" />
+                <button class="burger-menu-button" id="burger-menu-button">
+                  <img
+                    class="icon-burger"
+                    src="./images/burger-mob.svg"
+                    alt="Открыть меню"
+                  />
+                  <img
+                    class="icon-close"
+                    src="./images/close.svg"
+                    alt="Закрыть меню"
+                  />
                 </button>
               </li>
             </ul>
@@ -430,9 +434,81 @@
           </div>
         </div>
       </div>
+
+      <!-- Сам попап с меню -->
+      <div class="mobile-menu" id="mobile-menu">
+        <!-- Панель 1: Главное меню -->
+        <div class="mobile-menu__panel is-active" id="main-menu">
+          <ul class="mobile-menu__list">
+            <li><a href="#">О клинике</a></li>
+            <!-- Эта ссылка ведет на другую панель -->
+            <li class="has-submenu">
+              <a href="#" data-target="services-menu">Услуги</a>
+            </li>
+            <li><a href="#">Врачи</a></li>
+            <li><a href="#">Акции</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <div class="mobile-menu__contacts">
+            <a href="tel:+70000000000">
+              <img src="./images/tel-mob.svg" alt="" />
+            </a>
+            <a href="mailto:info@example.com">
+              <img src="./images/email-mob.svg" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Панель 2: Услуги -->
+        <div class="mobile-menu__panel" id="services-menu">
+          <div class="mobile-menu__header">
+            <button class="mobile-menu__back-button" data-target="main-menu">
+              <img src="./images/arrrr.svg" alt="" />
+              <h2>Услуги</h2>
+            </button>
+          </div>
+          <ul class="mobile-menu__list">
+            <!-- Эта ссылка ведет на другую панель -->
+            <li class="has-submenu">
+              <a href="#" data-target="stomatology-menu">Стоматология</a>
+            </li>
+            <li><a href="#">Детская стоматология</a></li>
+            <li><a href="#">Лечение под наркозом</a></li>
+            <li><a href="#">Дерматология</a></li>
+            <li class="has-submenu"><a href="#">Врачебная косметология</a></li>
+            <li><a href="#">Ультразвуковая диагностика</a></li>
+            <li><a href="#">Массаж</a></li>
+            <li><a href="#">Мануальная терапия</a></li>
+            <li><a href="#">Лаборатория</a></li>
+            <li><a href="#">Процедурный кабинет</a></li>
+          </ul>
+        </div>
+
+        <!-- Панель 3: Стоматология -->
+        <div class="mobile-menu__panel" id="stomatology-menu">
+          <div class="mobile-menu__header">
+            <button
+              class="mobile-menu__back-button"
+              data-target="services-menu"
+            >
+              <img src="./images/arrrr.svg" alt="" />
+              <h2>Стоматология</h2>
+            </button>
+          </div>
+          <ul class="mobile-menu__list">
+            <li><a href="#">Терапевтическая стоматология</a></li>
+            <li><a href="#">Хирургия</a></li>
+            <li><a href="#">Ортодонтия</a></li>
+            <li><a href="#">Пародонтология</a></li>
+            <li><a href="#">Ортопедия</a></li>
+            <li><a href="#">Имплантология</a></li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
-      <section class="hero-slider" style="display: none">
+      <section class="hero-slider">
         <ul class="hero-slider__wrapper">
           <li
             class="hero-slider__slide"
@@ -1999,7 +2075,8 @@
                 class="tabs-slider__nav-item tabs-slider__nav-item--filter js-filter-dropdown-wrapper"
               >
                 <button type="button" class="btn btn--filter js-open-filters">
-                  <img src="./images/filter-icon.svg" alt="" />
+                  <img class="f-b" src="./images/filter-icon.svg" alt="" />
+                  <img class="f-w" src="./images/filt-w.svg" alt="" />
                   Выбрать направление
                 </button>
 
@@ -3098,23 +3175,20 @@
                   required
                 />
                 <div class="consultation-form__policy">
-                  <input
-                    type="checkbox"
-                    name="policy"
-                    id="policy-agreement"
-                    class="consultation-form__checkbox"
-                    checked
-                    required
-                  />
-                  <label
-                    for="policy-agreement"
-                    class="consultation-form__label"
-                  >
-                    Соглашаюсь с условиями
-                    <a href="#"
-                      >Политики <br />
-                      конфиденциальности</a
-                    >.
+                  <label class="custom-checkbox">
+                    <input
+                      type="checkbox"
+                      class="custom-checkbox__input"
+                      name="policy"
+                      id="policy-agreement"
+                      checked
+                      required
+                    />
+                    <span class="custom-checkbox__box"></span>
+                    <span class="custom-checkbox__label-text">
+                      Соглашаюсь с условиями
+                      <a href="#">Политики конфиденциальности</a>.
+                    </span>
                   </label>
                 </div>
                 <button type="submit" class="consultation-form__submit-btn btn">
