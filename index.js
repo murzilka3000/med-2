@@ -377,3 +377,99 @@ const preimSwiper = new Swiper(".swiper-preim", {
 });
 
 // new
+
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Используем Map для хранения данных и созданных экземпляров Popper
+  const tooltipData = new Map();
+
+  // 1. Предварительная подготовка: находим элементы и вычисляем смещения
+  document.querySelectorAll('.tooltip-wrapper').forEach((wrapper, index) => {
+    const button = wrapper.querySelector('.usl-hero__button-2');
+    const tooltip = wrapper.querySelector('.tooltip');
+    const arrowElement = wrapper.querySelector('[data-popper-arrow]');
+    const iconInButton = button.querySelector('.usl-hero__icon');
+
+    if (!button || !tooltip || !iconInButton) return;
+
+    // Генерируем уникальный ID
+    const uniqueButtonId = `tooltip-trigger-${index}`;
+    button.id = uniqueButtonId;
+
+    // Вычисляем смещение ОДИН РАЗ при загрузке
+    const buttonRect = button.getBoundingClientRect();
+    const iconRect = iconInButton.getBoundingClientRect();
+    const skiddingValue = (iconRect.left + iconRect.width / 2) - (buttonRect.left + buttonRect.width / 2);
+
+    // Сохраняем все необходимые данные, но НЕ создаем Popper
+    tooltipData.set(uniqueButtonId, {
+      instance: null, // Экземпляр будет создан позже
+      button: button,
+      tooltip: tooltip,
+      arrowElement: arrowElement,
+      originalParent: wrapper,
+      skidding: skiddingValue,
+    });
+  });
+
+  // 2. Обработка кликов через делегирование
+  document.body.addEventListener('click', function(event) {
+    const clickedButton = event.target.closest('.usl-hero__button-2');
+
+    // Сначала закрываем все открытые тултипы
+    let closingTooltipData = null;
+    tooltipData.forEach((data, buttonId) => {
+      if (data.tooltip.classList.contains('is-visible')) {
+        closingTooltipData = data;
+        if (!clickedButton || buttonId !== clickedButton.id) {
+          data.tooltip.classList.remove('is-visible');
+        }
+      }
+    });
+    
+    // Возвращаем закрытый тултип на место
+    if (closingTooltipData && !closingTooltipData.tooltip.classList.contains('is-visible')) {
+      closingTooltipData.originalParent.appendChild(closingTooltipData.tooltip);
+    }
+
+    // Если клик был по кнопке, обрабатываем открытие/закрытие
+    if (clickedButton) {
+      const data = tooltipData.get(clickedButton.id);
+      if (!data) return;
+
+      const wasVisible = data.tooltip.classList.contains('is-visible');
+      
+      data.tooltip.classList.toggle('is-visible');
+
+      if (!wasVisible) {
+        // --- ВОТ КЛЮЧЕВОЕ ИЗМЕНЕНИЕ ---
+        // Если это первый клик, создаем экземпляр Popper
+        if (!data.instance) {
+          data.instance = Popper.createPopper(data.button, data.tooltip, {
+            placement: 'bottom',
+            modifiers: [
+              { name: 'offset', options: { offset: [data.skidding, 12] } },
+              { name: 'preventOverflow', options: { padding: 10 } },
+              { name: 'flip', options: { fallbackPlacements: ['top'] } },
+              { name: 'arrow', options: { element: data.arrowElement } },
+            ],
+          });
+        }
+        
+        // Телепортируем и обновляем
+        document.body.appendChild(data.tooltip);
+        data.instance.update();
+      } else {
+        // Возвращаем на место при закрытии
+        data.originalParent.appendChild(data.tooltip);
+      }
+    }
+  });
+});

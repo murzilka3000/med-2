@@ -2889,7 +2889,6 @@ body.menu-open {
 
 .usl-hero__item {
   border-radius: 20px;
-  overflow: hidden;
   background: #f8f8fa;
   display: flex;
   flex-direction: column;
@@ -2899,18 +2898,12 @@ body.menu-open {
   position: relative;
 }
 
-.usl-hero__item div {
-  display: flex;
-  flex-direction: column;
-  gap: 11px;
-}
-
 .usl-hero__item a {
   text-decoration: none;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 125%;
-  color: #333;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000;
 }
 
 .usl-hero__item button {
@@ -2924,6 +2917,7 @@ body.menu-open {
   color: #3c3c3b;
   gap: 6px;
   padding: 0;
+  margin-top: 11px;
 }
 
 .usl-hero__image {
@@ -3393,4 +3387,194 @@ body.menu-open {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+}
+
+
+
+
+
+
+.tooltip-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip {
+  display: none;
+  width: 352px;
+  min-width: 250px;
+  z-index: 100;
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 16px;
+  padding: 16px;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.tooltip.is-visible {
+  display: block;
+  opacity: 1;
+}
+
+.tooltip[data-popper-arrow]::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+.tooltip-cont {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.tooltip-cont > :first-child {
+  padding-right: 16px;
+  border-right: 1px solid #e9e9e9;
+}
+
+.tooltip-cont > :last-child {
+  padding-left: 16px;
+}
+
+.tooltip__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tooltip__list li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.tooltip__link {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.2s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tooltip-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip {
+  display: none;
+  width: 352px;
+  min-width: 250px;
+  z-index: 100;
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 16px;
+  padding: 16px;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.tooltip.is-visible {
+  display: block;
+  opacity: 1;
+}
+
+/* Стили для контейнера стрелки */
+[data-popper-arrow],
+[data-popper-arrow]::before {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: inherit;
+}
+
+[data-popper-arrow] {
+  visibility: hidden;
+}
+
+[data-popper-arrow]::before {
+  content: '';
+  visibility: visible;
+  transform: rotate(45deg);
+}
+
+/* Позиционирование стрелки в зависимости от положения тултипа */
+.tooltip[data-popper-placement^='top'] > [data-popper-arrow] {
+  bottom: -5px;
+}
+
+.tooltip[data-popper-placement^='bottom'] > [data-popper-arrow] {
+  top: -5px;
+}
+
+.tooltip[data-popper-placement^='left'] > [data-popper-arrow] {
+  right: -5px;
+}
+
+.tooltip[data-popper-placement^='right'] > [data-popper-arrow] {
+  left: -5px;
+}
+
+/* Стили контента */
+.tooltip-cont {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.tooltip-cont > :first-child {
+  padding-right: 16px;
+  border-right: 1px solid #e9e9e9;
+}
+
+.tooltip-cont > :last-child {
+  padding-left: 16px;
+}
+
+.tooltip__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tooltip__list li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.tooltip__link {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.2s ease;
+}
+
+
+.usl-hero__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.usl-hero {
+  overflow: hidden;
+}
+
+html, body {
+  overflow-x: hidden;
 }
