@@ -1,0 +1,1591 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__container">
+          <a href="/" class="header__logo" aria-label="На главную страницу">
+            <img src="./images/logo.svg" alt="Логотип Вешняки Мед" />
+          </a>
+
+          <div class="header__info">
+            <div class="header__location location">
+              <img class="location__icon" src="./images/map.svg" alt="" />
+              <div class="location__text">
+                <p class="location__address">
+                  Москва, ул. Вешняковская, д. 11А
+                </p>
+                <div class="location__schedule">
+                  <span>пн–пт: 8:00–21:00</span> <br />
+                  <span>сб–вс: 9:00–21:00</span>
+                </div>
+              </div>
+            </div>
+
+            <ul class="header__contacts">
+              <li class="contacts__item">
+                <img class="contacts__icon" src="./images/tel.svg" alt="" />
+                <div class="contacts__details">
+                  <a href="tel:+74953701300" class="contacts__link"
+                    >+7 495 370-13-00</a
+                  >
+                  <p class="contacts__description">Звоните по любым вопросам</p>
+                </div>
+              </li>
+              <li class="contacts__item">
+                <img class="contacts__icon" src="./images/email.svg" alt="" />
+                <div class="contacts__details">
+                  <a href="mailto:zapis@veshnyakimed.ru" class="contacts__link"
+                    >zapis@veshnyakimed.ru</a
+                  >
+                </div>
+              </li>
+            </ul>
+
+            <ul class="header__socials socials">
+              <li class="socials__item">
+                <a
+                  href="https://vk.com/example"
+                  class="socials__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Наша страница Вконтакте"
+                >
+                  <img
+                    class="socials__icon"
+                    src="./images/vk.svg"
+                    alt="Вконтакте"
+                  />
+                </a>
+              </li>
+              <li class="socials__item">
+                <a
+                  href="https://t.me/example"
+                  class="socials__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Наш канал в Телеграм"
+                >
+                  <img
+                    class="socials__icon"
+                    src="./images/tg.svg"
+                    alt="Телеграм"
+                  />
+                </a>
+              </li>
+              <li class="header-mob">
+                <a href="">
+                  <img src="./images/s.svg" alt="" />
+                </a>
+              </li>
+              <li>
+                <button class="burger-menu-button" id="burger-menu-button">
+                  <img
+                    class="icon-burger"
+                    src="./images/burger-mob.svg"
+                    alt="Открыть меню"
+                  />
+                  <img
+                    class="icon-close"
+                    src="./images/close.svg"
+                    alt="Закрыть меню"
+                  />
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="header__bottom">
+          <nav class="header__nav nav-menu" aria-label="Основная навигация">
+            <ul class="nav-menu__list">
+              <li class="nav-menu__item">
+                <a href="#" class="nav-menu__link">О клинике</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="#" class="nav-menu__link nav-menu__link--dropdown">
+                  Услуги
+                  <img src="./images/arr-nav.svg" alt="" />
+                </a>
+
+                <div class="nav-menu__dropdown" id="services-popup">
+                  <div
+                    class="nav-menu__dropdown-container nav-menu__dropdown-container-usl"
+                  >
+                    <div class="usl-1">
+                      <h3>Услуги</h3>
+                      <nav>
+                        <ul>
+                          <li>
+                            <a href="">Стоматология</a>
+                          </li>
+                          <li>
+                            <a href="">Детская стоматология</a>
+                          </li>
+                          <li>
+                            <a href="">Лечение под наркозом</a>
+                          </li>
+                          <li>
+                            <a href="">Дерматология</a>
+                          </li>
+                          <li>
+                            <a href="">Врачебная косметология</a>
+                          </li>
+                          <li>
+                            <a href="">Ультразвуковая диагностика</a>
+                          </li>
+                          <li>
+                            <a href="">Массаж</a>
+                          </li>
+                          <li>
+                            <a href="">Мануальная терапия</a>
+                          </li>
+                          <li>
+                            <a href="">Лаборатория</a>
+                          </li>
+                          <li>
+                            <a href="">Процедурный кабинет</a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                    <div class="usl-2">
+                      <h3>Стоматология</h3>
+                      <nav>
+                        <ul>
+                          <li>
+                            <a href=""> Стоматология </a>
+                          </li>
+                          <li>
+                            <a href=""> Терапевтическая стоматология </a>
+                          </li>
+                          <li>
+                            <a href=""> Хирургия </a>
+                          </li>
+                          <li>
+                            <a href=""> Ортодонтия </a>
+                          </li>
+                          <li>
+                            <a href=""> Стоматология </a>
+                          </li>
+                          <li>
+                            <a href=""> Пародонтология </a>
+                          </li>
+                          <li>
+                            <a href=""> Ортопедия </a>
+                          </li>
+                          <li>
+                            <a href=""> Имплантология </a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-menu__item">
+                <a href="#" class="nav-menu__link nav-menu__link--dropdown">
+                  Врачи
+                  <img src="./images/arr-nav.svg" alt="" />
+                </a>
+
+                <div class="nav-menu__dropdown" id="doctors-popup">
+                  <div
+                    class="nav-menu__dropdown-container nav-menu__dropdown-container-2"
+                  >
+                    <h3>Врачи</h3>
+                    <div>
+                      <input
+                        type="text"
+                        name=""
+                        id=""
+                        placeholder="Введите специальность"
+                      />
+                      <div class="header-grid">
+                        <div class="header-grid-item">
+                          <div>
+                            <p>А</p>
+                          </div>
+                          <ul>
+                            <li>
+                              <a href="">Акушер-гинеколог</a>
+                            </li>
+                            <li>
+                              <a href="">Алколог</a>
+                            </li>
+                            <li>
+                              <a href="">Аллерголог</a>
+                            </li>
+                            <li>
+                              <a href="">Андролог</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="header-grid-item">
+                          <div>
+                            <p>А</p>
+                          </div>
+                          <ul>
+                            <li>
+                              <a href="">Акушер-гинеколог</a>
+                            </li>
+                            <li>
+                              <a href="">Алколог</a>
+                            </li>
+                            <li>
+                              <a href="">Аллерголог</a>
+                            </li>
+                            <li>
+                              <a href="">Андролог</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="header-grid-item">
+                          <div>
+                            <p>с</p>
+                          </div>
+                          <ul>
+                            <li>
+                              <a href="">Акушер-гинеколог</a>
+                            </li>
+                            <li>
+                              <a href="">Алколог</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="header-grid-item">
+                          <div>
+                            <p>А</p>
+                          </div>
+                          <ul>
+                            <li>
+                              <a href="">Акушер-гинеколог</a>
+                            </li>
+                            <li>
+                              <a href="">Алколог</a>
+                            </li>
+                            <li>
+                              <a href="">Аллерголог</a>
+                            </li>
+                            <li>
+                              <a href="">Андролог</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="header-grid-item">
+                          <div>
+                            <p>А</p>
+                          </div>
+                          <ul>
+                            <li>
+                              <a href="">Акушер-гинеколог</a>
+                            </li>
+                            <li>
+                              <a href="">Алколог</a>
+                            </li>
+                            <li>
+                              <a href="">Аллерголог</a>
+                            </li>
+                            <li>
+                              <a href="">Андролог</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="header-grid-item">
+                          <div>
+                            <p>с</p>
+                          </div>
+                          <ul>
+                            <li>
+                              <a href="">Акушер-гинеколог</a>
+                            </li>
+                            <li>
+                              <a href="">Алколог</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="header-grid-item">
+                          <div>
+                            <p>А</p>
+                          </div>
+                          <ul>
+                            <li>
+                              <a href="">Акушер-гинеколог</a>
+                            </li>
+                            <li>
+                              <a href="">Алколог</a>
+                            </li>
+                            <li>
+                              <a href="">Аллерголог</a>
+                            </li>
+                            <li>
+                              <a href="">Андролог</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="header-grid-item">
+                          <div>
+                            <p>А</p>
+                          </div>
+                          <ul>
+                            <li>
+                              <a href="">Акушер-гинеколог</a>
+                            </li>
+                            <li>
+                              <a href="">Алколог</a>
+                            </li>
+                            <li>
+                              <a href="">Аллерголог</a>
+                            </li>
+                            <li>
+                              <a href="">Андролог</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="header-grid-item">
+                          <div>
+                            <p>с</p>
+                          </div>
+                          <ul>
+                            <li>
+                              <a href="">Акушер-гинеколог</a>
+                            </li>
+                            <li>
+                              <a href="">Алколог</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="header-grid-item">
+                          <div>
+                            <p>с</p>
+                          </div>
+                          <ul>
+                            <li>
+                              <a href="">Акушер-гинеколог</a>
+                            </li>
+                            <li>
+                              <a href="">Алколог</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="header-grid-item">
+                          <div>
+                            <p>с</p>
+                          </div>
+                          <ul>
+                            <li>
+                              <a href="">Акушер-гинеколог</a>
+                            </li>
+                            <li>
+                              <a href="">Алколог</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="header-grid-item">
+                          <div>
+                            <p>с</p>
+                          </div>
+                          <ul>
+                            <li>
+                              <a href="">Акушер-гинеколог</a>
+                            </li>
+                            <li>
+                              <a href="">Алколог</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-menu__item">
+                <a href="#" class="nav-menu__link">Акции</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="#" class="nav-menu__link">Отзывы</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="#" class="nav-menu__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__actions">
+            <button
+              type="button"
+              class="header__search"
+              aria-label="Поиск по сайту"
+            >
+              <img src="./images/search.svg" alt="" />
+            </button>
+            <button type="button" class="header__cta-btn btn">
+              Записаться на приём
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Сам попап с меню -->
+      <div class="mobile-menu" id="mobile-menu">
+        <!-- Панель 1: Главное меню -->
+        <div class="mobile-menu__panel is-active" id="main-menu">
+          <ul class="mobile-menu__list">
+            <li><a href="#">О клинике</a></li>
+            <!-- Эта ссылка ведет на другую панель -->
+            <li class="has-submenu">
+              <a href="#" data-target="services-menu">Услуги</a>
+            </li>
+            <li><a href="#">Врачи</a></li>
+            <li><a href="#">Акции</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <div class="mobile-menu__contacts">
+            <a href="tel:+70000000000">
+              <img src="./images/tel-mob.svg" alt="" />
+            </a>
+            <a href="mailto:info@example.com">
+              <img src="./images/email-mob.svg" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Панель 2: Услуги -->
+        <div class="mobile-menu__panel" id="services-menu">
+          <div class="mobile-menu__header">
+            <button class="mobile-menu__back-button" data-target="main-menu">
+              <img src="./images/arrrr.svg" alt="" />
+              <h2>Услуги</h2>
+            </button>
+          </div>
+          <ul class="mobile-menu__list">
+            <!-- Эта ссылка ведет на другую панель -->
+            <li class="has-submenu">
+              <a href="#" data-target="stomatology-menu">Стоматология</a>
+            </li>
+            <li><a href="#">Детская стоматология</a></li>
+            <li><a href="#">Лечение под наркозом</a></li>
+            <li><a href="#">Дерматология</a></li>
+            <li class="has-submenu"><a href="#">Врачебная косметология</a></li>
+            <li><a href="#">Ультразвуковая диагностика</a></li>
+            <li><a href="#">Массаж</a></li>
+            <li><a href="#">Мануальная терапия</a></li>
+            <li><a href="#">Лаборатория</a></li>
+            <li><a href="#">Процедурный кабинет</a></li>
+          </ul>
+        </div>
+
+        <!-- Панель 3: Стоматология -->
+        <div class="mobile-menu__panel" id="stomatology-menu">
+          <div class="mobile-menu__header">
+            <button
+              class="mobile-menu__back-button"
+              data-target="services-menu"
+            >
+              <img src="./images/arrrr.svg" alt="" />
+              <h2>Стоматология</h2>
+            </button>
+          </div>
+          <ul class="mobile-menu__list">
+            <li><a href="#">Терапевтическая стоматология</a></li>
+            <li><a href="#">Хирургия</a></li>
+            <li><a href="#">Ортодонтия</a></li>
+            <li><a href="#">Пародонтология</a></li>
+            <li><a href="#">Ортопедия</a></li>
+            <li><a href="#">Имплантология</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main style="min-height: 100vh">
+      <nav class="breadcrumbs" aria-label="breadcrumb">
+        <div class="wrapper">
+          <ol class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="">Главная</a>
+              <img
+                class="breadcrumbs__separator"
+                src="./images/arr-.svg"
+                alt=""
+                aria-hidden="true"
+              />
+            </li>
+            <li class="breadcrumbs__item">
+              <span class="breadcrumbs__text" aria-current="page">Статьи</span>
+            </li>
+          </ol>
+        </div>
+      </nav>
+      <div class="sta-filters">
+        <div class="wrapper">
+          <div class="header-grid header-grid-sta">
+            <div class="header-grid-item">
+              <div>
+                <p>А</p>
+              </div>
+              <ul>
+                <li>
+                  <a href="">Акушер-гинеколог</a>
+                </li>
+                <li>
+                  <a href="">Алколог</a>
+                </li>
+                <li>
+                  <a href="">Аллерголог</a>
+                </li>
+                <li>
+                  <a href="">Андролог</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-grid-item">
+              <div>
+                <p>А</p>
+              </div>
+              <ul>
+                <li>
+                  <a href="">Акушер-гинеколог</a>
+                </li>
+                <li>
+                  <a href="">Алколог</a>
+                </li>
+                <li>
+                  <a href="">Аллерголог</a>
+                </li>
+                <li>
+                  <a href="">Андролог</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-grid-item">
+              <div>
+                <p>с</p>
+              </div>
+              <ul>
+                <li>
+                  <a href="">Акушер-гинеколог</a>
+                </li>
+                <li>
+                  <a href="">Алколог</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-grid-item">
+              <div>
+                <p>А</p>
+              </div>
+              <ul>
+                <li>
+                  <a href="">Акушер-гинеколог</a>
+                </li>
+                <li>
+                  <a href="">Алколог</a>
+                </li>
+                <li>
+                  <a href="">Аллерголог</a>
+                </li>
+                <li>
+                  <a href="">Андролог</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-grid-item">
+              <div>
+                <p>А</p>
+              </div>
+              <ul>
+                <li>
+                  <a href="">Акушер-гинеколог</a>
+                </li>
+                <li>
+                  <a href="">Алколог</a>
+                </li>
+                <li>
+                  <a href="">Аллерголог</a>
+                </li>
+                <li>
+                  <a href="">Андролог</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-grid-item">
+              <div>
+                <p>с</p>
+              </div>
+              <ul>
+                <li>
+                  <a href="">Акушер-гинеколог</a>
+                </li>
+                <li>
+                  <a href="">Алколог</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-grid-item">
+              <div>
+                <p>А</p>
+              </div>
+              <ul>
+                <li>
+                  <a href="">Акушер-гинеколог</a>
+                </li>
+                <li>
+                  <a href="">Алколог</a>
+                </li>
+                <li>
+                  <a href="">Аллерголог</a>
+                </li>
+                <li>
+                  <a href="">Андролог</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-grid-item">
+              <div>
+                <p>А</p>
+              </div>
+              <ul>
+                <li>
+                  <a href="">Акушер-гинеколог</a>
+                </li>
+                <li>
+                  <a href="">Алколог</a>
+                </li>
+                <li>
+                  <a href="">Аллерголог</a>
+                </li>
+                <li>
+                  <a href="">Андролог</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-grid-item">
+              <div>
+                <p>с</p>
+              </div>
+              <ul>
+                <li>
+                  <a href="">Акушер-гинеколог</a>
+                </li>
+                <li>
+                  <a href="">Алколог</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-grid-item">
+              <div>
+                <p>с</p>
+              </div>
+              <ul>
+                <li>
+                  <a href="">Акушер-гинеколог</a>
+                </li>
+                <li>
+                  <a href="">Алколог</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-grid-item">
+              <div>
+                <p>с</p>
+              </div>
+              <ul>
+                <li>
+                  <a href="">Акушер-гинеколог</a>
+                </li>
+                <li>
+                  <a href="">Алколог</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-grid-item">
+              <div>
+                <p>с</p>
+              </div>
+              <ul>
+                <li>
+                  <a href="">Акушер-гинеколог</a>
+                </li>
+                <li>
+                  <a href="">Алколог</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="sta-page">
+        <div class="wrapper">
+          <div class="sta-page__content">
+            <h2>Статьи</h2>
+            <div class="custom-dropdown">
+              <div class="dropdown-selected">
+                <span>Ортодонтия</span>
+                <div class="arrow">
+                  <img src="./images/st-2.svg" alt="">
+                </div>
+              </div>
+              <ul class="dropdown-menu">
+                <li class="active">Ортодонтия</li>
+                <li>Категория</li>
+                <li>Категория</li>
+                <li>Категория</li>
+              </ul>
+            </div>
+            <div class="sta-page__list">
+              <div class="sta-page__item">
+                <div
+                  class="sta-page__thumbnail"
+                  style="
+                    background: url('./images/bg-hero.png');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                  "
+                ></div>
+                <div class="sta-page__card-content">
+                  <div class="sta-page__text-wrapper">
+                    <a href="" class="sta-page__title"
+                      >Образование в медицине: от школы до практики</a
+                    >
+                    <p class="sta-page__description">
+                      Отличная стоматология, хорошие врачи и стильный, уютный
+                      дизайн. При оплате процедур в клинике, есть возможность
+                      получить бесплатный массаж, что тоже очень порадовало!
+                      Отличная стоматология, хорошие врачи и стильный, уютный
+                      дизайн. При оплате процедур в клинике, есть возможность
+                      получить бесплатный массаж, что тоже очень порадовало!
+                    </p>
+                  </div>
+                  <div class="sta-page__footer">
+                    <a href="" class="sta-page__link">Подробнее</a>
+                    <div class="sta-page__stats">
+                      <div class="sta-page__stat">
+                        <img
+                          src="./images/e.svg"
+                          alt=""
+                          class="sta-page__stat-icon"
+                        />
+                        <span class="sta-page__stat-count">12</span>
+                      </div>
+                      <div class="sta-page__stat">
+                        <img
+                          src="./images/h.svg"
+                          alt=""
+                          class="sta-page__stat-icon"
+                        />
+                        <span class="sta-page__stat-count">21</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="sta-page__item">
+                <div
+                  class="sta-page__thumbnail"
+                  style="
+                    background: url('./images/bg-hero.png');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                  "
+                ></div>
+                <div class="sta-page__card-content">
+                  <div class="sta-page__text-wrapper">
+                    <a href="" class="sta-page__title"
+                      >Образование в медицине: от школы до практики</a
+                    >
+                    <p class="sta-page__description">
+                      Отличная стоматология, хорошие врачи и стильный,
+                      уютныйоже очень порадовало!
+                    </p>
+                  </div>
+                  <div class="sta-page__footer">
+                    <a href="" class="sta-page__link">Подробнее</a>
+                    <div class="sta-page__stats">
+                      <div class="sta-page__stat">
+                        <img
+                          src="./images/e.svg"
+                          alt=""
+                          class="sta-page__stat-icon"
+                        />
+                        <span class="sta-page__stat-count">12</span>
+                      </div>
+                      <div class="sta-page__stat">
+                        <img
+                          src="./images/h.svg"
+                          alt=""
+                          class="sta-page__stat-icon"
+                        />
+                        <span class="sta-page__stat-count">21</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="sta-page__item">
+                <div
+                  class="sta-page__thumbnail"
+                  style="
+                    background: url('./images/bg-hero.png');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                  "
+                ></div>
+                <div class="sta-page__card-content">
+                  <div class="sta-page__text-wrapper">
+                    <a href="" class="sta-page__title"
+                      >Образование в медицине: от школы до практики</a
+                    >
+                    <p class="sta-page__description">
+                      Отличная стоматология, хорошие врачи и стильный, уютный
+                      дизайн. При оплате процедур в клинике, есть возможность
+                      получить бесплатный массаж, что тоже очень порадовало!
+                    </p>
+                  </div>
+                  <div class="sta-page__footer">
+                    <a href="" class="sta-page__link">Подробнее</a>
+                    <div class="sta-page__stats">
+                      <div class="sta-page__stat">
+                        <img
+                          src="./images/e.svg"
+                          alt=""
+                          class="sta-page__stat-icon"
+                        />
+                        <span class="sta-page__stat-count">12</span>
+                      </div>
+                      <div class="sta-page__stat">
+                        <img
+                          src="./images/h.svg"
+                          alt=""
+                          class="sta-page__stat-icon"
+                        />
+                        <span class="sta-page__stat-count">21</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="sta-page__item">
+                <div
+                  class="sta-page__thumbnail"
+                  style="
+                    background: url('./images/bg-hero.png');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                  "
+                ></div>
+                <div class="sta-page__card-content">
+                  <div class="sta-page__text-wrapper">
+                    <a href="" class="sta-page__title"
+                      >Образование в медицине: от школы до практики</a
+                    >
+                    <p class="sta-page__description">
+                      Отличная стоматология, хорошие врачи и стильный, уютный
+                      дизайн. При оплате процедур в клинике, есть возможность
+                      получить бесплатный массаж, что тоже очень порадовало!
+                    </p>
+                  </div>
+                  <div class="sta-page__footer">
+                    <a href="" class="sta-page__link">Подробнее</a>
+                    <div class="sta-page__stats">
+                      <div class="sta-page__stat">
+                        <img
+                          src="./images/e.svg"
+                          alt=""
+                          class="sta-page__stat-icon"
+                        />
+                        <span class="sta-page__stat-count">12</span>
+                      </div>
+                      <div class="sta-page__stat">
+                        <img
+                          src="./images/h.svg"
+                          alt=""
+                          class="sta-page__stat-icon"
+                        />
+                        <span class="sta-page__stat-count">21</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="sta-page__item">
+                <div
+                  class="sta-page__thumbnail"
+                  style="
+                    background: url('./images/bg-hero.png');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                  "
+                ></div>
+                <div class="sta-page__card-content">
+                  <div class="sta-page__text-wrapper">
+                    <a href="" class="sta-page__title"
+                      >Образование в медицине: от школы до практики</a
+                    >
+                    <p class="sta-page__description">
+                      Отличная стоматология, хорошие врачи и стильный, уютный
+                      дизайн. При оплате процедур в клинике, есть возможность
+                      получить бесплатный массаж, что тоже очень порадовало!
+                    </p>
+                  </div>
+                  <div class="sta-page__footer">
+                    <a href="" class="sta-page__link">Подробнее</a>
+                    <div class="sta-page__stats">
+                      <div class="sta-page__stat">
+                        <img
+                          src="./images/e.svg"
+                          alt=""
+                          class="sta-page__stat-icon"
+                        />
+                        <span class="sta-page__stat-count">12</span>
+                      </div>
+                      <div class="sta-page__stat">
+                        <img
+                          src="./images/h.svg"
+                          alt=""
+                          class="sta-page__stat-icon"
+                        />
+                        <span class="sta-page__stat-count">21</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="sta-page__item">
+                <div
+                  class="sta-page__thumbnail"
+                  style="
+                    background: url('./images/bg-hero.png');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                  "
+                ></div>
+                <div class="sta-page__card-content">
+                  <div class="sta-page__text-wrapper">
+                    <a href="" class="sta-page__title"
+                      >Образование в медицине: от школы до практики</a
+                    >
+                    <p class="sta-page__description">
+                      Отличная стоматология, хорошие врачи и стильный, уютный
+                      дизайн. При оплате процедур в клинике, есть возможность
+                      получить бесплатный массаж, что тоже очень порадовало!
+                    </p>
+                  </div>
+                  <div class="sta-page__footer">
+                    <a href="" class="sta-page__link">Подробнее</a>
+                    <div class="sta-page__stats">
+                      <div class="sta-page__stat">
+                        <img
+                          src="./images/e.svg"
+                          alt=""
+                          class="sta-page__stat-icon"
+                        />
+                        <span class="sta-page__stat-count">12</span>
+                      </div>
+                      <div class="sta-page__stat">
+                        <img
+                          src="./images/h.svg"
+                          alt=""
+                          class="sta-page__stat-icon"
+                        />
+                        <span class="sta-page__stat-count">21</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <nav class="pagination">
+              <ul class="pagination__list">
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link pagination__link--active"
+                    >1</a
+                  >
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">2</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">3</a>
+                </li>
+                <li class="pagination__item">
+                  <span class="pagination__separator">...</span>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">7</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">8</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link pagination__arrow">
+                    <img src="./images/plag.svg" alt="Следующая страница" />
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+      <section class="consultation-form">
+        <div class="wrapper">
+          <div class="consultation-form__container">
+            <div class="consultation-form__content">
+              <h2 class="consultation-form__title section__title">
+                Нужна консультация?
+              </h2>
+              <p class="consultation-form__subtitle">
+                Оставьте заявку и мы подробно ответим на все ваши вопросы!
+              </p>
+              <form action="#" class="consultation-form__form">
+                <input
+                  type="text"
+                  name="name"
+                  class="consultation-form__input consultation-form__input-1"
+                  placeholder="Ваше имя"
+                  aria-label="Ваше имя"
+                  required
+                />
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  class="consultation-form__input"
+                  placeholder="+7 999 999-99-99"
+                  aria-label="Ваш телефон"
+                  required
+                />
+                <div class="consultation-form__policy">
+                  <label class="custom-checkbox">
+                    <input
+                      type="checkbox"
+                      class="custom-checkbox__input"
+                      name="policy"
+                      id="policy-agreement"
+                      checked
+                      required
+                    />
+                    <span class="custom-checkbox__box"></span>
+                    <span class="custom-checkbox__label-text">
+                      Соглашаюсь с условиями
+                      <a href="#">Политики конфиденциальности</a>.
+                    </span>
+                  </label>
+                </div>
+                <button type="submit" class="consultation-form__submit-btn btn">
+                  Записаться на приём
+                </button>
+              </form>
+            </div>
+            <div class="consultation-form__image">
+              <img
+                src="./images/cont.png"
+                alt="Врач готовый проконсультировать пациента"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="lichenion">
+        <div class="wrapper">
+          <h2>Лицензии</h2>
+          <div class="lichenion__cont">
+            <div>
+              <img src="./images/li.svg" alt="" />
+            </div>
+            <div class="lichenion__right">
+              <p>
+                Мы осуществляем деятельность на основании медицинских лицензий
+                в соответствии с рекомендациями Минздрава
+              </p>
+              <div class="li-links">
+                <a href=""> Посмотреть лизенции </a>
+                <a href="">Правовая информация</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__container">
+          <div class="footer__top">
+            <a href="/" class="footer__logo">
+              <img src="./images/footer-logo.svg" alt="Логотип Вешняки Мед" />
+            </a>
+            <div class="footer__top-block">
+              <div class="footer-mob-000">
+                <div class="footer__contact-item contacts__item">
+                  <img
+                    class="contacts__icon"
+                    src="./images/footer-tel.svg"
+                    alt=""
+                  />
+                  <div class="contacts__details">
+                    <a href="tel:+74953701300" class="contacts__link"
+                      >+7 495 370-13-00</a
+                    >
+                    <p class="contacts__description">
+                      Звоните по любым вопросам
+                    </p>
+                  </div>
+                </div>
+                <ul class="footer__socials socials__list">
+                  <li class="socials__item">
+                    <a
+                      href="#"
+                      class="socials__link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Наша страница Вконтакте"
+                    >
+                      <img
+                        src="./images/footer-vk.svg"
+                        alt="Вконтакте"
+                        class="socials__icon"
+                      />
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a
+                      href="#"
+                      class="socials__link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Наш канал в Телеграм"
+                    >
+                      <img
+                        src="./images/footer-tg.svg"
+                        alt="Телеграм"
+                        class="socials__icon"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__contact-item contacts__item">
+                <img
+                  class="contacts__icon"
+                  src="./images/footer-email.svg"
+                  alt=""
+                />
+                <div class="contacts__details">
+                  <a href="mailto:zapis@veshnyakimed.ru" class="contacts__link"
+                    >zapis@veshnyakimed.ru</a
+                  >
+                  <p class="contacts__description">Пишите по любым вопросам</p>
+                </div>
+              </div>
+              <div class="footer__cta">
+                <button type="button" class="footer__cta-btn btn">
+                  Записаться на приём
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer__center">
+            <div class="footer__column">
+              <h3 class="footer__column-title">Навигация</h3>
+              <nav class="footer-nav">
+                <ul class="footer-nav__list">
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link">О клинике</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link">Услуги</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link">Врачи</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link">Акции</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link">Отзывы</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <ul class="footer__socials socials__list">
+                <li class="socials__item">
+                  <a
+                    href="#"
+                    class="socials__link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Наша страница Вконтакте"
+                  >
+                    <img
+                      src="./images/footer-vk.svg"
+                      alt="Вконтакте"
+                      class="socials__icon"
+                    />
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a
+                    href="#"
+                    class="socials__link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Наш канал в Телеграм"
+                  >
+                    <img
+                      src="./images/footer-tg.svg"
+                      alt="Телеграм"
+                      class="socials__icon"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <h3 class="footer__column-title">Направления</h3>
+              <nav class="footer-nav">
+                <ul class="footer-nav__list">
+                  <li class="footer-nav__item footer-nav__item--has-submenu">
+                    <a
+                      href="#"
+                      class="footer-nav__link footer-nav__link--toggle js-nav-toggle"
+                      aria-expanded="false"
+                      aria-controls="submenu-stomatology"
+                    >
+                      Стоматология
+                      <img
+                        src="./images/arr-down.svg"
+                        alt=""
+                        class="footer-nav__toggle-icon"
+                      />
+                    </a>
+                    <ul class="footer-nav__sublist" id="submenu-stomatology">
+                      <li class="footer-nav__sublist-item">
+                        <a href="#" class="footer-nav__sublist-link">Терапия</a>
+                      </li>
+                      <li class="footer-nav__sublist-item">
+                        <a href="#" class="footer-nav__sublist-link"
+                          >Хирургия</a
+                        >
+                      </li>
+                      <li class="footer-nav__sublist-item">
+                        <a href="#" class="footer-nav__sublist-link"
+                          >Ортопедия</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link"
+                      >Детская стоматология</a
+                    >
+                  </li>
+
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link"
+                      >Лечение под наркозом</a
+                    >
+                  </li>
+
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link">Дерматология</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__column">
+              <h3 class="footer__column-title op">Навигация</h3>
+              <nav class="footer-nav footer-nav--no-title">
+                <ul class="footer-nav__list">
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link"
+                      >Врачебная косметология</a
+                    >
+                  </li>
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link"
+                      >Ультразвуковая диагностика</a
+                    >
+                  </li>
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link">Массаж</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link">Мануальная терапия</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link">Лаборатория</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link">Процедурный кабинет</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__column">
+              <div class="footer__info-block footer__info-block-1">
+                <h3 class="footer__column-title">Адрес клиники</h3>
+                <address class="footer__address">
+                  Москва, ул. Вешняковская, д. 11А
+                </address>
+                <div class="footer__schedule">
+                  <p>
+                    пн–пт: 8:00–21:00 <br />
+                    сб–вс: 9:00–21:00
+                  </p>
+                </div>
+              </div>
+              <div class="footer__info-block">
+                <h3 class="footer__column-title">Информация об организации</h3>
+                <p class="footer__legal-name">АО «Стоматология № 2»</p>
+                <p class="footer__legal-address">
+                  Юридический адрес: Москва, ул. Вешняковская, д. 11А
+                </p>
+              </div>
+            </div>
+            <div class="mobile-accordion js-mobile-accordion-item">
+              <h3 class="mobile-accordion__header">
+                <button
+                  type="button"
+                  class="mobile-accordion__toggle js-mobile-accordion-toggle"
+                  aria-expanded="true"
+                >
+                  Навигация
+                  <img
+                    class="mobile-accordion__icon"
+                    src="./images/arr-down.svg"
+                    alt=""
+                  />
+                </button>
+              </h3>
+              <div class="mobile-accordion__panel js-mobile-accordion-panel">
+                <nav class="footer-nav">
+                  <ul class="footer-nav__list">
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link">О клинике</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link">Услуги</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link">Врачи</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link">Акции</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link">Отзывы</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link">Контакты</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="mobile-accordion js-mobile-accordion-item">
+              <h3 class="mobile-accordion__header">
+                <button
+                  type="button"
+                  class="mobile-accordion__toggle js-mobile-accordion-toggle"
+                  aria-expanded="true"
+                >
+                  Направления
+                  <img
+                    class="mobile-accordion__icon"
+                    src="./images/arr-down.svg"
+                    alt=""
+                  />
+                </button>
+              </h3>
+              <div class="mobile-accordion__panel js-mobile-accordion-panel">
+                <nav class="footer-nav">
+                  <ul class="footer-nav__list">
+                    <li class="footer-nav__item footer-nav__item--has-submenu">
+                      <a
+                        href="#"
+                        class="footer-nav__link footer-nav__link--toggle js-nav-toggle"
+                        aria-expanded="false"
+                        aria-controls="submenu-stomatology"
+                      >
+                        Стоматология
+                        <img
+                          src="./images/arr-down.svg"
+                          alt=""
+                          class="footer-nav__toggle-icon"
+                        />
+                      </a>
+                      <ul class="footer-nav__sublist" id="submenu-stomatology">
+                        <li class="footer-nav__sublist-item">
+                          <a href="#" class="footer-nav__sublist-link"
+                            >Терапия</a
+                          >
+                        </li>
+                        <li class="footer-nav__sublist-item">
+                          <a href="#" class="footer-nav__sublist-link"
+                            >Хирургия</a
+                          >
+                        </li>
+                        <li class="footer-nav__sublist-item">
+                          <a href="#" class="footer-nav__sublist-link"
+                            >Ортопедия</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link"
+                        >Детская стоматология</a
+                      >
+                    </li>
+
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link"
+                        >Лечение под наркозом</a
+                      >
+                    </li>
+
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link">Дерматология</a>
+                    </li>
+                  </ul>
+                </nav>
+                <nav class="footer-nav footer-nav--no-title">
+                  <ul class="footer-nav__list">
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link"
+                        >Врачебная косметология</a
+                      >
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link"
+                        >Ультразвуковая диагностика</a
+                      >
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link">Массаж</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link"
+                        >Мануальная терапия</a
+                      >
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link">Лаборатория</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link"
+                        >Процедурный кабинет</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="mobile-accordion js-mobile-accordion-item">
+              <h3 class="mobile-accordion__header">
+                <button
+                  type="button"
+                  class="mobile-accordion__toggle js-mobile-accordion-toggle"
+                  aria-expanded="true"
+                >
+                  Адрес клиники
+                  <img
+                    class="mobile-accordion__icon"
+                    src="./images/arr-down.svg"
+                    alt=""
+                  />
+                </button>
+              </h3>
+              <div class="mobile-accordion__panel js-mobile-accordion-panel">
+                <address class="footer__address">
+                  Москва, ул. Вешняковская, д. 11А
+                </address>
+                <div class="footer__schedule">
+                  <p>
+                    пн–пт: 8:00–21:00 <br />
+                    сб–вс: 9:00–21:00
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="mobile-accordion js-mobile-accordion-item">
+              <h3 class="mobile-accordion__header">
+                <button
+                  type="button"
+                  class="mobile-accordion__toggle js-mobile-accordion-toggle"
+                  aria-expanded="true"
+                >
+                  Информация об организации
+                  <img
+                    class="mobile-accordion__icon"
+                    src="./images/arr-down.svg"
+                    alt=""
+                  />
+                </button>
+              </h3>
+              <div class="mobile-accordion__panel js-mobile-accordion-panel">
+                <div class="footer__info-block">
+                  <p class="footer__legal-name">АО «Стоматология № 2»</p>
+                  <p class="footer__legal-address">
+                    Юридический адрес: Москва, ул. Вешняковская, д. 11А
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer__bottom">
+            <p class="footer__copyright">© 2025 Медицинский центр «Вешняки»</p>
+            <div class="footer__bottom-right">
+              <nav class="footer-nav">
+                <ul class="footer-nav__list footer-nav__list--horizontal">
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link"
+                      >Политика конфиденциальности</a
+                    >
+                  </li>
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link"
+                      >Пользовательское соглашение</a
+                    >
+                  </li>
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link"
+                      >Юридическая информация</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <div class="footer__partner-logo">
+                <img src="./images/footer-bottom.png" alt="Логотип партнера" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

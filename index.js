@@ -473,3 +473,46 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const dropdown = document.querySelector('.custom-dropdown');
+  const selected = dropdown.querySelector('.dropdown-selected');
+  const menu = dropdown.querySelector('.dropdown-menu');
+  const options = dropdown.querySelectorAll('.dropdown-menu li');
+  const selectedSpan = selected.querySelector('span');
+
+  // Открытие/закрытие списка по клику
+  selected.addEventListener('click', () => {
+    dropdown.classList.toggle('open');
+  });
+
+  // Обработка выбора опции
+  options.forEach(option => {
+    option.addEventListener('click', () => {
+      // Обновляем текст в "выбранном" поле
+      selectedSpan.innerText = option.innerText;
+      
+      // Убираем активный класс у всех и добавляем к выбранному
+      options.forEach(opt => opt.classList.remove('active'));
+      option.classList.add('active');
+      
+      // Закрываем дропдаун
+      dropdown.classList.remove('open');
+    });
+  });
+
+  // Закрытие дропдауна при клике вне его области
+  document.addEventListener('click', function(e) {
+    if (!dropdown.contains(e.target)) {
+      dropdown.classList.remove('open');
+    }
+  });
+});
