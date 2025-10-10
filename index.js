@@ -376,6 +376,37 @@ const preimSwiper = new Swiper(".swiper-preim", {
   },
 });
 
+
+
+const saleSwiper = new Swiper(".swiper-sale", {
+  loop: true,
+
+  slidesPerView: 3, 
+  spaceBetween: 10, 
+
+
+  navigation: {
+    nextEl: ".our-preim__nav-button--next",
+    prevEl: ".our-preim__nav-button--prev",
+  },
+
+  breakpoints: {
+    1384: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    891: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    }
+  },
+});
+
+
 // new
 
 
@@ -483,36 +514,177 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 document.addEventListener('DOMContentLoaded', function() {
+  // Находим основной контейнер дропдауна
   const dropdown = document.querySelector('.custom-dropdown');
+
+  // Если дропдаун не найден на странице, прекращаем выполнение скрипта
+  if (!dropdown) {
+    return;
+  }
+
+  // Находим остальные элементы внутри дропдауна
   const selected = dropdown.querySelector('.dropdown-selected');
   const menu = dropdown.querySelector('.dropdown-menu');
   const options = dropdown.querySelectorAll('.dropdown-menu li');
-  const selectedSpan = selected.querySelector('span');
+  
+  // Проверяем наличие ключевых элементов перед добавлением обработчиков
+  if (selected && menu && options.length > 0) {
+    const selectedSpan = selected.querySelector('span');
 
-  // Открытие/закрытие списка по клику
-  selected.addEventListener('click', () => {
-    dropdown.classList.toggle('open');
-  });
-
-  // Обработка выбора опции
-  options.forEach(option => {
-    option.addEventListener('click', () => {
-      // Обновляем текст в "выбранном" поле
-      selectedSpan.innerText = option.innerText;
-      
-      // Убираем активный класс у всех и добавляем к выбранному
-      options.forEach(opt => opt.classList.remove('active'));
-      option.classList.add('active');
-      
-      // Закрываем дропдаун
-      dropdown.classList.remove('open');
+    // Открытие/закрытие списка по клику
+    selected.addEventListener('click', () => {
+      dropdown.classList.toggle('open');
     });
-  });
+
+    // Обработка выбора опции
+    options.forEach(option => {
+      option.addEventListener('click', () => {
+        // Обновляем текст в "выбранном" поле, если span существует
+        if (selectedSpan) {
+            selectedSpan.innerText = option.innerText;
+        }
+        
+        // Убираем активный класс у всех и добавляем к выбранному
+        options.forEach(opt => opt.classList.remove('active'));
+        option.classList.add('active');
+        
+        // Закрываем дропдаун
+        dropdown.classList.remove('open');
+      });
+    });
+  }
 
   // Закрытие дропдауна при клике вне его области
   document.addEventListener('click', function(e) {
+    // Проверяем, был ли клик вне области существующего дропдауна
     if (!dropdown.contains(e.target)) {
       dropdown.classList.remove('open');
     }
   });
+});
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const accordionItems = document.querySelectorAll('.price__item');
+
+  accordionItems.forEach(item => {
+    const header = item.querySelector('.price__header');
+
+    header.addEventListener('click', function() {
+      const isActive = item.classList.contains('is-active');
+
+      accordionItems.forEach(otherItem => {
+        otherItem.classList.remove('is-active');
+        otherItem.querySelector('.price__header').setAttribute('aria-expanded', 'false');
+      });
+
+      if (!isActive) {
+        item.classList.add('is-active');
+        this.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+const worksSlider = new Swiper('.swiper-works-slider', {
+  direction: 'vertical',
+  loop: true,
+  slidesPerView: 2,
+  slidesPerGroup: 2,
+  spaceBetween: 20,
+
+  navigation: {
+    nextEl: '.our-work__nav-button--next',
+    prevEl: '.our-work__nav-button--prev',
+  },
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  breakpoints: {
+    768: {
+      direction: 'horizontal',
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 30
+    }
+  }
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const accordionHeaders = document.querySelectorAll('.usl-qua__accordion-header');
+
+  accordionHeaders.forEach(clickedHeader => {
+    clickedHeader.addEventListener('click', () => {
+      const clickedItem = clickedHeader.parentElement;
+
+      accordionHeaders.forEach(header => {
+        const item = header.parentElement;
+        if (item !== clickedItem) {
+          item.classList.remove('usl-qua__accordion-item--active');
+        }
+      });
+      
+      clickedItem.classList.toggle('usl-qua__accordion-item--active');
+    });
+  });
+});
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const partnersContainer = document.querySelector('.partners-cont');
+
+    if (partnersContainer) {
+        const partnerSlides = partnersContainer.querySelectorAll('.swiper-wrapper > a');
+
+        partnerSlides.forEach(slide => {
+            slide.classList.add('swiper-slide');
+        });
+
+        const partnersSwiper = new Swiper(partnersContainer, {
+            loop: true,
+            spaceBetween: 30,
+            slidesPerView: 4,
+            // breakpoints: {
+            //     640: {
+            //         slidesPerView: 3,
+            //         spaceBetween: 20
+            //     },
+            //     768: {
+            //         slidesPerView: 4,
+            //         spaceBetween: 30
+            //     },
+            //     1024: {
+            //         slidesPerView: 5, // Для больших экранов
+            //         spaceBetween: 40
+            //     }
+            // },
+            // Добавим автопрокрутку, это хорошо смотрится на слайдерах с логотипами
+            navigation: {
+                nextEl: '.our-par__nav-button--next',
+                prevEl: '.our-par__nav-button--prev',
+            },
+        });
+    }
 });
