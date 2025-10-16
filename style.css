@@ -5992,3 +5992,74 @@ body.menu-open {
     padding: 18px 0;
   }
 }
+
+.dostors-page-top h1 {
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 120%;
+  color: #3c3c3b;
+  margin-bottom: 40px;
+}
+
+.dostors-page-top {
+  margin-top: 70px;
+  margin-bottom: 80px;
+}
+
+.dostors-page-top .nav-menu__dropdown-container-2 input {
+  margin-top: 0;
+}
+
+.doctors-grid-cont {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 21px;
+}
+
+.dostors-page-top,
+.doctors-grid {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 1113px) {
+  .doctors-grid-cont {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 927px) {
+  .header-grid {
+    column-count: 3;
+  }
+  .dostors-page-top h1 {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .desc-doc-filter {
+    display: none;
+  }
+
+  .dostors-page-top h1 {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+
+  .dostors-page-top {
+    margin: 33px 0;
+  }
+}
+
+@media screen and (max-width: 755px) {
+  .doctors-grid-cont {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+
+
+
+
