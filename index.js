@@ -355,9 +355,8 @@ document.addEventListener("DOMContentLoaded", function () {
 const preimSwiper = new Swiper(".swiper-preim", {
   loop: true,
 
-  slidesPerView: 1, 
-  spaceBetween: 10, 
-
+  slidesPerView: 1,
+  spaceBetween: 10,
 
   navigation: {
     nextEl: ".our-preim__nav-button--next",
@@ -376,14 +375,11 @@ const preimSwiper = new Swiper(".swiper-preim", {
   },
 });
 
-
-
 const saleSwiper = new Swiper(".swiper-sale", {
   loop: true,
 
-  slidesPerView: 3, 
-  spaceBetween: 10, 
-
+  slidesPerView: 3,
+  spaceBetween: 10,
 
   navigation: {
     nextEl: ".our-preim__nav-button--next",
@@ -402,31 +398,22 @@ const saleSwiper = new Swiper(".swiper-sale", {
     0: {
       slidesPerView: 1,
       spaceBetween: 30,
-    }
+    },
   },
 });
 
-
 // new
 
-
-
-
-
-
-
-
-
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function () {
   // Используем Map для хранения данных и созданных экземпляров Popper
   const tooltipData = new Map();
 
   // 1. Предварительная подготовка: находим элементы и вычисляем смещения
-  document.querySelectorAll('.tooltip-wrapper').forEach((wrapper, index) => {
-    const button = wrapper.querySelector('.usl-hero__button-2');
-    const tooltip = wrapper.querySelector('.tooltip');
-    const arrowElement = wrapper.querySelector('[data-popper-arrow]');
-    const iconInButton = button.querySelector('.usl-hero__icon');
+  document.querySelectorAll(".tooltip-wrapper").forEach((wrapper, index) => {
+    const button = wrapper.querySelector(".usl-hero__button-2");
+    const tooltip = wrapper.querySelector(".tooltip");
+    const arrowElement = wrapper.querySelector("[data-popper-arrow]");
+    const iconInButton = button.querySelector(".usl-hero__icon");
 
     if (!button || !tooltip || !iconInButton) return;
 
@@ -437,7 +424,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Вычисляем смещение ОДИН РАЗ при загрузке
     const buttonRect = button.getBoundingClientRect();
     const iconRect = iconInButton.getBoundingClientRect();
-    const skiddingValue = (iconRect.left + iconRect.width / 2) - (buttonRect.left + buttonRect.width / 2);
+    const skiddingValue =
+      iconRect.left +
+      iconRect.width / 2 -
+      (buttonRect.left + buttonRect.width / 2);
 
     // Сохраняем все необходимые данные, но НЕ создаем Popper
     tooltipData.set(uniqueButtonId, {
@@ -451,22 +441,25 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // 2. Обработка кликов через делегирование
-  document.body.addEventListener('click', function(event) {
-    const clickedButton = event.target.closest('.usl-hero__button-2');
+  document.body.addEventListener("click", function (event) {
+    const clickedButton = event.target.closest(".usl-hero__button-2");
 
     // Сначала закрываем все открытые тултипы
     let closingTooltipData = null;
     tooltipData.forEach((data, buttonId) => {
-      if (data.tooltip.classList.contains('is-visible')) {
+      if (data.tooltip.classList.contains("is-visible")) {
         closingTooltipData = data;
         if (!clickedButton || buttonId !== clickedButton.id) {
-          data.tooltip.classList.remove('is-visible');
+          data.tooltip.classList.remove("is-visible");
         }
       }
     });
-    
+
     // Возвращаем закрытый тултип на место
-    if (closingTooltipData && !closingTooltipData.tooltip.classList.contains('is-visible')) {
+    if (
+      closingTooltipData &&
+      !closingTooltipData.tooltip.classList.contains("is-visible")
+    ) {
       closingTooltipData.originalParent.appendChild(closingTooltipData.tooltip);
     }
 
@@ -475,25 +468,25 @@ document.addEventListener('DOMContentLoaded', function() {
       const data = tooltipData.get(clickedButton.id);
       if (!data) return;
 
-      const wasVisible = data.tooltip.classList.contains('is-visible');
-      
-      data.tooltip.classList.toggle('is-visible');
+      const wasVisible = data.tooltip.classList.contains("is-visible");
+
+      data.tooltip.classList.toggle("is-visible");
 
       if (!wasVisible) {
         // --- ВОТ КЛЮЧЕВОЕ ИЗМЕНЕНИЕ ---
         // Если это первый клик, создаем экземпляр Popper
         if (!data.instance) {
           data.instance = Popper.createPopper(data.button, data.tooltip, {
-            placement: 'bottom',
+            placement: "bottom",
             modifiers: [
-              { name: 'offset', options: { offset: [data.skidding, 12] } },
-              { name: 'preventOverflow', options: { padding: 10 } },
-              { name: 'flip', options: { fallbackPlacements: ['top'] } },
-              { name: 'arrow', options: { element: data.arrowElement } },
+              { name: "offset", options: { offset: [data.skidding, 12] } },
+              { name: "preventOverflow", options: { padding: 10 } },
+              { name: "flip", options: { fallbackPlacements: ["top"] } },
+              { name: "arrow", options: { element: data.arrowElement } },
             ],
           });
         }
-        
+
         // Телепортируем и обновляем
         document.body.appendChild(data.tooltip);
         data.instance.update();
@@ -505,17 +498,9 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-
-
-
-
-
-
-
-
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function () {
   // Находим основной контейнер дропдауна
-  const dropdown = document.querySelector('.custom-dropdown');
+  const dropdown = document.querySelector(".custom-dropdown");
 
   // Если дропдаун не найден на странице, прекращаем выполнение скрипта
   if (!dropdown) {
@@ -523,168 +508,185 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // Находим остальные элементы внутри дропдауна
-  const selected = dropdown.querySelector('.dropdown-selected');
-  const menu = dropdown.querySelector('.dropdown-menu');
-  const options = dropdown.querySelectorAll('.dropdown-menu li');
-  
+  const selected = dropdown.querySelector(".dropdown-selected");
+  const menu = dropdown.querySelector(".dropdown-menu");
+  const options = dropdown.querySelectorAll(".dropdown-menu li");
+
   // Проверяем наличие ключевых элементов перед добавлением обработчиков
   if (selected && menu && options.length > 0) {
-    const selectedSpan = selected.querySelector('span');
+    const selectedSpan = selected.querySelector("span");
 
     // Открытие/закрытие списка по клику
-    selected.addEventListener('click', () => {
-      dropdown.classList.toggle('open');
+    selected.addEventListener("click", () => {
+      dropdown.classList.toggle("open");
     });
 
     // Обработка выбора опции
-    options.forEach(option => {
-      option.addEventListener('click', () => {
+    options.forEach((option) => {
+      option.addEventListener("click", () => {
         // Обновляем текст в "выбранном" поле, если span существует
         if (selectedSpan) {
-            selectedSpan.innerText = option.innerText;
+          selectedSpan.innerText = option.innerText;
         }
-        
+
         // Убираем активный класс у всех и добавляем к выбранному
-        options.forEach(opt => opt.classList.remove('active'));
-        option.classList.add('active');
-        
+        options.forEach((opt) => opt.classList.remove("active"));
+        option.classList.add("active");
+
         // Закрываем дропдаун
-        dropdown.classList.remove('open');
+        dropdown.classList.remove("open");
       });
     });
   }
 
   // Закрытие дропдауна при клике вне его области
-  document.addEventListener('click', function(e) {
+  document.addEventListener("click", function (e) {
     // Проверяем, был ли клик вне области существующего дропдауна
     if (!dropdown.contains(e.target)) {
-      dropdown.classList.remove('open');
+      dropdown.classList.remove("open");
     }
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const accordionItems = document.querySelectorAll(".price__item");
 
+  accordionItems.forEach((item) => {
+    const header = item.querySelector(".price__header");
 
+    header.addEventListener("click", function () {
+      const isActive = item.classList.contains("is-active");
 
-
-
-
-document.addEventListener('DOMContentLoaded', function() {
-  const accordionItems = document.querySelectorAll('.price__item');
-
-  accordionItems.forEach(item => {
-    const header = item.querySelector('.price__header');
-
-    header.addEventListener('click', function() {
-      const isActive = item.classList.contains('is-active');
-
-      accordionItems.forEach(otherItem => {
-        otherItem.classList.remove('is-active');
-        otherItem.querySelector('.price__header').setAttribute('aria-expanded', 'false');
+      accordionItems.forEach((otherItem) => {
+        otherItem.classList.remove("is-active");
+        otherItem
+          .querySelector(".price__header")
+          .setAttribute("aria-expanded", "false");
       });
 
       if (!isActive) {
-        item.classList.add('is-active');
-        this.setAttribute('aria-expanded', 'true');
+        item.classList.add("is-active");
+        this.setAttribute("aria-expanded", "true");
       }
     });
   });
 });
 
-
-
-
-
-
-
-
-
-
-
-const worksSlider = new Swiper('.swiper-works-slider', {
-  direction: 'vertical',
+const worksSlider = new Swiper(".swiper-works-slider", {
+  direction: "vertical",
   loop: true,
   slidesPerView: 2,
   slidesPerGroup: 2,
   spaceBetween: 20,
 
   navigation: {
-    nextEl: '.our-work__nav-button--next',
-    prevEl: '.our-work__nav-button--prev',
+    nextEl: ".our-work__nav-button--next",
+    prevEl: ".our-work__nav-button--prev",
   },
 
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
     clickable: true,
   },
 
   breakpoints: {
     768: {
-      direction: 'horizontal',
+      direction: "horizontal",
       slidesPerView: 2,
       slidesPerGroup: 2,
-      spaceBetween: 30
-    }
-  }
+      spaceBetween: 30,
+    },
+  },
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const accordionHeaders = document.querySelectorAll(
+    ".usl-qua__accordion-header"
+  );
 
-document.addEventListener('DOMContentLoaded', () => {
-  const accordionHeaders = document.querySelectorAll('.usl-qua__accordion-header');
-
-  accordionHeaders.forEach(clickedHeader => {
-    clickedHeader.addEventListener('click', () => {
+  accordionHeaders.forEach((clickedHeader) => {
+    clickedHeader.addEventListener("click", () => {
       const clickedItem = clickedHeader.parentElement;
 
-      accordionHeaders.forEach(header => {
+      accordionHeaders.forEach((header) => {
         const item = header.parentElement;
         if (item !== clickedItem) {
-          item.classList.remove('usl-qua__accordion-item--active');
+          item.classList.remove("usl-qua__accordion-item--active");
         }
       });
-      
-      clickedItem.classList.toggle('usl-qua__accordion-item--active');
+
+      clickedItem.classList.toggle("usl-qua__accordion-item--active");
     });
   });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const partnersContainer = document.querySelector(".partners-cont");
 
+  if (partnersContainer) {
+    const partnerSlides = partnersContainer.querySelectorAll(
+      ".swiper-wrapper > a"
+    );
 
+    partnerSlides.forEach((slide) => {
+      slide.classList.add("swiper-slide");
+    });
 
+    const partnersSwiper = new Swiper(partnersContainer, {
+      loop: true,
+      spaceBetween: 30,
+      slidesPerView: 4,
+      // breakpoints: {
+      //     640: {
+      //         slidesPerView: 3,
+      //         spaceBetween: 20
+      //     },
+      //     768: {
+      //         slidesPerView: 4,
+      //         spaceBetween: 30
+      //     },
+      //     1024: {
+      //         slidesPerView: 5, // Для больших экранов
+      //         spaceBetween: 40
+      //     }
+      // },
+      // Добавим автопрокрутку, это хорошо смотрится на слайдерах с логотипами
+      navigation: {
+        nextEl: ".our-par__nav-button--next",
+        prevEl: ".our-par__nav-button--prev",
+      },
+    });
+  }
+});
 
-document.addEventListener('DOMContentLoaded', () => {
-    const partnersContainer = document.querySelector('.partners-cont');
-
-    if (partnersContainer) {
-        const partnerSlides = partnersContainer.querySelectorAll('.swiper-wrapper > a');
-
-        partnerSlides.forEach(slide => {
-            slide.classList.add('swiper-slide');
-        });
-
-        const partnersSwiper = new Swiper(partnersContainer, {
-            loop: true,
-            spaceBetween: 30,
-            slidesPerView: 4,
-            // breakpoints: {
-            //     640: {
-            //         slidesPerView: 3,
-            //         spaceBetween: 20
-            //     },
-            //     768: {
-            //         slidesPerView: 4,
-            //         spaceBetween: 30
-            //     },
-            //     1024: {
-            //         slidesPerView: 5, // Для больших экранов
-            //         spaceBetween: 40
-            //     }
-            // },
-            // Добавим автопрокрутку, это хорошо смотрится на слайдерах с логотипами
-            navigation: {
-                nextEl: '.our-par__nav-button--next',
-                prevEl: '.our-par__nav-button--prev',
-            },
-        });
+document.addEventListener("DOMContentLoaded", () => {
+  const worksSlider2 = new Swiper(".swiper-photo", {
+    loop: true,
+    slidesPerView: 3,
+    slidesPerGroup: 2,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".our-work__nav-button--next-2",
+      prevEl: ".our-work__nav-button--prev-2",
+    },
+    breakpoints: {
+        1133: {
+            slidesPerView: 3,
+            spaceBetween: 20
+        },
+        770: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 20
+        },
     }
+  });
+
+  const lightbox = GLightbox({
+    selector: ".gallery-item",
+    loop: true,
+  });
 });
