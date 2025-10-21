@@ -670,23 +670,191 @@ document.addEventListener("DOMContentLoaded", () => {
       prevEl: ".our-work__nav-button--prev-2",
     },
     breakpoints: {
-        1133: {
-            slidesPerView: 3,
-            spaceBetween: 20
-        },
-        770: {
-            slidesPerView: 2,
-            spaceBetween: 20
-        },
-        0: {
-            slidesPerView: 1,
-            spaceBetween: 20
-        },
-    }
+      1133: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      770: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+    },
   });
 
   const lightbox = GLightbox({
     selector: ".gallery-item",
     loop: true,
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const tabsContainer = document.querySelector(".single-doc-tabs");
+
+  if (tabsContainer) {
+    const tabs = tabsContainer.querySelectorAll(".single-doc-tabs__tab");
+    const panels = tabsContainer.querySelectorAll(".single-doc-tabs__panel");
+
+    // Находим ВСЕ кнопки "Развернуть" с помощью querySelectorAll
+    const expandButtons = tabsContainer.querySelectorAll(
+      ".single-doc-tabs__expand-button"
+    );
+
+    // Логика переключения табов (остается без изменений)
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        const targetPanelId = tab.dataset.tab;
+
+        tabs.forEach((t) => t.classList.remove("single-doc-tabs__tab--active"));
+        tab.classList.add("single-doc-tabs__tab--active");
+
+        panels.forEach((panel) => {
+          if (panel.dataset.panel === targetPanelId) {
+            panel.classList.add("single-doc-tabs__panel--active");
+          } else {
+            panel.classList.remove("single-doc-tabs__panel--active");
+          }
+        });
+      });
+    });
+
+    // Перебираем каждую найденную кнопку и вешаем на нее обработчик
+    expandButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        // 'button' - это конкретная кнопка, на которую кликнули
+        const panel = button.closest(".single-doc-tabs__panel");
+
+        if (panel) {
+          panel.classList.toggle("single-doc-tabs__panel--expanded");
+
+          if (panel.classList.contains("single-doc-tabs__panel--expanded")) {
+            button.textContent = "Свернуть";
+          } else {
+            button.textContent = "Развернуть";
+          }
+        }
+      });
+    });
+  }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const worksSlider3 = new Swiper(".swiper-sertificate", {
+    loop: true,
+    slidesPerView: 4,
+    slidesPerGroup: 1,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".our-preim__nav-button--next-22",
+      prevEl: ".our-preim__nav-button--prev-22",
+    },
+    breakpoints: {
+      1153: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+      930: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
+      655: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+    },
+  });
+
+  const lightbox = GLightbox({
+    selector: ".sertificate-link",
+    loop: true,
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const worksSlider4 = new Swiper(".swiper-do-posle", {
+    loop: true,
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".our-preim__nav-button--next",
+      prevEl: ".our-preim__nav-button--prev",
+    },
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const worksSlider4 = new Swiper(".swiper-doc-12", {
+    loop: true,
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".our-preim__nav-button--next-2",
+      prevEl: ".our-preim__nav-button--prev-2",
+    },
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const tabsContainer = document.querySelector(".single-doc-tabs__wrapper");
+  if (!tabsContainer) return;
+
+  const mobileHeader = tabsContainer.querySelector(
+    ".single-doc-tabs__mobile-header"
+  );
+  const mobileList = tabsContainer.querySelector(
+    ".single-doc-tabs__mobile-list"
+  );
+  const mobileTabs = mobileList.querySelectorAll(".single-doc-tabs__tab");
+  const desktopTabs = tabsContainer.querySelectorAll(
+    ".single-doc-tabs__nav .single-doc-tabs__tab"
+  );
+  const allPanels = tabsContainer.querySelectorAll(".single-doc-tabs__panel");
+
+  mobileHeader.addEventListener("click", () => {
+    mobileHeader.classList.toggle("is-open");
+    mobileList.classList.toggle("is-open");
+  });
+
+  mobileTabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      const targetPanelId = tab.dataset.tab;
+
+      mobileHeader.innerHTML =
+        tab.innerHTML +
+        '<svg class="single-doc-tabs__mobile-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1.5L6 6.5L11 1.5" stroke="#212529" stroke-width="2"/></svg>';
+
+      mobileHeader.classList.remove("is-open");
+      mobileList.classList.remove("is-open");
+
+      allPanels.forEach((panel) => {
+        panel.classList.toggle(
+          "single-doc-tabs__panel--active",
+          panel.dataset.panel === targetPanelId
+        );
+      });
+
+      desktopTabs.forEach((dTab) => {
+        dTab.classList.toggle(
+          "single-doc-tabs__tab--active",
+          dTab.dataset.tab === targetPanelId
+        );
+      });
+    });
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!tabsContainer.contains(e.target)) {
+      mobileHeader.classList.remove("is-open");
+      mobileList.classList.remove("is-open");
+    }
   });
 });
