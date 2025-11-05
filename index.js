@@ -858,3 +858,26 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const tabs = document.querySelectorAll('.about-gallery__tab');
+    const grids = document.querySelectorAll('.about-gallery__grid');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const target = document.querySelector(tab.dataset.tabTarget);
+
+            tabs.forEach(t => t.classList.remove('about-gallery__tab--active'));
+            tab.classList.add('about-gallery__tab--active');
+
+            grids.forEach(grid => grid.classList.remove('about-gallery__grid--active'));
+            target.classList.add('about-gallery__grid--active');
+        });
+    });
+});

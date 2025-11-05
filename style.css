@@ -7399,3 +7399,630 @@ body.menu-open {
   padding-left: 20px;
   padding-right: 20px;
 }
+
+.about-hero__content {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about-hero__pre-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+  color: #000;
+  margin-bottom: 12px;
+}
+
+.about-hero__title {
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 120%;
+  color: #000;
+  margin-bottom: 12px;
+}
+
+.about-hero__description {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 140%;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.about-hero__button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+  color: #fff;
+  border: 2px solid #67bec1;
+  border-radius: 8px;
+  padding: 18px 32px;
+  background: #67bec1;
+}
+
+.about-hero {
+  position: relative; /* Необходимо для позиционирования псевдоэлемента */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* 1. Делаем псевдоэлемент полноразмерным оверлеем */
+  width: 100%;
+  height: 100%;
+
+  /* 2. Копируем фон, который теперь идеально совпадает */
+  background: inherit;
+
+  /* 3. Применяем размытие ко всему оверлею */
+  filter: blur(5px);
+
+  /* 4. С помощью маски плавно "стираем" правую часть размытого оверлея */
+  mask-image: linear-gradient(to right, black 40%, transparent 70%);
+  -webkit-mask-image: linear-gradient(to right, black 40%, transparent 70%);
+}
+
+/* Контент должен быть поверх нашего размытого слоя */
+.about-hero .wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.info-section {
+  margin: 60px 0;
+}
+
+.info-section__paragraph {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  color: #333;
+}
+
+.info-section__content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.about-second__grid {
+  display: flex;
+  gap: 45px;
+}
+
+.about-second__image {
+  aspect-ratio: 1/1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex: 1;
+  border: 4px solid #67bec1;
+  border-radius: 20px;
+}
+
+.about-second__content {
+  flex: 1;
+}
+
+.about-second__title {
+  margin-bottom: 24px;
+}
+
+.about-second__paragraph {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.about-second__paragraph a {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #67bec1;
+}
+
+.about-second__paragraph-2 a {
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #000;
+}
+
+.about-second {
+  background: #f8f8fa;
+  padding: 60px 0;
+}
+
+.about-usl {
+  margin: 60px 0;
+}
+
+.about-usl-p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.features-section p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  color: #333;
+}
+
+.features-section p strong {
+  font-weight: 600;
+}
+
+.features-section {
+  background: #f8f8fa;
+  padding: 60px 0;
+}
+
+.features-section__content > :not(:last-child) {
+  margin-bottom: 40px;
+}
+
+/* 
+
+
+
+ */
+
+.about-gallery__tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 32px 0;
+}
+
+.about-gallery__tab {
+  padding: 24px 0;
+  font-weight: 500;
+  font-size: 19px;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #adacac;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+  flex: 1;
+}
+
+.about-gallery__tab--active {
+  border-color: #67bec1;
+  background: #f8f8fa;
+  font-weight: 600;
+}
+
+.about-gallery__grid {
+  display: none;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+}
+
+.about-gallery__grid--active {
+  display: grid;
+}
+
+.about-gallery__item {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+}
+
+.about-gallery {
+  margin: 80px 0;
+}
+
+.about-doc {
+  background: #f8f8fa;
+  padding: 85px 0;
+}
+
+.about-doc h2 {
+  margin-bottom: 24px;
+}
+
+.about-doc-p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.about-doc-cont {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.about-doc-cont button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  color: #fff;
+  border-radius: 8px;
+  padding: 18px 32px;
+  background: #67bec1;
+  border: none;
+}
+
+.insurance__title {
+  margin-bottom: 40px;
+}
+
+.insurance__card--dms {
+  border: 1px solid #adacac;
+  border-radius: 20px;
+  padding: 32px;
+}
+
+.insurance__content {
+  display: flex;
+  gap: 16px;
+}
+
+.insurance__content > :first-child,
+.insurance__content > :last-child {
+  flex: 1;
+}
+
+.insurance__image {
+  width: 100%;
+}
+
+.insurance__card-title {
+  font-weight: 600;
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 24px;
+}
+
+.insurance__card-description p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: #000;
+}
+
+.insurance__card-description {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.insurance__card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.insurance__logos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.insurance__logos > :first-child {
+  border-right: 1px solid #adacac;
+  border-bottom: 1px solid #adacac;
+}
+
+.insurance__logos > :nth-child(2) {
+  border-bottom: 1px solid #adacac;
+}
+
+.insurance__logos > :nth-child(3) {
+  border-right: 1px solid #adacac;
+}
+
+.insurance__logo-item {
+  padding: 30px;
+}
+
+.insurance__card--offers {
+  border: 2px solid #67bec1;
+  border-radius: 20px;
+  background: #f8f8fa;
+  padding: 30px 30px 0 30px;
+}
+
+.insurance__card-subtitle,
+.insurance__features p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: #000;
+  margin-bottom: 12px;
+}
+
+.insurance__features p {
+  line-height: 90%;
+}
+
+.insurance__features {
+  margin-bottom: 32px;
+}
+
+.insurance__button {
+  width: 100%;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  color: #fff;
+  border-radius: 8px;
+  padding: 18px 32px;
+  background: #67bec1;
+  border: none;
+}
+
+.insurance__image {
+  margin-bottom: -10px;
+}
+
+.insurance__card--offers {
+  overflow: hidden;
+}
+
+.insurance {
+  margin: 80px 0;
+}
+
+.lic-gallery h2,
+.lic-gallery__description {
+  margin-bottom: 32px;
+}
+
+.lic-gallery__description {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  color: #333;
+}
+
+.lic-gallery__grid img {
+  width: 100%;
+}
+
+.lic-gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.lic-gallery__grid div {
+  border: 1px solid #adacac;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.button-flex-1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.button-flex-1 a {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  color: #fff;
+  border-radius: 8px;
+  padding: 18px 32px;
+  background: #67bec1;
+  text-decoration: none;
+}
+
+.about-hero {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .about-hero__title {
+    font-size: 32px;
+  }
+
+  .about-hero__pre-title,
+  .about-hero__description,
+  .about-hero__button {
+    font-size: 16px;
+  }
+
+  .about-hero__button {
+    padding: 13px 25px;
+  }
+
+  .about-hero__content {
+    height: 418px;
+  }
+
+  .info-section__paragraph {
+    font-size: 16px;
+  }
+
+  .info-section__content {
+    gap: 20px;
+  }
+}
+
+.info-section,
+.about-second {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 957px) {
+  .about-second__grid {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.about-usl {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .about-second__paragraph,
+  .about-usl-p,
+  .features-section p {
+    font-size: 16px;
+  }
+
+  .about-second__paragraph {
+    margin-bottom: 24px;
+  }
+
+  .features-section__content > :not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.features-section,
+.about-gallery {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 890px) {
+  .about-gallery__grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .about-gallery__tabs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-gallery__grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .about-gallery__tab {
+    padding: 18px 0;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-gallery {
+    margin: 60px 0;
+  }
+
+  .about-doc-p {
+    font-size: 16px;
+  }
+
+  .about-doc-p {
+    margin-bottom: 24px;
+  }
+
+  .about-doc-cont button {
+    font-size: 16px;
+    padding: 13px 24px;
+  }
+
+  .about-doc-cont {
+    margin-top: 24px;
+  }
+
+  .about-doc {
+    padding: 60px 0;
+  }
+}
+
+.about-doc {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.insurance__logo-item img {
+  width: 100%;
+}
+
+.insurance {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 1112px) {
+  .insurance__content {
+    flex-direction: column;
+  }
+
+  .insurance__card--offers {
+    padding: 24px;
+  }
+
+  .insurance__logos {
+    margin-top: 32px;
+  }
+
+  .insurance__logo-item {
+    border: none !important;
+  }
+
+  .insurance__logos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .insurance__card-subtitle,
+  .insurance__features p {
+    font-size: 16px;
+  }
+
+  .insurance__button {
+    font-size: 13px;
+  }
+
+  .insurance__card--dms {
+    padding: 24px;
+  }
+
+  .insurance__logo-item {
+    padding: 10px;
+  }
+
+  .insurance__card-description {
+    gap: 16px;
+  }
+
+  .insurance__button {
+    padding: 15px;
+  }
+
+  .insurance__image {
+    display: none;
+  }
+
+  .insurance {
+    margin: 60px 0;
+  }
+}
