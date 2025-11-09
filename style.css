@@ -8026,3 +8026,496 @@ body.menu-open {
     margin: 60px 0;
   }
 }
+
+.sales-gallery__grid.about-gallery__grid {
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.sale-card {
+  border-radius: 20px;
+  overflow: hidden;
+  background: #f8f8fa;
+}
+
+.sale-card__header {
+  aspect-ratio: 2/1.2;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.sale-flex-12 {
+  background: #19815a;
+  padding: 24px;
+  border-radius: 0 0 0 50%;
+}
+
+.sale-flex-12 > :first-child {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  color: #fff;
+}
+
+.sale-flex-12 > :last-child {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 120%;
+  color: #fff;
+}
+
+.sale-card__body {
+  padding: 24px;
+}
+
+.sale-card__title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 120%;
+  color: #333;
+  margin-bottom: 16px;
+}
+.sale-card__description {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: #000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  min-height: 112px;
+  margin-bottom: 52px;
+}
+
+.sale-card__actions {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.sale-card__actions a,
+.sale-card__actions button {
+  flex: 1;
+  border-radius: 8px;
+  padding: 18px;
+  display: inline-flex;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 95%;
+  text-align: center;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  justify-content: center;
+}
+
+.sale-card__actions a {
+  background: #fff;
+  color: #3c3c3b;
+}
+
+.sale-card__actions button {
+  background: #67bec1;
+  color: #fff;
+}
+
+.sale-card__term {
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+}
+
+.sales-tabs {
+  margin: 80px 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.form-sales__container {
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f8f8fa;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-sales__container > :last-child img {
+  width: 100%;
+  max-width: 480px;
+}
+
+.form-sales__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.form-sales__content h2 {
+  margin-bottom: 16px;
+}
+
+.consultation-form__form input,
+.consultation-form__form .custom-checkbox__box {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.consultation-form__form .custom-checkbox {
+  align-items: center;
+}
+
+.consultation-form__form .consultation-form__submit-btn {
+  margin-top: 32px;
+}
+
+/* 
+
+
+
+
+
+
+
+
+
+
+
+ */
+.faq__container {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .faq__container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.faq__column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faq__item {
+  background: #f8f8fa;
+  color: var(--white);
+  padding: 24px;
+  border-radius: 16px;
+}
+
+.faq__question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  color: #000;
+}
+
+.faq__icon {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+.faq__icon::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #000;
+  border-right: 2px solid #000;
+  transition: transform 0.3s ease-out;
+  transform: translate(-50%, -75%) rotate(45deg);
+}
+
+.faq__icon::after {
+  content: none;
+}
+
+.faq__item.active .faq__icon::before {
+  transform: translate(-50%, -25%) rotate(-135deg);
+}
+
+.faq__answer {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.4s ease-in-out;
+}
+
+.faq__answer-content {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: #000;
+}
+
+.faq__item.active .faq__question {
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.faq-section {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 80px;
+  margin-top: 80px;
+}
+
+.faq-section h2 {
+  margin-bottom: 40px;
+}
+
+.second-form-sales__container {
+  background: radial-gradient(
+    56.61% 79.07% at 98.59% 15.82%,
+    rgba(103, 190, 193, 0.2) 0%,
+    #67bec1 100%
+  );
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 40px;
+}
+
+.second-form-sales__title {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 112%;
+  color: #fff;
+  margin-bottom: 32px;
+}
+
+.second-form-sales__description > :not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.second-form-sales__description p {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  color: #fff;
+}
+
+strong {
+  font-weight: bold !important;
+}
+
+.second-form-sales__description {
+  border-radius: 20px;
+  padding: 16px 24px;
+  border: 1px solid #fff;
+  max-width: 796px;
+  margin-bottom: 20px;
+}
+
+.appointment__field-group-12 {
+  max-width: 796px;
+}
+
+.appointment__field-group-12 .appointment__field {
+  margin-top: 0;
+}
+
+.second-form-sales .custom-checkbox__label-text,
+.second-form-sales .custom-checkbox__label-text a {
+  color: #fff;
+}
+
+.second-form-sales__container {
+  position: relative;
+}
+
+.abs-s-1 {
+  position: absolute;
+  bottom: 0;
+  right: 24px;
+  z-index: 2;
+}
+
+.abs-s-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.second-form-sales {
+  margin-bottom: 80px;
+}
+
+.hero-slider-2 .hero-slider__arrow {
+  background: #dbf3f1;
+}
+
+.hero-slider-2 .btn--outline {
+  color: #fff;
+  background: #67bec1;
+}
+
+.hero-slider-2 .slide-content {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .hero-slider-2 .slide-content__btn {
+    font-size: 14px;
+    padding: 13px 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-gallery__tabs {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .sale-card__title {
+    font-size: 21px;
+    margin-bottom: 10px;
+  }
+
+  .sale-card__description {
+    font-size: 18px;
+    min-height: 100.81px;
+    margin-bottom: 32px;
+  }
+
+  .sale-card__actions a,
+  .sale-card__actions button,
+  .sale-card__term {
+    font-size: 16px;
+  }
+
+  .sale-flex-12 > :first-child {
+    font-size: 14px;
+  }
+
+  .sale-flex-12 > :last-child {
+    font-size: 21px;
+  }
+
+  .sale-flex-12 {
+    padding: 18px;
+  }
+}
+
+.form-sales {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.form-sales__media-block {
+  display: flex;
+  align-items: flex-end;
+}
+
+@media screen and (max-width: 1240px) {
+  .form-sales__container > :last-child img {
+    max-width: 400px;
+  }
+
+  .form-sales__subtitle {
+    margin-bottom: 24px;
+  }
+
+  .form-sales__content {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .form-sales__content {
+    max-width: 450px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .form-sales__container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .form-sales__content {
+    max-width: 100%;
+  }
+
+  .form-sales__media-block {
+    justify-content: flex-end;
+  }
+
+  .form-sales__content {
+    padding: 24px;
+  }
+
+  .form-sales__container .consultation-form__submit-btn {
+    max-width: 100%;
+  }
+}
+
+.second-form-sales {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 1223px) {
+  .abs-s-1 {
+    display: none;
+  }
+
+  .abs-s-2 {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .abs-s-2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .second-form-sales__container {
+    padding: 24px;
+  }
+
+  .second-form-sales__description p {
+    font-size: 14px;
+  }
+
+  .second-form-sales__description {
+    padding: 16px;
+  }
+
+  .second-form-sales__title {
+    font-size: 24px;
+  }
+
+  .faq__question {
+    font-size: 18px;
+  }
+
+  .faq__item {
+    padding: 18px;
+  }
+}

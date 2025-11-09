@@ -881,3 +881,35 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const questions = document.querySelectorAll(".faq__question");
+
+  questions.forEach((clickedQuestion) => {
+    clickedQuestion.addEventListener("click", () => {
+      const clickedItem = clickedQuestion.parentElement;
+      const clickedAnswer = clickedQuestion.nextElementSibling;
+      const isAlreadyActive = clickedItem.classList.contains("active");
+
+      questions.forEach((question) => {
+        const item = question.parentElement;
+        const answer = question.nextElementSibling;
+        if (item !== clickedItem) {
+          item.classList.remove("active");
+          answer.style.height = "0px";
+        }
+      });
+
+      if (!isAlreadyActive) {
+        clickedItem.classList.add("active");
+        clickedAnswer.style.height = clickedAnswer.scrollHeight + "px";
+      } else {
+        clickedItem.classList.remove("active");
+        clickedAnswer.style.height = "0px";
+      }
+    });
+  });
+});
