@@ -1,0 +1,2461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__container">
+          <a href="/" class="header__logo" aria-label="На главную страницу">
+            <img src="./images/logo.svg" alt="Логотип Вешняки Мед" />
+          </a>
+
+          <div class="header__info">
+            <div class="header__location location">
+              <img class="location__icon" src="./images/map.svg" alt="" />
+              <div class="location__text">
+                <p class="location__address">
+                  Москва, ул. Вешняковская, д. 11А
+                </p>
+                <div class="location__schedule">
+                  <span>пн–пт: 8:00–21:00</span> <br />
+                  <span>сб–вс: 9:00–21:00</span>
+                </div>
+              </div>
+            </div>
+
+            <ul class="header__contacts">
+              <li class="contacts__item">
+                <img class="contacts__icon" src="./images/tel.svg" alt="" />
+                <div class="contacts__details">
+                  <a href="tel:+74953701300" class="contacts__link"
+                    >+7 495 370-13-00</a
+                  >
+                  <p class="contacts__description">Звоните по любым вопросам</p>
+                </div>
+              </li>
+              <li class="contacts__item">
+                <img class="contacts__icon" src="./images/email.svg" alt="" />
+                <div class="contacts__details">
+                  <a href="mailto:zapis@veshnyakimed.ru" class="contacts__link"
+                    >zapis@veshnyakimed.ru</a
+                  >
+                </div>
+              </li>
+            </ul>
+
+            <ul class="header__socials socials">
+              <li class="socials__item">
+                <a
+                  href="https://vk.com/example"
+                  class="socials__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Наша страница Вконтакте"
+                >
+                  <img
+                    class="socials__icon"
+                    src="./images/vk.svg"
+                    alt="Вконтакте"
+                  />
+                </a>
+              </li>
+              <li class="socials__item">
+                <a
+                  href="https://t.me/example"
+                  class="socials__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Наш канал в Телеграм"
+                >
+                  <img
+                    class="socials__icon"
+                    src="./images/tg.svg"
+                    alt="Телеграм"
+                  />
+                </a>
+              </li>
+              <li class="header-mob">
+                <a href="">
+                  <img src="./images/s.svg" alt="" />
+                </a>
+              </li>
+              <li>
+                <button class="burger-menu-button" id="burger-menu-button">
+                  <img
+                    class="icon-burger"
+                    src="./images/burger-mob.svg"
+                    alt="Открыть меню"
+                  />
+                  <img
+                    class="icon-close"
+                    src="./images/close.svg"
+                    alt="Закрыть меню"
+                  />
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="header__bottom">
+          <nav class="header__nav nav-menu" aria-label="Основная навигация">
+            <ul class="nav-menu__list">
+              <li class="nav-menu__item">
+                <a href="#" class="nav-menu__link">О клинике</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="#" class="nav-menu__link nav-menu__link--dropdown">
+                  Услуги
+                  <img src="./images/arr-nav.svg" alt="" />
+                </a>
+
+                <div class="nav-menu__dropdown" id="services-popup">
+                  <div
+                    class="nav-menu__dropdown-container nav-menu__dropdown-container-usl"
+                  >
+                    <div class="usl-1">
+                      <h3>Услуги</h3>
+                      <nav>
+                        <ul>
+                          <li>
+                            <a href="">Стоматология</a>
+                          </li>
+                          <li>
+                            <a href="">Детская стоматология</a>
+                          </li>
+                          <li>
+                            <a href="">Лечение под наркозом</a>
+                          </li>
+                          <li>
+                            <a href="">Дерматология</a>
+                          </li>
+                          <li>
+                            <a href="">Врачебная косметология</a>
+                          </li>
+                          <li>
+                            <a href="">Ультразвуковая диагностика</a>
+                          </li>
+                          <li>
+                            <a href="">Массаж</a>
+                          </li>
+                          <li>
+                            <a href="">Мануальная терапия</a>
+                          </li>
+                          <li>
+                            <a href="">Лаборатория</a>
+                          </li>
+                          <li>
+                            <a href="">Процедурный кабинет</a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                    <div class="usl-2">
+                      <h3>Стоматология</h3>
+                      <nav>
+                        <ul>
+                          <li>
+                            <a href=""> Стоматология </a>
+                          </li>
+                          <li>
+                            <a href=""> Терапевтическая стоматология </a>
+                          </li>
+                          <li>
+                            <a href=""> Хирургия </a>
+                          </li>
+                          <li>
+                            <a href=""> Ортодонтия </a>
+                          </li>
+                          <li>
+                            <a href=""> Стоматология </a>
+                          </li>
+                          <li>
+                            <a href=""> Пародонтология </a>
+                          </li>
+                          <li>
+                            <a href=""> Ортопедия </a>
+                          </li>
+                          <li>
+                            <a href=""> Имплантология </a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-menu__item">
+                <a href="#" class="nav-menu__link nav-menu__link--dropdown">
+                  Врачи
+                  <img src="./images/arr-nav.svg" alt="" />
+                </a>
+
+                <div class="nav-menu__dropdown" id="doctors-popup">
+                  <div
+                    class="nav-menu__dropdown-container nav-menu__dropdown-container-2"
+                  >
+                    <h3>Врачи</h3>
+                    <div>
+                      <input
+                        type="text"
+                        name=""
+                        id=""
+                        placeholder="Введите специальность"
+                      />
+                      <div class="header-grid">
+                        <div class="header-grid-item">
+                          <div>
+                            <p>А</p>
+                          </div>
+                          <ul>
+                            <li>
+                              <a href="">Акушер-гинеколог</a>
+                            </li>
+                            <li>
+                              <a href="">Алколог</a>
+                            </li>
+                            <li>
+                              <a href="">Аллерголог</a>
+                            </li>
+                            <li>
+                              <a href="">Андролог</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="header-grid-item">
+                          <div>
+                            <p>А</p>
+                          </div>
+                          <ul>
+                            <li>
+                              <a href="">Акушер-гинеколог</a>
+                            </li>
+                            <li>
+                              <a href="">Алколог</a>
+                            </li>
+                            <li>
+                              <a href="">Аллерголог</a>
+                            </li>
+                            <li>
+                              <a href="">Андролог</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="header-grid-item">
+                          <div>
+                            <p>с</p>
+                          </div>
+                          <ul>
+                            <li>
+                              <a href="">Акушер-гинеколог</a>
+                            </li>
+                            <li>
+                              <a href="">Алколог</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="header-grid-item">
+                          <div>
+                            <p>А</p>
+                          </div>
+                          <ul>
+                            <li>
+                              <a href="">Акушер-гинеколог</a>
+                            </li>
+                            <li>
+                              <a href="">Алколог</a>
+                            </li>
+                            <li>
+                              <a href="">Аллерголог</a>
+                            </li>
+                            <li>
+                              <a href="">Андролог</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="header-grid-item">
+                          <div>
+                            <p>А</p>
+                          </div>
+                          <ul>
+                            <li>
+                              <a href="">Акушер-гинеколог</a>
+                            </li>
+                            <li>
+                              <a href="">Алколог</a>
+                            </li>
+                            <li>
+                              <a href="">Аллерголог</a>
+                            </li>
+                            <li>
+                              <a href="">Андролог</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="header-grid-item">
+                          <div>
+                            <p>с</p>
+                          </div>
+                          <ul>
+                            <li>
+                              <a href="">Акушер-гинеколог</a>
+                            </li>
+                            <li>
+                              <a href="">Алколог</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="header-grid-item">
+                          <div>
+                            <p>А</p>
+                          </div>
+                          <ul>
+                            <li>
+                              <a href="">Акушер-гинеколог</a>
+                            </li>
+                            <li>
+                              <a href="">Алколог</a>
+                            </li>
+                            <li>
+                              <a href="">Аллерголог</a>
+                            </li>
+                            <li>
+                              <a href="">Андролог</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="header-grid-item">
+                          <div>
+                            <p>А</p>
+                          </div>
+                          <ul>
+                            <li>
+                              <a href="">Акушер-гинеколог</a>
+                            </li>
+                            <li>
+                              <a href="">Алколог</a>
+                            </li>
+                            <li>
+                              <a href="">Аллерголог</a>
+                            </li>
+                            <li>
+                              <a href="">Андролог</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="header-grid-item">
+                          <div>
+                            <p>с</p>
+                          </div>
+                          <ul>
+                            <li>
+                              <a href="">Акушер-гинеколог</a>
+                            </li>
+                            <li>
+                              <a href="">Алколог</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="header-grid-item">
+                          <div>
+                            <p>с</p>
+                          </div>
+                          <ul>
+                            <li>
+                              <a href="">Акушер-гинеколог</a>
+                            </li>
+                            <li>
+                              <a href="">Алколог</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="header-grid-item">
+                          <div>
+                            <p>с</p>
+                          </div>
+                          <ul>
+                            <li>
+                              <a href="">Акушер-гинеколог</a>
+                            </li>
+                            <li>
+                              <a href="">Алколог</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="header-grid-item">
+                          <div>
+                            <p>с</p>
+                          </div>
+                          <ul>
+                            <li>
+                              <a href="">Акушер-гинеколог</a>
+                            </li>
+                            <li>
+                              <a href="">Алколог</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-menu__item">
+                <a href="#" class="nav-menu__link">Акции</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="#" class="nav-menu__link">Отзывы</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="#" class="nav-menu__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__actions">
+            <button
+              type="button"
+              class="header__search"
+              aria-label="Поиск по сайту"
+            >
+              <img src="./images/search.svg" alt="" />
+            </button>
+            <button type="button" class="header__cta-btn btn">
+              Записаться на приём
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Сам попап с меню -->
+      <div class="mobile-menu" id="mobile-menu">
+        <!-- Панель 1: Главное меню -->
+        <div class="mobile-menu__panel is-active" id="main-menu">
+          <ul class="mobile-menu__list">
+            <li><a href="#">О клинике</a></li>
+            <!-- Эта ссылка ведет на другую панель -->
+            <li class="has-submenu">
+              <a href="#" data-target="services-menu">Услуги</a>
+            </li>
+            <li><a href="#">Врачи</a></li>
+            <li><a href="#">Акции</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <div class="mobile-menu__contacts">
+            <a href="tel:+70000000000">
+              <img src="./images/tel-mob.svg" alt="" />
+            </a>
+            <a href="mailto:info@example.com">
+              <img src="./images/email-mob.svg" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Панель 2: Услуги -->
+        <div class="mobile-menu__panel" id="services-menu">
+          <div class="mobile-menu__header">
+            <button class="mobile-menu__back-button" data-target="main-menu">
+              <img src="./images/arrrr.svg" alt="" />
+              <h2>Услуги</h2>
+            </button>
+          </div>
+          <ul class="mobile-menu__list">
+            <!-- Эта ссылка ведет на другую панель -->
+            <li class="has-submenu">
+              <a href="#" data-target="stomatology-menu">Стоматология</a>
+            </li>
+            <li><a href="#">Детская стоматология</a></li>
+            <li><a href="#">Лечение под наркозом</a></li>
+            <li><a href="#">Дерматология</a></li>
+            <li class="has-submenu"><a href="#">Врачебная косметология</a></li>
+            <li><a href="#">Ультразвуковая диагностика</a></li>
+            <li><a href="#">Массаж</a></li>
+            <li><a href="#">Мануальная терапия</a></li>
+            <li><a href="#">Лаборатория</a></li>
+            <li><a href="#">Процедурный кабинет</a></li>
+          </ul>
+        </div>
+
+        <!-- Панель 3: Стоматология -->
+        <div class="mobile-menu__panel" id="stomatology-menu">
+          <div class="mobile-menu__header">
+            <button
+              class="mobile-menu__back-button"
+              data-target="services-menu"
+            >
+              <img src="./images/arrrr.svg" alt="" />
+              <h2>Стоматология</h2>
+            </button>
+          </div>
+          <ul class="mobile-menu__list">
+            <li><a href="#">Терапевтическая стоматология</a></li>
+            <li><a href="#">Хирургия</a></li>
+            <li><a href="#">Ортодонтия</a></li>
+            <li><a href="#">Пародонтология</a></li>
+            <li><a href="#">Ортопедия</a></li>
+            <li><a href="#">Имплантология</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <nav class="breadcrumbs" aria-label="breadcrumb">
+        <div class="wrapper">
+          <ol class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="">Главная</a>
+              <img
+                class="breadcrumbs__separator"
+                src="./images/arr-.svg"
+                alt=""
+                aria-hidden="true"
+              />
+            </li>
+            <li class="breadcrumbs__item">
+              <span class="breadcrumbs__text" aria-current="page">Услуги</span>
+            </li>
+          </ol>
+        </div>
+      </nav>
+      <section
+        class="rev-hero"
+        style="background-image: url('./images/rev-hero.png')"
+      >
+        <div class="wrapper">
+          <div class="rev-hero-h">
+            <div class="rev-hero__content">
+              <div class="rev-hero__header">
+                <h1 class="rev-hero__title">Отзывы</h1>
+                <p class="rev-hero__subtitle">
+                  Реальные мнения наших пациентов
+                </p>
+              </div>
+              <div class="rev-hero__stats">
+                <div class="rev-hero__rating-block">
+                  <p class="rev-hero__rating-value">5.0</p>
+                  <div class="rev-hero__rating-details">
+                    <div class="rev-hero__rating-info">
+                      <img
+                        class="rev-hero__icon"
+                        src="./images/re-1.svg"
+                        alt="Иконка рейтинга"
+                      />
+                      <p class="rev-hero__stats-text">Рейтинг</p>
+                    </div>
+                    <a href="#" class="rev-hero__link">Смотреть ещё</a>
+                  </div>
+                </div>
+                <div class="rev-hero__reviews-block">
+                  <p class="rev-hero__reviews-count">544</p>
+                  <div class="rev-hero__reviews-details">
+                    <div class="rev-hero__reviews-info">
+                      <img
+                        class="rev-hero__icon"
+                        src="./images/re-2.svg"
+                        alt="Иконка отзывов"
+                      />
+                      <p class="rev-hero__stats-text">Всего отзывов</p>
+                    </div>
+                  </div>
+                  <img
+                    class="rev-hero__decoration"
+                    src="./images/a-434.svg"
+                    alt="Декоративный элемент"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="filters-121">
+        <div class="wrapper">
+          <div>
+            <div class="filters-121-top">
+              <h2>Отзывы</h2>
+              <button class="add-rev add-rev-r">
+                Оставить отзыв
+                <img src="./images/arr.svg" alt="" class="mobb">
+              </button>
+            </div>
+            <div>
+              <div class="flex-344343">
+                <div class="filter-dropdown2">
+                  <div class="filter-dropdown__selected">
+                    <span class="filter-dropdown__text">Тип контента</span>
+                    <svg
+                      width="16"
+                      height="9"
+                      viewBox="0 0 16 9"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="filter-dropdown__arrow"
+                    >
+                      <path
+                        d="M15.2969 0.630111C15.2969 0.699985 15.2794 0.782336 15.2445 0.877165C15.2095 0.971994 15.1571 1.05434 15.0873 1.12422L8.04996 8.79038C7.98008 8.86025 7.89773 8.91266 7.8029 8.94759C7.70808 8.98253 7.62572 9 7.55585 9C7.48598 9 7.40612 8.98253 7.31628 8.94759C7.22644 8.91266 7.14659 8.86025 7.07672 8.79038L0.174176 1.25898C0.0344286 1.11923 -0.0229677 0.957021 0.00198721 0.772355C0.0269422 0.587688 0.109293 0.425481 0.249041 0.285733C0.388789 0.145986 0.550996 0.0885892 0.735663 0.113544C0.920329 0.138499 1.08254 0.22085 1.22228 0.360598L7.63071 7.32303L14.1889 0.225841C14.3186 0.0860931 14.4784 0.0112282 14.668 0.00124624C14.8577 -0.00873574 15.0224 0.0411741 15.1621 0.150976C15.1921 0.22085 15.222 0.293219 15.252 0.368084C15.2819 0.442949 15.2969 0.530291 15.2969 0.630111Z"
+                        fill="#333333"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="filter-dropdown__options filter-dropdown__options--hidden"
+                  >
+                    <div class="filter-dropdown__option" data-value="articles">
+                      Статьи
+                    </div>
+                    <div class="filter-dropdown__option" data-value="videos">
+                      Видео
+                    </div>
+                    <div class="filter-dropdown__option" data-value="news">
+                      Новости
+                    </div>
+                    <div class="filter-dropdown__option" data-value="reviews">
+                      Обзоры
+                    </div>
+                  </div>
+                </div>
+                <div class="filter-dropdown2">
+                  <div class="filter-dropdown__selected">
+                    <span class="filter-dropdown__text">Тип контента</span>
+                    <svg
+                      width="16"
+                      height="9"
+                      viewBox="0 0 16 9"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="filter-dropdown__arrow"
+                    >
+                      <path
+                        d="M15.2969 0.630111C15.2969 0.699985 15.2794 0.782336 15.2445 0.877165C15.2095 0.971994 15.1571 1.05434 15.0873 1.12422L8.04996 8.79038C7.98008 8.86025 7.89773 8.91266 7.8029 8.94759C7.70808 8.98253 7.62572 9 7.55585 9C7.48598 9 7.40612 8.98253 7.31628 8.94759C7.22644 8.91266 7.14659 8.86025 7.07672 8.79038L0.174176 1.25898C0.0344286 1.11923 -0.0229677 0.957021 0.00198721 0.772355C0.0269422 0.587688 0.109293 0.425481 0.249041 0.285733C0.388789 0.145986 0.550996 0.0885892 0.735663 0.113544C0.920329 0.138499 1.08254 0.22085 1.22228 0.360598L7.63071 7.32303L14.1889 0.225841C14.3186 0.0860931 14.4784 0.0112282 14.668 0.00124624C14.8577 -0.00873574 15.0224 0.0411741 15.1621 0.150976C15.1921 0.22085 15.222 0.293219 15.252 0.368084C15.2819 0.442949 15.2969 0.530291 15.2969 0.630111Z"
+                        fill="#333333"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="filter-dropdown__options filter-dropdown__options--hidden"
+                  >
+                    <div class="filter-dropdown__option" data-value="articles">
+                      Статьи
+                    </div>
+                    <div class="filter-dropdown__option" data-value="videos">
+                      Видео
+                    </div>
+                    <div class="filter-dropdown__option" data-value="news">
+                      Новости
+                    </div>
+                    <div class="filter-dropdown__option" data-value="reviews">
+                      Обзоры
+                    </div>
+                  </div>
+                </div>
+                <div class="filter-dropdown2">
+                  <div class="filter-dropdown__selected">
+                    <span class="filter-dropdown__text">Тип контента</span>
+                    <svg
+                      width="16"
+                      height="9"
+                      viewBox="0 0 16 9"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="filter-dropdown__arrow"
+                    >
+                      <path
+                        d="M15.2969 0.630111C15.2969 0.699985 15.2794 0.782336 15.2445 0.877165C15.2095 0.971994 15.1571 1.05434 15.0873 1.12422L8.04996 8.79038C7.98008 8.86025 7.89773 8.91266 7.8029 8.94759C7.70808 8.98253 7.62572 9 7.55585 9C7.48598 9 7.40612 8.98253 7.31628 8.94759C7.22644 8.91266 7.14659 8.86025 7.07672 8.79038L0.174176 1.25898C0.0344286 1.11923 -0.0229677 0.957021 0.00198721 0.772355C0.0269422 0.587688 0.109293 0.425481 0.249041 0.285733C0.388789 0.145986 0.550996 0.0885892 0.735663 0.113544C0.920329 0.138499 1.08254 0.22085 1.22228 0.360598L7.63071 7.32303L14.1889 0.225841C14.3186 0.0860931 14.4784 0.0112282 14.668 0.00124624C14.8577 -0.00873574 15.0224 0.0411741 15.1621 0.150976C15.1921 0.22085 15.222 0.293219 15.252 0.368084C15.2819 0.442949 15.2969 0.530291 15.2969 0.630111Z"
+                        fill="#333333"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="filter-dropdown__options filter-dropdown__options--hidden"
+                  >
+                    <div class="filter-dropdown__option" data-value="articles">
+                      Статьи
+                    </div>
+                    <div class="filter-dropdown__option" data-value="videos">
+                      Видео
+                    </div>
+                    <div class="filter-dropdown__option" data-value="news">
+                      Новости
+                    </div>
+                    <div class="filter-dropdown__option" data-value="reviews">
+                      Обзоры
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-dropdown2">
+                <div class="filter-dropdown__selected">
+                  <span class="filter-dropdown__text">Тип контента</span>
+                  <svg
+                    width="16"
+                    height="9"
+                    viewBox="0 0 16 9"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="filter-dropdown__arrow"
+                  >
+                    <path
+                      d="M15.2969 0.630111C15.2969 0.699985 15.2794 0.782336 15.2445 0.877165C15.2095 0.971994 15.1571 1.05434 15.0873 1.12422L8.04996 8.79038C7.98008 8.86025 7.89773 8.91266 7.8029 8.94759C7.70808 8.98253 7.62572 9 7.55585 9C7.48598 9 7.40612 8.98253 7.31628 8.94759C7.22644 8.91266 7.14659 8.86025 7.07672 8.79038L0.174176 1.25898C0.0344286 1.11923 -0.0229677 0.957021 0.00198721 0.772355C0.0269422 0.587688 0.109293 0.425481 0.249041 0.285733C0.388789 0.145986 0.550996 0.0885892 0.735663 0.113544C0.920329 0.138499 1.08254 0.22085 1.22228 0.360598L7.63071 7.32303L14.1889 0.225841C14.3186 0.0860931 14.4784 0.0112282 14.668 0.00124624C14.8577 -0.00873574 15.0224 0.0411741 15.1621 0.150976C15.1921 0.22085 15.222 0.293219 15.252 0.368084C15.2819 0.442949 15.2969 0.530291 15.2969 0.630111Z"
+                      fill="#333333"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="filter-dropdown__options filter-dropdown__options--hidden"
+                >
+                  <div class="filter-dropdown__option" data-value="articles">
+                    Статьи
+                  </div>
+                  <div class="filter-dropdown__option" data-value="videos">
+                    Видео
+                  </div>
+                  <div class="filter-dropdown__option" data-value="news">
+                    Новости
+                  </div>
+                  <div class="filter-dropdown__option" data-value="reviews">
+                    Обзоры
+                  </div>
+                </div>
+              </div>
+              <button class="reset-mob-45">Сбросить фильтр</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="rev-grid">
+        <div class="wrapper">
+          <div class="rev-grid__container">
+            <div class="rev-grid__card">
+              <div class="rev-grid__header">
+                <div class="rev-grid__author">
+                  <div
+                    class="rev-grid__author-avatar"
+                    style="background-image: url('./images/about.png')"
+                  ></div>
+                  <div class="rev-grid__author-info">
+                    <p class="rev-grid__author-name">Иван Фёдоров</p>
+                    <p class="rev-grid__author-specialty">Направление</p>
+                  </div>
+                </div>
+                <div class="rev-grid__source">
+                  <img
+                    class="rev-grid__source-logo"
+                    src="./images/y-1.svg"
+                    alt="Логотип источника отзыва"
+                  />
+                </div>
+              </div>
+
+              <div class="rev-grid__rating">
+                <svg
+                  class="rev-grid__star"
+                  width="28"
+                  height="26"
+                  viewBox="0 0 28 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5909 0.681353C12.8957 -0.228364 14.1824 -0.228366 14.4872 0.681351L17.0149 8.225C17.1515 8.63258 17.5333 8.90729 17.9631 8.90729H26.0758C27.052 8.90729 27.4498 10.1626 26.6518 10.7248L20.1419 15.3111C19.7806 15.5657 19.6293 16.0273 19.7697 16.4463L22.2686 23.9042C22.5755 24.8201 21.5342 25.5958 20.7445 25.0394L14.115 20.3688C13.7696 20.1254 13.3085 20.1254 12.9631 20.3688L6.33364 25.0394C5.54396 25.5958 4.5026 24.8202 4.80951 23.9042L7.30845 16.4463C7.44887 16.0273 7.29752 15.5657 6.9362 15.3111L0.426362 10.7248C-0.371638 10.1626 0.0261477 8.90729 1.00231 8.90729H9.11501C9.54486 8.90729 9.92663 8.63259 10.0632 8.225L12.5909 0.681353Z"
+                    fill="#FFD300"
+                  />
+                </svg>
+                <svg
+                  class="rev-grid__star"
+                  width="28"
+                  height="26"
+                  viewBox="0 0 28 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5909 0.681353C12.8957 -0.228364 14.1824 -0.228366 14.4872 0.681351L17.0149 8.225C17.1515 8.63258 17.5333 8.90729 17.9631 8.90729H26.0758C27.052 8.90729 27.4498 10.1626 26.6518 10.7248L20.1419 15.3111C19.7806 15.5657 19.6293 16.0273 19.7697 16.4463L22.2686 23.9042C22.5755 24.8201 21.5342 25.5958 20.7445 25.0394L14.115 20.3688C13.7696 20.1254 13.3085 20.1254 12.9631 20.3688L6.33364 25.0394C5.54396 25.5958 4.5026 24.8202 4.80951 23.9042L7.30845 16.4463C7.44887 16.0273 7.29752 15.5657 6.9362 15.3111L0.426362 10.7248C-0.371638 10.1626 0.0261477 8.90729 1.00231 8.90729H9.11501C9.54486 8.90729 9.92663 8.63259 10.0632 8.225L12.5909 0.681353Z"
+                    fill="#FFD300"
+                  />
+                </svg>
+                <svg
+                  class="rev-grid__star"
+                  width="28"
+                  height="26"
+                  viewBox="0 0 28 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5909 0.681353C12.8957 -0.228364 14.1824 -0.228366 14.4872 0.681351L17.0149 8.225C17.1515 8.63258 17.5333 8.90729 17.9631 8.90729H26.0758C27.052 8.90729 27.4498 10.1626 26.6518 10.7248L20.1419 15.3111C19.7806 15.5657 19.6293 16.0273 19.7697 16.4463L22.2686 23.9042C22.5755 24.8201 21.5342 25.5958 20.7445 25.0394L14.115 20.3688C13.7696 20.1254 13.3085 20.1254 12.9631 20.3688L6.33364 25.0394C5.54396 25.5958 4.5026 24.8202 4.80951 23.9042L7.30845 16.4463C7.44887 16.0273 7.29752 15.5657 6.9362 15.3111L0.426362 10.7248C-0.371638 10.1626 0.0261477 8.90729 1.00231 8.90729H9.11501C9.54486 8.90729 9.92663 8.63259 10.0632 8.225L12.5909 0.681353Z"
+                    fill="#FFD300"
+                  />
+                </svg>
+                <svg
+                  class="rev-grid__star"
+                  width="28"
+                  height="26"
+                  viewBox="0 0 28 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5909 0.681353C12.8957 -0.228364 14.1824 -0.228366 14.4872 0.681351L17.0149 8.225C17.1515 8.63258 17.5333 8.90729 17.9631 8.90729H26.0758C27.052 8.90729 27.4498 10.1626 26.6518 10.7248L20.1419 15.3111C19.7806 15.5657 19.6293 16.0273 19.7697 16.4463L22.2686 23.9042C22.5755 24.8201 21.5342 25.5958 20.7445 25.0394L14.115 20.3688C13.7696 20.1254 13.3085 20.1254 12.9631 20.3688L6.33364 25.0394C5.54396 25.5958 4.5026 24.8202 4.80951 23.9042L7.30845 16.4463C7.44887 16.0273 7.29752 15.5657 6.9362 15.3111L0.426362 10.7248C-0.371638 10.1626 0.0261477 8.90729 1.00231 8.90729H9.11501C9.54486 8.90729 9.92663 8.63259 10.0632 8.225L12.5909 0.681353Z"
+                    fill="#FFD300"
+                  />
+                </svg>
+                <svg
+                  class="rev-grid__star"
+                  width="28"
+                  height="26"
+                  viewBox="0 0 28 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5909 0.681353C12.8957 -0.228364 14.1824 -0.228366 14.4872 0.681351L17.0149 8.225C17.1515 8.63258 17.5333 8.90729 17.9631 8.90729H26.0758C27.052 8.90729 27.4498 10.1626 26.6518 10.7248L20.1419 15.3111C19.7806 15.5657 19.6293 16.0273 19.7697 16.4463L22.2686 23.9042C22.5755 24.8201 21.5342 25.5958 20.7445 25.0394L14.115 20.3688C13.7696 20.1254 13.3085 20.1254 12.9631 20.3688L6.33364 25.0394C5.54396 25.5958 4.5026 24.8202 4.80951 23.9042L7.30845 16.4463C7.44887 16.0273 7.29752 15.5657 6.9362 15.3111L0.426362 10.7248C-0.371638 10.1626 0.0261477 8.90729 1.00231 8.90729H9.11501C9.54486 8.90729 9.92663 8.63259 10.0632 8.225L12.5909 0.681353Z"
+                    fill="#FFD300"
+                  />
+                </svg>
+              </div>
+
+              <div class="rev-grid__body">
+                <p class="rev-grid__text">
+                  Отличная стоматология, хорошие врачи и стильный, уютный
+                  дизайн. При оплате процедур в клинике, есть возможность
+                  получить бесплатный массаж, что тоже очень порадовало!
+                  получить бесплатный массаж, что тоже очень порадовало!
+                  получить бесплатный массаж, что тоже очень порадовало!
+                </p>
+              </div>
+              <button
+                class="rev-grid__read-more"
+                data-popup-target="#review-popup-text"
+              >
+                Читать полностью
+              </button>
+
+              <div class="rev-grid__footer">
+                <p class="rev-grid__footer-label">Отзыв о враче:</p>
+                <a href="#" class="rev-grid__doctor-link"
+                  >Агапова Марина Сергеевна</a
+                >
+                <p class="rev-grid__date">16 февраля 2025</p>
+              </div>
+            </div>
+
+            <div class="rev-grid__card">
+              <div class="rev-grid__header">
+                <div class="rev-grid__author">
+                  <div
+                    class="rev-grid__author-avatar"
+                    style="background-image: url('./images/about.png')"
+                  ></div>
+                  <div class="rev-grid__author-info">
+                    <p class="rev-grid__author-name">Иван Фёдоров</p>
+                    <p class="rev-grid__author-specialty">Направление</p>
+                  </div>
+                </div>
+                <div class="rev-grid__source">
+                  <img
+                    class="rev-grid__source-logo"
+                    src="./images/y-1.svg"
+                    alt="Логотип источника отзыва"
+                  />
+                </div>
+              </div>
+
+              <div class="rev-grid__rating">
+                <svg
+                  class="rev-grid__star"
+                  width="28"
+                  height="26"
+                  viewBox="0 0 28 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5909 0.681353C12.8957 -0.228364 14.1824 -0.228366 14.4872 0.681351L17.0149 8.225C17.1515 8.63258 17.5333 8.90729 17.9631 8.90729H26.0758C27.052 8.90729 27.4498 10.1626 26.6518 10.7248L20.1419 15.3111C19.7806 15.5657 19.6293 16.0273 19.7697 16.4463L22.2686 23.9042C22.5755 24.8201 21.5342 25.5958 20.7445 25.0394L14.115 20.3688C13.7696 20.1254 13.3085 20.1254 12.9631 20.3688L6.33364 25.0394C5.54396 25.5958 4.5026 24.8202 4.80951 23.9042L7.30845 16.4463C7.44887 16.0273 7.29752 15.5657 6.9362 15.3111L0.426362 10.7248C-0.371638 10.1626 0.0261477 8.90729 1.00231 8.90729H9.11501C9.54486 8.90729 9.92663 8.63259 10.0632 8.225L12.5909 0.681353Z"
+                    fill="#FFD300"
+                  />
+                </svg>
+                <svg
+                  class="rev-grid__star"
+                  width="28"
+                  height="26"
+                  viewBox="0 0 28 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5909 0.681353C12.8957 -0.228364 14.1824 -0.228366 14.4872 0.681351L17.0149 8.225C17.1515 8.63258 17.5333 8.90729 17.9631 8.90729H26.0758C27.052 8.90729 27.4498 10.1626 26.6518 10.7248L20.1419 15.3111C19.7806 15.5657 19.6293 16.0273 19.7697 16.4463L22.2686 23.9042C22.5755 24.8201 21.5342 25.5958 20.7445 25.0394L14.115 20.3688C13.7696 20.1254 13.3085 20.1254 12.9631 20.3688L6.33364 25.0394C5.54396 25.5958 4.5026 24.8202 4.80951 23.9042L7.30845 16.4463C7.44887 16.0273 7.29752 15.5657 6.9362 15.3111L0.426362 10.7248C-0.371638 10.1626 0.0261477 8.90729 1.00231 8.90729H9.11501C9.54486 8.90729 9.92663 8.63259 10.0632 8.225L12.5909 0.681353Z"
+                    fill="#FFD300"
+                  />
+                </svg>
+                <svg
+                  class="rev-grid__star"
+                  width="28"
+                  height="26"
+                  viewBox="0 0 28 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5909 0.681353C12.8957 -0.228364 14.1824 -0.228366 14.4872 0.681351L17.0149 8.225C17.1515 8.63258 17.5333 8.90729 17.9631 8.90729H26.0758C27.052 8.90729 27.4498 10.1626 26.6518 10.7248L20.1419 15.3111C19.7806 15.5657 19.6293 16.0273 19.7697 16.4463L22.2686 23.9042C22.5755 24.8201 21.5342 25.5958 20.7445 25.0394L14.115 20.3688C13.7696 20.1254 13.3085 20.1254 12.9631 20.3688L6.33364 25.0394C5.54396 25.5958 4.5026 24.8202 4.80951 23.9042L7.30845 16.4463C7.44887 16.0273 7.29752 15.5657 6.9362 15.3111L0.426362 10.7248C-0.371638 10.1626 0.0261477 8.90729 1.00231 8.90729H9.11501C9.54486 8.90729 9.92663 8.63259 10.0632 8.225L12.5909 0.681353Z"
+                    fill="#FFD300"
+                  />
+                </svg>
+                <svg
+                  class="rev-grid__star"
+                  width="28"
+                  height="26"
+                  viewBox="0 0 28 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5909 0.681353C12.8957 -0.228364 14.1824 -0.228366 14.4872 0.681351L17.0149 8.225C17.1515 8.63258 17.5333 8.90729 17.9631 8.90729H26.0758C27.052 8.90729 27.4498 10.1626 26.6518 10.7248L20.1419 15.3111C19.7806 15.5657 19.6293 16.0273 19.7697 16.4463L22.2686 23.9042C22.5755 24.8201 21.5342 25.5958 20.7445 25.0394L14.115 20.3688C13.7696 20.1254 13.3085 20.1254 12.9631 20.3688L6.33364 25.0394C5.54396 25.5958 4.5026 24.8202 4.80951 23.9042L7.30845 16.4463C7.44887 16.0273 7.29752 15.5657 6.9362 15.3111L0.426362 10.7248C-0.371638 10.1626 0.0261477 8.90729 1.00231 8.90729H9.11501C9.54486 8.90729 9.92663 8.63259 10.0632 8.225L12.5909 0.681353Z"
+                    fill="#FFD300"
+                  />
+                </svg>
+                <svg
+                  class="rev-grid__star"
+                  width="28"
+                  height="26"
+                  viewBox="0 0 28 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5909 0.681353C12.8957 -0.228364 14.1824 -0.228366 14.4872 0.681351L17.0149 8.225C17.1515 8.63258 17.5333 8.90729 17.9631 8.90729H26.0758C27.052 8.90729 27.4498 10.1626 26.6518 10.7248L20.1419 15.3111C19.7806 15.5657 19.6293 16.0273 19.7697 16.4463L22.2686 23.9042C22.5755 24.8201 21.5342 25.5958 20.7445 25.0394L14.115 20.3688C13.7696 20.1254 13.3085 20.1254 12.9631 20.3688L6.33364 25.0394C5.54396 25.5958 4.5026 24.8202 4.80951 23.9042L7.30845 16.4463C7.44887 16.0273 7.29752 15.5657 6.9362 15.3111L0.426362 10.7248C-0.371638 10.1626 0.0261477 8.90729 1.00231 8.90729H9.11501C9.54486 8.90729 9.92663 8.63259 10.0632 8.225L12.5909 0.681353Z"
+                    fill="#FFD300"
+                  />
+                </svg>
+              </div>
+
+              <div class="rev-grid__body">
+                <p class="rev-grid__text">
+                  Отличная стоматология, хорошие врачи и стильный, уютный
+                  дизайн. При оплате процедур в клинике, есть возможность
+                  получить бесплатный массаж, что тоже очень порадовало!
+                  получить бесплатный массаж, что тоже очень порадовало!
+                  получить бесплатный массаж, что тоже очень порадовало!
+                </p>
+              </div>
+              <button
+                class="rev-grid__read-more"
+                data-popup-target="#review-popup-image"
+              >
+                Читать полностью
+              </button>
+
+              <div class="rev-grid__footer">
+                <p class="rev-grid__footer-label">Отзыв о враче:</p>
+                <a href="#" class="rev-grid__doctor-link"
+                  >Агапова Марина Сергеевна</a
+                >
+                <p class="rev-grid__date">16 февраля 2025</p>
+              </div>
+            </div>
+
+            <div class="rev-grid__card">
+              <div class="rev-grid__header">
+                <div class="rev-grid__author">
+                  <div
+                    class="rev-grid__author-avatar"
+                    style="background-image: url('./images/about.png')"
+                  ></div>
+                  <div class="rev-grid__author-info">
+                    <p class="rev-grid__author-name">Иван Фёдоров</p>
+                    <p class="rev-grid__author-specialty">Направление</p>
+                  </div>
+                </div>
+                <div class="rev-grid__source">
+                  <img
+                    class="rev-grid__source-logo"
+                    src="./images/y-1.svg"
+                    alt="Логотип источника отзыва"
+                  />
+                </div>
+              </div>
+
+              <div class="rev-grid__rating">
+                <svg
+                  class="rev-grid__star"
+                  width="28"
+                  height="26"
+                  viewBox="0 0 28 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5909 0.681353C12.8957 -0.228364 14.1824 -0.228366 14.4872 0.681351L17.0149 8.225C17.1515 8.63258 17.5333 8.90729 17.9631 8.90729H26.0758C27.052 8.90729 27.4498 10.1626 26.6518 10.7248L20.1419 15.3111C19.7806 15.5657 19.6293 16.0273 19.7697 16.4463L22.2686 23.9042C22.5755 24.8201 21.5342 25.5958 20.7445 25.0394L14.115 20.3688C13.7696 20.1254 13.3085 20.1254 12.9631 20.3688L6.33364 25.0394C5.54396 25.5958 4.5026 24.8202 4.80951 23.9042L7.30845 16.4463C7.44887 16.0273 7.29752 15.5657 6.9362 15.3111L0.426362 10.7248C-0.371638 10.1626 0.0261477 8.90729 1.00231 8.90729H9.11501C9.54486 8.90729 9.92663 8.63259 10.0632 8.225L12.5909 0.681353Z"
+                    fill="#FFD300"
+                  />
+                </svg>
+                <svg
+                  class="rev-grid__star"
+                  width="28"
+                  height="26"
+                  viewBox="0 0 28 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5909 0.681353C12.8957 -0.228364 14.1824 -0.228366 14.4872 0.681351L17.0149 8.225C17.1515 8.63258 17.5333 8.90729 17.9631 8.90729H26.0758C27.052 8.90729 27.4498 10.1626 26.6518 10.7248L20.1419 15.3111C19.7806 15.5657 19.6293 16.0273 19.7697 16.4463L22.2686 23.9042C22.5755 24.8201 21.5342 25.5958 20.7445 25.0394L14.115 20.3688C13.7696 20.1254 13.3085 20.1254 12.9631 20.3688L6.33364 25.0394C5.54396 25.5958 4.5026 24.8202 4.80951 23.9042L7.30845 16.4463C7.44887 16.0273 7.29752 15.5657 6.9362 15.3111L0.426362 10.7248C-0.371638 10.1626 0.0261477 8.90729 1.00231 8.90729H9.11501C9.54486 8.90729 9.92663 8.63259 10.0632 8.225L12.5909 0.681353Z"
+                    fill="#FFD300"
+                  />
+                </svg>
+                <svg
+                  class="rev-grid__star"
+                  width="28"
+                  height="26"
+                  viewBox="0 0 28 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5909 0.681353C12.8957 -0.228364 14.1824 -0.228366 14.4872 0.681351L17.0149 8.225C17.1515 8.63258 17.5333 8.90729 17.9631 8.90729H26.0758C27.052 8.90729 27.4498 10.1626 26.6518 10.7248L20.1419 15.3111C19.7806 15.5657 19.6293 16.0273 19.7697 16.4463L22.2686 23.9042C22.5755 24.8201 21.5342 25.5958 20.7445 25.0394L14.115 20.3688C13.7696 20.1254 13.3085 20.1254 12.9631 20.3688L6.33364 25.0394C5.54396 25.5958 4.5026 24.8202 4.80951 23.9042L7.30845 16.4463C7.44887 16.0273 7.29752 15.5657 6.9362 15.3111L0.426362 10.7248C-0.371638 10.1626 0.0261477 8.90729 1.00231 8.90729H9.11501C9.54486 8.90729 9.92663 8.63259 10.0632 8.225L12.5909 0.681353Z"
+                    fill="#FFD300"
+                  />
+                </svg>
+                <svg
+                  class="rev-grid__star"
+                  width="28"
+                  height="26"
+                  viewBox="0 0 28 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5909 0.681353C12.8957 -0.228364 14.1824 -0.228366 14.4872 0.681351L17.0149 8.225C17.1515 8.63258 17.5333 8.90729 17.9631 8.90729H26.0758C27.052 8.90729 27.4498 10.1626 26.6518 10.7248L20.1419 15.3111C19.7806 15.5657 19.6293 16.0273 19.7697 16.4463L22.2686 23.9042C22.5755 24.8201 21.5342 25.5958 20.7445 25.0394L14.115 20.3688C13.7696 20.1254 13.3085 20.1254 12.9631 20.3688L6.33364 25.0394C5.54396 25.5958 4.5026 24.8202 4.80951 23.9042L7.30845 16.4463C7.44887 16.0273 7.29752 15.5657 6.9362 15.3111L0.426362 10.7248C-0.371638 10.1626 0.0261477 8.90729 1.00231 8.90729H9.11501C9.54486 8.90729 9.92663 8.63259 10.0632 8.225L12.5909 0.681353Z"
+                    fill="#FFD300"
+                  />
+                </svg>
+                <svg
+                  class="rev-grid__star"
+                  width="28"
+                  height="26"
+                  viewBox="0 0 28 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5909 0.681353C12.8957 -0.228364 14.1824 -0.228366 14.4872 0.681351L17.0149 8.225C17.1515 8.63258 17.5333 8.90729 17.9631 8.90729H26.0758C27.052 8.90729 27.4498 10.1626 26.6518 10.7248L20.1419 15.3111C19.7806 15.5657 19.6293 16.0273 19.7697 16.4463L22.2686 23.9042C22.5755 24.8201 21.5342 25.5958 20.7445 25.0394L14.115 20.3688C13.7696 20.1254 13.3085 20.1254 12.9631 20.3688L6.33364 25.0394C5.54396 25.5958 4.5026 24.8202 4.80951 23.9042L7.30845 16.4463C7.44887 16.0273 7.29752 15.5657 6.9362 15.3111L0.426362 10.7248C-0.371638 10.1626 0.0261477 8.90729 1.00231 8.90729H9.11501C9.54486 8.90729 9.92663 8.63259 10.0632 8.225L12.5909 0.681353Z"
+                    fill="#FFD300"
+                  />
+                </svg>
+              </div>
+
+              <div class="rev-grid__body">
+                <p class="rev-grid__text">
+                  Отличная стоматология, хорошие врачи и стильный, уютный
+                  дизайн. При оплате процедур в клинике, есть возможность
+                  получить бесплатный массаж, что тоже очень порадовало!
+                  получить бесплатный массаж, что тоже очень порадовало!
+                  получить бесплатный массаж, что тоже очень порадовало!
+                </p>
+              </div>
+              <button
+                class="rev-grid__read-more"
+                data-popup-target="#review-popup-video"
+              >
+                Читать полностью
+              </button>
+
+              <div class="rev-grid__footer">
+                <p class="rev-grid__footer-label">Отзыв о враче:</p>
+                <a href="#" class="rev-grid__doctor-link"
+                  >Агапова Марина Сергеевна</a
+                >
+                <p class="rev-grid__date">16 февраля 2025</p>
+              </div>
+            </div>
+          </div>
+          <nav class="pagination">
+            <ul class="pagination__list">
+              <li class="pagination__item">
+                <a href="#" class="pagination__link pagination__link--active"
+                  >1</a
+                >
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">2</a>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">3</a>
+              </li>
+              <li class="pagination__item">
+                <span class="pagination__separator">...</span>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">7</a>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">8</a>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link pagination__arrow">
+                  <img src="./images/plag.svg" alt="Следующая страница" />
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <button class="add-rev add-rev-mob">Отправить отзыв</button>
+        </div>
+      </section>
+      <section class="our-preim our-preim45">
+        <div class="wrapper">
+          <div class="our-preim__container">
+            <h2 class="our-preim__title">Наши преимущества</h2>
+            <div class="our-preim__slider-area">
+              <div class="swiper-preim our-preim__slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide our-preim__slide">
+                    <div class="our-preim__slide-header">
+                      <img
+                        class="our-preim__slide-icon"
+                        src="./images/preim-1.svg"
+                        alt="Иконка преимущества"
+                      />
+                      <h3 class="our-preim__slide-title">40 лет доверия</h3>
+                    </div>
+                    <p class="our-preim__slide-text">
+                      Нам доверяют здоровье с 1985 года — десятки тысяч
+                      довольных пациентов.
+                    </p>
+                  </div>
+                  <div class="swiper-slide our-preim__slide">
+                    <div class="our-preim__slide-header">
+                      <img
+                        class="our-preim__slide-icon"
+                        src="./images/preim-1.svg"
+                        alt="Иконка преимущества"
+                      />
+                      <h3 class="our-preim__slide-title">40 лет доверия</h3>
+                    </div>
+                    <p class="our-preim__slide-text">
+                      Нам доверяют здоровье с 1985 года — десятки тысяч
+                      довольных пациентов.
+                    </p>
+                  </div>
+                  <div class="swiper-slide our-preim__slide">
+                    <div class="our-preim__slide-header">
+                      <img
+                        class="our-preim__slide-icon"
+                        src="./images/preim-1.svg"
+                        alt="Иконка преимущества"
+                      />
+                      <h3 class="our-preim__slide-title">40 лет доверия</h3>
+                    </div>
+                    <p class="our-preim__slide-text">
+                      Нам доверяют здоровье с 1985 года — десятки тысяч
+                      довольных пациентов.
+                    </p>
+                  </div>
+                  <div class="swiper-slide our-preim__slide">
+                    <div class="our-preim__slide-header">
+                      <img
+                        class="our-preim__slide-icon"
+                        src="./images/preim-1.svg"
+                        alt="Иконка преимущества"
+                      />
+                      <h3 class="our-preim__slide-title">40 лет доверия</h3>
+                    </div>
+                    <p class="our-preim__slide-text">
+                      Нам доверяют здоровье с 1985 года — десятки тысяч
+                      довольных пациентов.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="our-preim__navigation">
+                <div class="our-preim__nav-button our-preim__nav-button--prev">
+                  <svg
+                    class="our-preim__nav-icon"
+                    width="12"
+                    height="20"
+                    viewBox="0 0 12 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.9945 -7.43866e-05C10.9033 -7.43866e-05 10.7992 0.0227127 10.682 0.068285C10.5648 0.113859 10.4606 0.182219 10.3695 0.273363L0.369467 9.45305C0.27832 9.5442 0.209961 9.65162 0.164389 9.77532C0.118815 9.89901 0.0960293 10.0064 0.0960293 10.0976C0.0960293 10.1887 0.118815 10.2929 0.164389 10.4101C0.209961 10.5273 0.27832 10.6314 0.369467 10.7226L10.1937 19.7265C10.376 19.9088 10.5876 19.9836 10.8285 19.9511C11.0693 19.9185 11.2809 19.8111 11.4632 19.6288C11.6455 19.4465 11.7204 19.235 11.6878 18.9941C11.6553 18.7532 11.5479 18.5416 11.3656 18.3593L2.28353 9.99993L11.5413 1.44524C11.7236 1.27597 11.8213 1.06763 11.8343 0.820238C11.8473 0.572844 11.7822 0.358 11.639 0.175707C11.5479 0.136644 11.4535 0.0975819 11.3558 0.0585194C11.2581 0.0194569 11.1377 -7.43866e-05 10.9945 -7.43866e-05Z"
+                      fill="#19815A"
+                    />
+                  </svg>
+                </div>
+                <div class="our-preim__nav-button our-preim__nav-button--next">
+                  <svg
+                    class="our-preim__nav-icon"
+                    width="12"
+                    height="20"
+                    viewBox="0 0 12 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.00553 -7.43866e-05C1.09668 -7.43866e-05 1.20085 0.0227127 1.31803 0.068285C1.43522 0.113859 1.53939 0.182219 1.63053 0.273363L11.6305 9.45305C11.7217 9.5442 11.79 9.65162 11.8356 9.77532C11.8812 9.89901 11.904 10.0064 11.904 10.0976C11.904 10.1887 11.8812 10.2929 11.8356 10.4101C11.79 10.5273 11.7217 10.6314 11.6305 10.7226L1.80632 19.7265C1.62402 19.9088 1.41243 19.9836 1.17155 19.9511C0.930664 19.9185 0.719076 19.8111 0.536784 19.6288C0.354492 19.4465 0.279622 19.235 0.312174 18.9941C0.344727 18.7532 0.452148 18.5416 0.63444 18.3593L9.71647 9.99993L0.458659 1.44524C0.276367 1.27597 0.178711 1.06763 0.16569 0.820238C0.152669 0.572844 0.217773 0.358 0.361003 0.175707C0.452148 0.136644 0.546549 0.0975819 0.644206 0.0585194C0.741862 0.0194569 0.862305 -7.43866e-05 1.00553 -7.43866e-05Z"
+                      fill="#19815A"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="lichenion">
+        <div class="wrapper">
+          <h2>Лицензии</h2>
+          <div class="lichenion__cont">
+            <div>
+              <img src="./images/li.svg" alt="" />
+            </div>
+            <div class="lichenion__right">
+              <p>
+                Мы осуществляем деятельность на основании медицинских лицензий
+                в соответствии с рекомендациями Минздрава
+              </p>
+              <div class="li-links">
+                <a href=""> Посмотреть лизенции </a>
+                <a href="">Правовая информация</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="rat-usl rat-usl4343">
+        <div class="wrapper">
+          <div class="rat-usl__container">
+            <h2 class="rat-usl__title">Рейтинги клиники</h2>
+            <div class="rat-usl__list">
+              <div class="rating-item__mob">
+                <div class="rating-item__mob-0">
+                  <div class="rating-item__mob-1">
+                    <p>Хорошее место</p>
+                    <p>Выбор пользователей Яндекса — 2025</p>
+                  </div>
+                  <div class="rating-item__mob-2">
+                    <p>4,9</p>
+                    <img src="./images/black-stars.svg" alt="" />
+                  </div>
+                </div>
+                <div>
+                  <img src="./images/yand-2.svg" alt="" />
+                </div>
+              </div>
+              <div class="rat-usl__item">
+                <img
+                  class="rat-usl__logo"
+                  src="./images/y.svg"
+                  alt="Логотип Яндекс"
+                />
+                <div class="rat-usl__content">
+                  <div class="rat-usl__rating">
+                    <p class="rat-usl__score">5,0</p>
+                    <img
+                      class="rat-usl__stars"
+                      src="./images/s-2.svg"
+                      alt="Рейтинг 5 из 5"
+                    />
+                  </div>
+                  <a href="" class="rat-usl__reviews-link">1440 отзывов</a>
+                </div>
+              </div>
+              <div class="rat-usl__item">
+                <img
+                  class="rat-usl__logo"
+                  src="./images/y.svg"
+                  alt="Логотип Яндекс"
+                />
+                <div class="rat-usl__content">
+                  <div class="rat-usl__rating">
+                    <p class="rat-usl__score">5,0</p>
+                    <img
+                      class="rat-usl__stars"
+                      src="./images/s-2.svg"
+                      alt="Рейтинг 5 из 5"
+                    />
+                  </div>
+                  <a href="" class="rat-usl__reviews-link">1440 отзывов</a>
+                </div>
+              </div>
+              <div class="rat-usl__item">
+                <img
+                  class="rat-usl__logo"
+                  src="./images/y.svg"
+                  alt="Логотип Яндекс"
+                />
+                <div class="rat-usl__content">
+                  <div class="rat-usl__rating">
+                    <p class="rat-usl__score">5,0</p>
+                    <img
+                      class="rat-usl__stars"
+                      src="./images/s-2.svg"
+                      alt="Рейтинг 5 из 5"
+                    />
+                  </div>
+                  <a href="" class="rat-usl__reviews-link">1440 отзывов</a>
+                </div>
+              </div>
+              <div class="rat-usl__item">
+                <img
+                  class="rat-usl__logo"
+                  src="./images/y.svg"
+                  alt="Логотип Яндекс"
+                />
+                <div class="rat-usl__content">
+                  <div class="rat-usl__rating">
+                    <p class="rat-usl__score">5,0</p>
+                    <img
+                      class="rat-usl__stars"
+                      src="./images/s-2.svg"
+                      alt="Рейтинг 5 из 5"
+                    />
+                  </div>
+                  <a href="" class="rat-usl__reviews-link">1440 отзывов</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contsct-rev">
+        <div class="wrapper">
+          <div class="contsct-rev__container">
+            <div class="contsct-rev__content">
+              <div>
+                <h2 class="contsct-rev__title">
+                  Присоединяйтесь <br />
+                  к нашему сообществу!
+                </h2>
+                <p class="contsct-rev__subtitle">
+                  Читайте отзывы, полезные статьи и будьте в курсе акций
+                </p>
+              </div>
+              <div class="contsct-rev__socials">
+                <a href="#" class="contsct-rev__social-item">
+                  <img
+                    class="contsct-rev__social-icon"
+                    src="./images/b-1.svg"
+                    alt="Иконка социальной сети"
+                  />
+                  <div class="contsct-rev__social-info">
+                    <p class="contsct-rev__social-name">@никнейм</p>
+                    <p class="contsct-rev__social-subs">1.9К подписчиков</p>
+                  </div>
+                </a>
+                <a href="#" class="contsct-rev__social-item">
+                  <img
+                    class="contsct-rev__social-icon"
+                    src="./images/b-2.svg"
+                    alt="Иконка социальной сети"
+                  />
+                  <div class="contsct-rev__social-info">
+                    <p class="contsct-rev__social-name">@никнейм</p>
+                    <p class="contsct-rev__social-subs">1.9К подписчиков</p>
+                  </div>
+                </a>
+                <a href="#" class="contsct-rev__social-item">
+                  <img
+                    class="contsct-rev__social-icon"
+                    src="./images/b-3.svg"
+                    alt="Иконка социальной сети"
+                  />
+                  <div class="contsct-rev__social-info">
+                    <p class="contsct-rev__social-name">@никнейм</p>
+                    <p class="contsct-rev__social-subs">1.9К подписчиков</p>
+                  </div>
+                </a>
+                <a href="#" class="contsct-rev__social-item">
+                  <img
+                    class="contsct-rev__social-icon"
+                    src="./images/b-4.svg"
+                    alt="Иконка социальной сети"
+                  />
+                  <div class="contsct-rev__social-info">
+                    <p class="contsct-rev__social-name">@никнейм</p>
+                    <p class="contsct-rev__social-subs">1.9К подписчиков</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="contsct-rev__media">
+              <img
+                class="contsct-rev__image"
+                src="./images/reer.png"
+                alt="Изображение сообщества"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__container">
+          <div class="footer__top">
+            <a href="/" class="footer__logo">
+              <img src="./images/footer-logo.svg" alt="Логотип Вешняки Мед" />
+            </a>
+            <div class="footer__top-block">
+              <div class="footer-mob-000">
+                <div class="footer__contact-item contacts__item">
+                  <img
+                    class="contacts__icon"
+                    src="./images/footer-tel.svg"
+                    alt=""
+                  />
+                  <div class="contacts__details">
+                    <a href="tel:+74953701300" class="contacts__link"
+                      >+7 495 370-13-00</a
+                    >
+                    <p class="contacts__description">
+                      Звоните по любым вопросам
+                    </p>
+                  </div>
+                </div>
+                <ul class="footer__socials socials__list">
+                  <li class="socials__item">
+                    <a
+                      href="#"
+                      class="socials__link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Наша страница Вконтакте"
+                    >
+                      <img
+                        src="./images/footer-vk.svg"
+                        alt="Вконтакте"
+                        class="socials__icon"
+                      />
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a
+                      href="#"
+                      class="socials__link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Наш канал в Телеграм"
+                    >
+                      <img
+                        src="./images/footer-tg.svg"
+                        alt="Телеграм"
+                        class="socials__icon"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__contact-item contacts__item">
+                <img
+                  class="contacts__icon"
+                  src="./images/footer-email.svg"
+                  alt=""
+                />
+                <div class="contacts__details">
+                  <a href="mailto:zapis@veshnyakimed.ru" class="contacts__link"
+                    >zapis@veshnyakimed.ru</a
+                  >
+                  <p class="contacts__description">Пишите по любым вопросам</p>
+                </div>
+              </div>
+              <div class="footer__cta">
+                <button type="button" class="footer__cta-btn btn">
+                  Записаться на приём
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer__center">
+            <div class="footer__column">
+              <h3 class="footer__column-title">Навигация</h3>
+              <nav class="footer-nav">
+                <ul class="footer-nav__list">
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link">О клинике</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link">Услуги</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link">Врачи</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link">Акции</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link">Отзывы</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <ul class="footer__socials socials__list">
+                <li class="socials__item">
+                  <a
+                    href="#"
+                    class="socials__link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Наша страница Вконтакте"
+                  >
+                    <img
+                      src="./images/footer-vk.svg"
+                      alt="Вконтакте"
+                      class="socials__icon"
+                    />
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a
+                    href="#"
+                    class="socials__link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Наш канал в Телеграм"
+                  >
+                    <img
+                      src="./images/footer-tg.svg"
+                      alt="Телеграм"
+                      class="socials__icon"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <h3 class="footer__column-title">Направления</h3>
+              <nav class="footer-nav">
+                <ul class="footer-nav__list">
+                  <li class="footer-nav__item footer-nav__item--has-submenu">
+                    <a
+                      href="#"
+                      class="footer-nav__link footer-nav__link--toggle js-nav-toggle"
+                      aria-expanded="false"
+                      aria-controls="submenu-stomatology"
+                    >
+                      Стоматология
+                      <img
+                        src="./images/arr-down.svg"
+                        alt=""
+                        class="footer-nav__toggle-icon"
+                      />
+                    </a>
+                    <ul class="footer-nav__sublist" id="submenu-stomatology">
+                      <li class="footer-nav__sublist-item">
+                        <a href="#" class="footer-nav__sublist-link">Терапия</a>
+                      </li>
+                      <li class="footer-nav__sublist-item">
+                        <a href="#" class="footer-nav__sublist-link"
+                          >Хирургия</a
+                        >
+                      </li>
+                      <li class="footer-nav__sublist-item">
+                        <a href="#" class="footer-nav__sublist-link"
+                          >Ортопедия</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link"
+                      >Детская стоматология</a
+                    >
+                  </li>
+
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link"
+                      >Лечение под наркозом</a
+                    >
+                  </li>
+
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link">Дерматология</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__column">
+              <h3 class="footer__column-title op">Навигация</h3>
+              <nav class="footer-nav footer-nav--no-title">
+                <ul class="footer-nav__list">
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link"
+                      >Врачебная косметология</a
+                    >
+                  </li>
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link"
+                      >Ультразвуковая диагностика</a
+                    >
+                  </li>
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link">Массаж</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link">Мануальная терапия</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link">Лаборатория</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link">Процедурный кабинет</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__column">
+              <div class="footer__info-block footer__info-block-1">
+                <h3 class="footer__column-title">Адрес клиники</h3>
+                <address class="footer__address">
+                  Москва, ул. Вешняковская, д. 11А
+                </address>
+                <div class="footer__schedule">
+                  <p>
+                    пн–пт: 8:00–21:00 <br />
+                    сб–вс: 9:00–21:00
+                  </p>
+                </div>
+              </div>
+              <div class="footer__info-block">
+                <h3 class="footer__column-title">Информация об организации</h3>
+                <p class="footer__legal-name">АО «Стоматология № 2»</p>
+                <p class="footer__legal-address">
+                  Юридический адрес: Москва, ул. Вешняковская, д. 11А
+                </p>
+              </div>
+            </div>
+            <div class="mobile-accordion js-mobile-accordion-item">
+              <h3 class="mobile-accordion__header">
+                <button
+                  type="button"
+                  class="mobile-accordion__toggle js-mobile-accordion-toggle"
+                  aria-expanded="true"
+                >
+                  Навигация
+                  <img
+                    class="mobile-accordion__icon"
+                    src="./images/arr-down.svg"
+                    alt=""
+                  />
+                </button>
+              </h3>
+              <div class="mobile-accordion__panel js-mobile-accordion-panel">
+                <nav class="footer-nav">
+                  <ul class="footer-nav__list">
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link">О клинике</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link">Услуги</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link">Врачи</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link">Акции</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link">Отзывы</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link">Контакты</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="mobile-accordion js-mobile-accordion-item">
+              <h3 class="mobile-accordion__header">
+                <button
+                  type="button"
+                  class="mobile-accordion__toggle js-mobile-accordion-toggle"
+                  aria-expanded="true"
+                >
+                  Направления
+                  <img
+                    class="mobile-accordion__icon"
+                    src="./images/arr-down.svg"
+                    alt=""
+                  />
+                </button>
+              </h3>
+              <div class="mobile-accordion__panel js-mobile-accordion-panel">
+                <nav class="footer-nav">
+                  <ul class="footer-nav__list">
+                    <li class="footer-nav__item footer-nav__item--has-submenu">
+                      <a
+                        href="#"
+                        class="footer-nav__link footer-nav__link--toggle js-nav-toggle"
+                        aria-expanded="false"
+                        aria-controls="submenu-stomatology"
+                      >
+                        Стоматология
+                        <img
+                          src="./images/arr-down.svg"
+                          alt=""
+                          class="footer-nav__toggle-icon"
+                        />
+                      </a>
+                      <ul class="footer-nav__sublist" id="submenu-stomatology">
+                        <li class="footer-nav__sublist-item">
+                          <a href="#" class="footer-nav__sublist-link"
+                            >Терапия</a
+                          >
+                        </li>
+                        <li class="footer-nav__sublist-item">
+                          <a href="#" class="footer-nav__sublist-link"
+                            >Хирургия</a
+                          >
+                        </li>
+                        <li class="footer-nav__sublist-item">
+                          <a href="#" class="footer-nav__sublist-link"
+                            >Ортопедия</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link"
+                        >Детская стоматология</a
+                      >
+                    </li>
+
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link"
+                        >Лечение под наркозом</a
+                      >
+                    </li>
+
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link">Дерматология</a>
+                    </li>
+                  </ul>
+                </nav>
+                <nav class="footer-nav footer-nav--no-title">
+                  <ul class="footer-nav__list">
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link"
+                        >Врачебная косметология</a
+                      >
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link"
+                        >Ультразвуковая диагностика</a
+                      >
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link">Массаж</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link"
+                        >Мануальная терапия</a
+                      >
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link">Лаборатория</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link"
+                        >Процедурный кабинет</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="mobile-accordion js-mobile-accordion-item">
+              <h3 class="mobile-accordion__header">
+                <button
+                  type="button"
+                  class="mobile-accordion__toggle js-mobile-accordion-toggle"
+                  aria-expanded="true"
+                >
+                  Адрес клиники
+                  <img
+                    class="mobile-accordion__icon"
+                    src="./images/arr-down.svg"
+                    alt=""
+                  />
+                </button>
+              </h3>
+              <div class="mobile-accordion__panel js-mobile-accordion-panel">
+                <address class="footer__address">
+                  Москва, ул. Вешняковская, д. 11А
+                </address>
+                <div class="footer__schedule">
+                  <p>
+                    пн–пт: 8:00–21:00 <br />
+                    сб–вс: 9:00–21:00
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="mobile-accordion js-mobile-accordion-item">
+              <h3 class="mobile-accordion__header">
+                <button
+                  type="button"
+                  class="mobile-accordion__toggle js-mobile-accordion-toggle"
+                  aria-expanded="true"
+                >
+                  Информация об организации
+                  <img
+                    class="mobile-accordion__icon"
+                    src="./images/arr-down.svg"
+                    alt=""
+                  />
+                </button>
+              </h3>
+              <div class="mobile-accordion__panel js-mobile-accordion-panel">
+                <div class="footer__info-block">
+                  <p class="footer__legal-name">АО «Стоматология № 2»</p>
+                  <p class="footer__legal-address">
+                    Юридический адрес: Москва, ул. Вешняковская, д. 11А
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer__bottom">
+            <p class="footer__copyright">© 2025 Медицинский центр «Вешняки»</p>
+            <div class="footer__bottom-right">
+              <nav class="footer-nav">
+                <ul class="footer-nav__list footer-nav__list--horizontal">
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link"
+                      >Политика конфиденциальности</a
+                    >
+                  </li>
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link"
+                      >Пользовательское соглашение</a
+                    >
+                  </li>
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link"
+                      >Юридическая информация</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <div class="footer__partner-logo">
+                <img src="./images/footer-bottom.png" alt="Логотип партнера" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="review-popup-overlay is-hidden">
+      <div class="review-popup">
+        <button class="review-popup__close-btn" aria-label="Закрыть окно">
+          <img src="./images/clo.svg" alt="" />
+        </button>
+        <h2 class="review-popup__title">Оставить отзыв</h2>
+
+        <form action="#" class="review-popup__form">
+          <div class="review-popup__field">
+            <textarea
+              class="review-popup__textarea"
+              placeholder="Ваш комментарий*"
+              required
+            ></textarea>
+
+            <input
+              type="file"
+              id="review-file-input"
+              class="review-popup__attach-input"
+              accept="image/*, video/*"
+            />
+
+            <label for="review-file-input" class="review-popup__attach-label">
+              <span class="review-popup__attach-text"
+                >Прикрепите свое фото или видеоотзыв</span
+              >
+              <span class="review-popup__attach-icon"></span>
+            </label>
+          </div>
+
+          <div class="review-popup__group">
+            <div class="review-popup__field">
+              <input
+                type="text"
+                class="review-popup__input"
+                placeholder="Ваше Имя*"
+                required
+              />
+            </div>
+            <div class="review-popup__field">
+              <input
+                type="tel"
+                class="review-popup__input"
+                placeholder="Ваш телефон*"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="review-popup__field filter-dropdown2">
+            <div class="filter-dropdown__selected">
+              <span class="filter-dropdown__text">Выбрать услугу</span>
+              <svg
+                width="16"
+                height="9"
+                viewBox="0 0 16 9"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="filter-dropdown__arrow"
+              >
+                <path
+                  d="M15.2969 0.630111C15.2969 0.699985 15.2794 0.782336 15.2445 0.877165C15.2095 0.971994 15.1571 1.05434 15.0873 1.12422L8.04996 8.79038C7.98008 8.86025 7.89773 8.91266 7.8029 8.94759C7.70808 8.98253 7.62572 9 7.55585 9C7.48598 9 7.40612 8.98253 7.31628 8.94759C7.22644 8.91266 7.14659 8.86025 7.07672 8.79038L0.174176 1.25898C0.0344286 1.11923 -0.0229677 0.957021 0.00198721 0.772355C0.0269422 0.587688 0.109293 0.425481 0.249041 0.285733C0.388789 0.145986 0.550996 0.0885892 0.735663 0.113544C0.920329 0.138499 1.08254 0.22085 1.22228 0.360598L7.63071 7.32303L14.1889 0.225841C14.3186 0.0860931 14.4784 0.0112282 14.668 0.00124624C14.8577 -0.00873574 15.0224 0.0411741 15.1621 0.150976C15.1921 0.22085 15.222 0.293219 15.252 0.368084C15.2819 0.442949 15.2969 0.530291 15.2969 0.630111Z"
+                  fill="#333333"
+                ></path>
+              </svg>
+            </div>
+            <div
+              class="filter-dropdown__options filter-dropdown__options--hidden"
+            >
+              <div class="filter-dropdown__option">Услуга 1</div>
+              <div class="filter-dropdown__option">Услуга 2</div>
+              <div class="filter-dropdown__option">Услуга 3</div>
+            </div>
+          </div>
+
+          <div class="review-popup__field filter-dropdown2">
+            <div class="filter-dropdown__selected">
+              <span class="filter-dropdown__text">ФИО врача</span>
+              <svg
+                class="filter-dropdown__arrow"
+                width="16"
+                height="9"
+                viewBox="0 0 16 9"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.2969 0.630111C15.2969 0.699985 15.2794 0.782336 15.2445 0.877165C15.2095 0.971994 15.1571 1.05434 15.0873 1.12422L8.04996 8.79038C7.98008 8.86025 7.89773 8.91266 7.8029 8.94759C7.70808 8.98253 7.62572 9 7.55585 9C7.48598 9 7.40612 8.98253 7.31628 8.94759C7.22644 8.91266 7.14659 8.86025 7.07672 8.79038L0.174176 1.25898C0.0344286 1.11923 -0.0229677 0.957021 0.00198721 0.772355C0.0269422 0.587688 0.109293 0.425481 0.249041 0.285733C0.388789 0.145986 0.550996 0.0885892 0.735663 0.113544C0.920329 0.138499 1.08254 0.22085 1.22228 0.360598L7.63071 7.32303L14.1889 0.225841C14.3186 0.0860931 14.4784 0.0112282 14.668 0.00124624C14.8577 -0.00873574 15.0224 0.0411741 15.1621 0.150976C15.1921 0.22085 15.222 0.293219 15.252 0.368084C15.2819 0.442949 15.2969 0.530291 15.2969 0.630111Z"
+                  fill="#333333"
+                ></path>
+              </svg>
+            </div>
+            <div
+              class="filter-dropdown__options filter-dropdown__options--hidden"
+            >
+              <div class="filter-dropdown__option">Врач 1</div>
+              <div class="filter-dropdown__option">Врач 2</div>
+              <div class="filter-dropdown__option">Врач 3</div>
+            </div>
+          </div>
+
+          <div class="review-popup__rating">
+            <span class="review-popup__rating-label">Поставьте оценку*</span>
+            <div class="review-popup__stars">
+              <input
+                type="radio"
+                id="star5-rev"
+                name="rating-rev"
+                value="5"
+                required
+              /><label for="star5-rev"></label>
+              <input
+                type="radio"
+                id="star4-rev"
+                name="rating-rev"
+                value="4"
+              /><label for="star4-rev"></label>
+              <input
+                type="radio"
+                id="star3-rev"
+                name="rating-rev"
+                value="3"
+              /><label for="star3-rev"></label>
+              <input
+                type="radio"
+                id="star2-rev"
+                name="rating-rev"
+                value="2"
+              /><label for="star2-rev"></label>
+              <input
+                type="radio"
+                id="star1-rev"
+                name="rating-rev"
+                value="1"
+              /><label for="star1-rev"></label>
+            </div>
+          </div>
+
+          <label class="review-popup__agreement">
+            <input
+              type="checkbox"
+              class="review-popup__checkbox-real"
+              required
+            />
+            <span class="review-popup__checkbox-fake"></span>
+            <span class="review-popup__agreement-text"
+              >Я согласен с политикой <a href="#">обработки данных</a></span
+            >
+          </label>
+
+          <button type="submit" class="review-popup__submit">
+            Отправить отзыв
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="full-review-overlay is-hidden">
+      <div class="full-review-modal is-hidden" id="review-popup-text">
+        <button class="full-review-modal__close" aria-label="Закрыть отзыв">
+          <img
+            src="./images/clo.svg"
+            alt=""
+            class="full-review-modal__close-icon"
+          />
+        </button>
+        <div class="full-review-modal__content">
+          <h6>Отзыв</h6>
+          <div class="full-review-modal__top">
+            <div class="full-review-modal__header">
+              <div
+                class="full-review-modal__avatar"
+                style="background-image: url('./images/bg-hero.png')"
+              ></div>
+              <div class="full-review-modal__author">
+                <p class="full-review-modal__name">Иван Фёдоров</p>
+                <p class="full-review-modal__service">Направление</p>
+              </div>
+            </div>
+            <div class="full-review-modal__meta">
+              <div class="full-review-modal__stars">
+                <svg
+                  width="28"
+                  height="26"
+                  viewBox="0 0 28 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5909 0.681353C12.8957 -0.228364 14.1824 -0.228366 14.4872 0.681351L17.0149 8.225C17.1515 8.63258 17.5333 8.90729 17.9631 8.90729H26.0758C27.052 8.90729 27.4498 10.1626 26.6518 10.7248L20.1419 15.3111C19.7806 15.5657 19.6293 16.0273 19.7697 16.4463L22.2686 23.9042C22.5755 24.8201 21.5342 25.5958 20.7445 25.0394L14.115 20.3688C13.7696 20.1254 13.3085 20.1254 12.9631 20.3688L6.33364 25.0394C5.54396 25.5958 4.5026 24.8202 4.80951 23.9042L7.30845 16.4463C7.44887 16.0273 7.29752 15.5657 6.9362 15.3111L0.426362 10.7248C-0.371638 10.1626 0.0261477 8.90729 1.00231 8.90729H9.11501C9.54486 8.90729 9.92663 8.63259 10.0632 8.225L12.5909 0.681353Z"
+                    fill="#FFD300"
+                  />
+                </svg>
+                <svg
+                  width="28"
+                  height="26"
+                  viewBox="0 0 28 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5909 0.681353C12.8957 -0.228364 14.1824 -0.228366 14.4872 0.681351L17.0149 8.225C17.1515 8.63258 17.5333 8.90729 17.9631 8.90729H26.0758C27.052 8.90729 27.4498 10.1626 26.6518 10.7248L20.1419 15.3111C19.7806 15.5657 19.6293 16.0273 19.7697 16.4463L22.2686 23.9042C22.5755 24.8201 21.5342 25.5958 20.7445 25.0394L14.115 20.3688C13.7696 20.1254 13.3085 20.1254 12.9631 20.3688L6.33364 25.0394C5.54396 25.5958 4.5026 24.8202 4.80951 23.9042L7.30845 16.4463C7.44887 16.0273 7.29752 15.5657 6.9362 15.3111L0.426362 10.7248C-0.371638 10.1626 0.0261477 8.90729 1.00231 8.90729H9.11501C9.54486 8.90729 9.92663 8.63259 10.0632 8.225L12.5909 0.681353Z"
+                    fill="#FFD300"
+                  />
+                </svg>
+                <svg
+                  width="28"
+                  height="26"
+                  viewBox="0 0 28 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5909 0.681353C12.8957 -0.228364 14.1824 -0.228366 14.4872 0.681351L17.0149 8.225C17.1515 8.63258 17.5333 8.90729 17.9631 8.90729H26.0758C27.052 8.90729 27.4498 10.1626 26.6518 10.7248L20.1419 15.3111C19.7806 15.5657 19.6293 16.0273 19.7697 16.4463L22.2686 23.9042C22.5755 24.8201 21.5342 25.5958 20.7445 25.0394L14.115 20.3688C13.7696 20.1254 13.3085 20.1254 12.9631 20.3688L6.33364 25.0394C5.54396 25.5958 4.5026 24.8202 4.80951 23.9042L7.30845 16.4463C7.44887 16.0273 7.29752 15.5657 6.9362 15.3111L0.426362 10.7248C-0.371638 10.1626 0.0261477 8.90729 1.00231 8.90729H9.11501C9.54486 8.90729 9.92663 8.63259 10.0632 8.225L12.5909 0.681353Z"
+                    fill="#FFD300"
+                  />
+                </svg>
+                <svg
+                  width="28"
+                  height="26"
+                  viewBox="0 0 28 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5909 0.681353C12.8957 -0.228364 14.1824 -0.228366 14.4872 0.681351L17.0149 8.225C17.1515 8.63258 17.5333 8.90729 17.9631 8.90729H26.0758C27.052 8.90729 27.4498 10.1626 26.6518 10.7248L20.1419 15.3111C19.7806 15.5657 19.6293 16.0273 19.7697 16.4463L22.2686 23.9042C22.5755 24.8201 21.5342 25.5958 20.7445 25.0394L14.115 20.3688C13.7696 20.1254 13.3085 20.1254 12.9631 20.3688L6.33364 25.0394C5.54396 25.5958 4.5026 24.8202 4.80951 23.9042L7.30845 16.4463C7.44887 16.0273 7.29752 15.5657 6.9362 15.3111L0.426362 10.7248C-0.371638 10.1626 0.0261477 8.90729 1.00231 8.90729H9.11501C9.54486 8.90729 9.92663 8.63259 10.0632 8.225L12.5909 0.681353Z"
+                    fill="#FFD300"
+                  />
+                </svg>
+                <svg
+                  width="28"
+                  height="26"
+                  viewBox="0 0 28 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5909 0.681353C12.8957 -0.228364 14.1824 -0.228366 14.4872 0.681351L17.0149 8.225C17.1515 8.63258 17.5333 8.90729 17.9631 8.90729H26.0758C27.052 8.90729 27.4498 10.1626 26.6518 10.7248L20.1419 15.3111C19.7806 15.5657 19.6293 16.0273 19.7697 16.4463L22.2686 23.9042C22.5755 24.8201 21.5342 25.5958 20.7445 25.0394L14.115 20.3688C13.7696 20.1254 13.3085 20.1254 12.9631 20.3688L6.33364 25.0394C5.54396 25.5958 4.5026 24.8202 4.80951 23.9042L7.30845 16.4463C7.44887 16.0273 7.29752 15.5657 6.9362 15.3111L0.426362 10.7248C-0.371638 10.1626 0.0261477 8.90729 1.00231 8.90729H9.11501C9.54486 8.90729 9.92663 8.63259 10.0632 8.225L12.5909 0.681353Z"
+                    fill="#FFD300"
+                  />
+                </svg>
+              </div>
+              <div class="full-review-modal__source">
+                <img
+                  src="./images/y-1.svg"
+                  alt=""
+                  class="full-review-modal__source-icon"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="full-review-modal__body">
+            <p class="full-review-modal__text">
+              Отличная стоматология, хорошие врачи и стильный, уютный дизайн.
+              При оплате процедур в клинике, есть возможность получить
+              бесплатный массаж, что тоже очень порадовало! Отличная
+              стоматология, хорошие врачи и стильный, уютный дизайн. При оплате
+              процедур в клинике, есть возможность получить бесплатный массаж,
+              что тоже очень порадовало! Отличная стоматология, хорошие врачи
+              и стильный, уютный дизайн. При оплате процедур в клинике,
+              есть возможность получить бесплатный массаж, что тоже очень
+              есть возможность получить бесплатный массаж, что тоже очень
+              есть возможность получить бесплатный массаж, что тоже очень
+              порадовало!
+            </p>
+          </div>
+          <div class="full-review-modal__footer">
+            <div class="full-review-modal__doctor-info">
+              Отзыв о враче:
+              <a href="" class="full-review-modal__doctor-link"
+                >Агапова Марина Сергеевна</a
+              >
+            </div>
+            <div class="full-review-modal__appointment">
+              <a href="" class="full-review-modal__appointment-link">
+                <img
+                  src="./images/zap.svg"
+                  alt=""
+                  class="full-review-modal__appointment-icon"
+                />
+                <p class="full-review-modal__appointment-text">
+                  Записаться к этому врачу
+                </p>
+              </a>
+            </div>
+          </div>
+          <p class="full-review-modal__publish-date">16 февраля 2025</p>
+        </div>
+      </div>
+
+      <div class="full-review-modal is-hidden" id="review-popup-image">
+        <button class="full-review-modal__close" aria-label="Закрыть отзыв">
+          <img
+            src="./images/clo.svg"
+            alt=""
+            class="full-review-modal__close-icon"
+          />
+        </button>
+        <div class="full-review-modal__content">
+          <h6>Отзыв</h6>
+          <div class="full-review-modal__top">
+            <div class="full-review-modal__header">
+              <div
+                class="full-review-modal__avatar"
+                style="background-image: url('./images/bg-hero.png')"
+              ></div>
+              <div class="full-review-modal__author">
+                <p class="full-review-modal__name">Иван Фёдоров</p>
+                <p class="full-review-modal__service">Направление</p>
+              </div>
+            </div>
+            <div class="full-review-modal__meta">
+              <div class="full-review-modal__stars">
+                <svg
+                  width="28"
+                  height="26"
+                  viewBox="0 0 28 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5909 0.681353C12.8957 -0.228364 14.1824 -0.228366 14.4872 0.681351L17.0149 8.225C17.1515 8.63258 17.5333 8.90729 17.9631 8.90729H26.0758C27.052 8.90729 27.4498 10.1626 26.6518 10.7248L20.1419 15.3111C19.7806 15.5657 19.6293 16.0273 19.7697 16.4463L22.2686 23.9042C22.5755 24.8201 21.5342 25.5958 20.7445 25.0394L14.115 20.3688C13.7696 20.1254 13.3085 20.1254 12.9631 20.3688L6.33364 25.0394C5.54396 25.5958 4.5026 24.8202 4.80951 23.9042L7.30845 16.4463C7.44887 16.0273 7.29752 15.5657 6.9362 15.3111L0.426362 10.7248C-0.371638 10.1626 0.0261477 8.90729 1.00231 8.90729H9.11501C9.54486 8.90729 9.92663 8.63259 10.0632 8.225L12.5909 0.681353Z"
+                    fill="#FFD300"
+                  />
+                </svg>
+                <svg
+                  width="28"
+                  height="26"
+                  viewBox="0 0 28 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5909 0.681353C12.8957 -0.228364 14.1824 -0.228366 14.4872 0.681351L17.0149 8.225C17.1515 8.63258 17.5333 8.90729 17.9631 8.90729H26.0758C27.052 8.90729 27.4498 10.1626 26.6518 10.7248L20.1419 15.3111C19.7806 15.5657 19.6293 16.0273 19.7697 16.4463L22.2686 23.9042C22.5755 24.8201 21.5342 25.5958 20.7445 25.0394L14.115 20.3688C13.7696 20.1254 13.3085 20.1254 12.9631 20.3688L6.33364 25.0394C5.54396 25.5958 4.5026 24.8202 4.80951 23.9042L7.30845 16.4463C7.44887 16.0273 7.29752 15.5657 6.9362 15.3111L0.426362 10.7248C-0.371638 10.1626 0.0261477 8.90729 1.00231 8.90729H9.11501C9.54486 8.90729 9.92663 8.63259 10.0632 8.225L12.5909 0.681353Z"
+                    fill="#FFD300"
+                  />
+                </svg>
+                <svg
+                  width="28"
+                  height="26"
+                  viewBox="0 0 28 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5909 0.681353C12.8957 -0.228364 14.1824 -0.228366 14.4872 0.681351L17.0149 8.225C17.1515 8.63258 17.5333 8.90729 17.9631 8.90729H26.0758C27.052 8.90729 27.4498 10.1626 26.6518 10.7248L20.1419 15.3111C19.7806 15.5657 19.6293 16.0273 19.7697 16.4463L22.2686 23.9042C22.5755 24.8201 21.5342 25.5958 20.7445 25.0394L14.115 20.3688C13.7696 20.1254 13.3085 20.1254 12.9631 20.3688L6.33364 25.0394C5.54396 25.5958 4.5026 24.8202 4.80951 23.9042L7.30845 16.4463C7.44887 16.0273 7.29752 15.5657 6.9362 15.3111L0.426362 10.7248C-0.371638 10.1626 0.0261477 8.90729 1.00231 8.90729H9.11501C9.54486 8.90729 9.92663 8.63259 10.0632 8.225L12.5909 0.681353Z"
+                    fill="#FFD300"
+                  />
+                </svg>
+                <svg
+                  width="28"
+                  height="26"
+                  viewBox="0 0 28 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5909 0.681353C12.8957 -0.228364 14.1824 -0.228366 14.4872 0.681351L17.0149 8.225C17.1515 8.63258 17.5333 8.90729 17.9631 8.90729H26.0758C27.052 8.90729 27.4498 10.1626 26.6518 10.7248L20.1419 15.3111C19.7806 15.5657 19.6293 16.0273 19.7697 16.4463L22.2686 23.9042C22.5755 24.8201 21.5342 25.5958 20.7445 25.0394L14.115 20.3688C13.7696 20.1254 13.3085 20.1254 12.9631 20.3688L6.33364 25.0394C5.54396 25.5958 4.5026 24.8202 4.80951 23.9042L7.30845 16.4463C7.44887 16.0273 7.29752 15.5657 6.9362 15.3111L0.426362 10.7248C-0.371638 10.1626 0.0261477 8.90729 1.00231 8.90729H9.11501C9.54486 8.90729 9.92663 8.63259 10.0632 8.225L12.5909 0.681353Z"
+                    fill="#FFD300"
+                  />
+                </svg>
+                <svg
+                  width="28"
+                  height="26"
+                  viewBox="0 0 28 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5909 0.681353C12.8957 -0.228364 14.1824 -0.228366 14.4872 0.681351L17.0149 8.225C17.1515 8.63258 17.5333 8.90729 17.9631 8.90729H26.0758C27.052 8.90729 27.4498 10.1626 26.6518 10.7248L20.1419 15.3111C19.7806 15.5657 19.6293 16.0273 19.7697 16.4463L22.2686 23.9042C22.5755 24.8201 21.5342 25.5958 20.7445 25.0394L14.115 20.3688C13.7696 20.1254 13.3085 20.1254 12.9631 20.3688L6.33364 25.0394C5.54396 25.5958 4.5026 24.8202 4.80951 23.9042L7.30845 16.4463C7.44887 16.0273 7.29752 15.5657 6.9362 15.3111L0.426362 10.7248C-0.371638 10.1626 0.0261477 8.90729 1.00231 8.90729H9.11501C9.54486 8.90729 9.92663 8.63259 10.0632 8.225L12.5909 0.681353Z"
+                    fill="#FFD300"
+                  />
+                </svg>
+              </div>
+              <div class="full-review-modal__source">
+                <img
+                  src="./images/y-1.svg"
+                  alt=""
+                  class="full-review-modal__source-icon"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="full-review-modal__body">
+            <div class="full-review-modal__media">
+              <div class="swiper-rev-343">
+                <div class="swiper-wrapper">
+                  <div
+                    class="swiper-slide"
+                    style="background-image: url('./images/banner-3.png')"
+                  ></div>
+                  <div
+                    class="swiper-slide"
+                    style="background-image: url('./images/banner-3.png')"
+                  ></div>
+                  <div
+                    class="swiper-slide"
+                    style="background-image: url('./images/banner-3.png')"
+                  ></div>
+                </div>
+              </div>
+              <div class="swiper-rev-343-prev">
+                <svg
+                  width="9"
+                  height="15"
+                  viewBox="0 0 9 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.9923 0.000433764C7.92546 0.000433764 7.84907 0.0171438 7.76313 0.050564C7.67719 0.0839841 7.6008 0.134114 7.53396 0.200955L0.200629 6.93273C0.133789 6.99957 0.083659 7.07834 0.0502388 7.16905C0.0168187 7.25977 0.000108612 7.33854 0.000108612 7.40538C0.000108612 7.47222 0.0168187 7.54861 0.0502388 7.63455C0.083659 7.72049 0.133789 7.79687 0.200629 7.86372L7.40506 14.4666C7.53874 14.6003 7.6939 14.6552 7.87055 14.6313C8.0472 14.6074 8.20237 14.5286 8.33605 14.395C8.46973 14.2613 8.52463 14.1061 8.50076 13.9295C8.47689 13.7528 8.39811 13.5977 8.26443 13.464L1.60427 7.33377L8.39334 1.06033C8.52702 0.936198 8.59863 0.78342 8.60818 0.601996C8.61773 0.420573 8.56999 0.263021 8.46495 0.12934C8.39811 0.100694 8.32888 0.0720483 8.25727 0.0434025C8.18566 0.0147567 8.09733 0.000433764 7.9923 0.000433764Z"
+                    fill="#19815A"
+                  />
+                </svg>
+              </div>
+              <div class="swiper-rev-343-next">
+                <svg
+                  width="9"
+                  height="15"
+                  viewBox="0 0 9 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.617079 0.000433764C0.683919 0.000433764 0.760308 0.0171438 0.846246 0.050564C0.932183 0.0839841 1.00857 0.134114 1.07541 0.200955L8.40875 6.93273C8.47559 6.99957 8.52572 7.07834 8.55914 7.16905C8.59256 7.25977 8.60927 7.33854 8.60927 7.40538C8.60927 7.47222 8.59256 7.54861 8.55914 7.63455C8.52572 7.72049 8.47559 7.79687 8.40875 7.86372L1.20432 14.4666C1.07064 14.6003 0.915473 14.6552 0.738824 14.6313C0.562174 14.6074 0.40701 14.5286 0.273329 14.395C0.139648 14.2613 0.0847439 14.1061 0.108615 13.9295C0.132487 13.7528 0.211263 13.5977 0.344944 13.464L7.0051 7.33377L0.216037 1.06033C0.0823568 0.936198 0.0107422 0.78342 0.00119358 0.601996C-0.00835504 0.420573 0.039388 0.263021 0.144423 0.12934C0.211263 0.100694 0.28049 0.0720483 0.352105 0.0434025C0.42372 0.0147567 0.512044 0.000433764 0.617079 0.000433764Z"
+                    fill="#19815A"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="full-review-modal__text-wrapper">
+              <p class="full-review-modal__text-2">
+                Отличная стоматология, хорошие врачи и стильный, уютный дизайн.
+                При оплате процедур в клинике, есть возможность получить
+                бесплатный массаж, что тоже очень порадовало!
+              </p>
+            </div>
+          </div>
+          <div class="full-review-modal__footer">
+            <div class="full-review-modal__doctor-info">
+              Отзыв о враче:
+              <a href="" class="full-review-modal__doctor-link"
+                >Агапова Марина Сергеевна</a
+              >
+            </div>
+            <div class="full-review-modal__appointment">
+              <a href="" class="full-review-modal__appointment-link">
+                <img
+                  src="./images/zap.svg"
+                  alt=""
+                  class="full-review-modal__appointment-icon"
+                />
+                <p class="full-review-modal__appointment-text">
+                  Записаться к этому врачу
+                </p>
+              </a>
+            </div>
+          </div>
+          <p class="full-review-modal__publish-date">16 февраля 2025</p>
+        </div>
+      </div>
+
+      <div class="full-review-modal is-hidden" id="review-popup-video">
+        <button class="full-review-modal__close" aria-label="Закрыть отзыв">
+          <img
+            src="./images/clo.svg"
+            alt=""
+            class="full-review-modal__close-icon"
+          />
+        </button>
+        <div class="full-review-modal__content">
+          <h6>Отзыв</h6>
+          <div class="full-review-modal__top">
+            <div class="full-review-modal__header">
+              <div
+                class="full-review-modal__avatar"
+                style="background-image: url('./images/bg-hero.png')"
+              ></div>
+              <div class="full-review-modal__author">
+                <p class="full-review-modal__name">Иван Фёдоров</p>
+                <p class="full-review-modal__service">Направление</p>
+              </div>
+            </div>
+            <div class="full-review-modal__meta">
+              <div class="full-review-modal__stars">
+                <svg
+                  width="28"
+                  height="26"
+                  viewBox="0 0 28 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5909 0.681353C12.8957 -0.228364 14.1824 -0.228366 14.4872 0.681351L17.0149 8.225C17.1515 8.63258 17.5333 8.90729 17.9631 8.90729H26.0758C27.052 8.90729 27.4498 10.1626 26.6518 10.7248L20.1419 15.3111C19.7806 15.5657 19.6293 16.0273 19.7697 16.4463L22.2686 23.9042C22.5755 24.8201 21.5342 25.5958 20.7445 25.0394L14.115 20.3688C13.7696 20.1254 13.3085 20.1254 12.9631 20.3688L6.33364 25.0394C5.54396 25.5958 4.5026 24.8202 4.80951 23.9042L7.30845 16.4463C7.44887 16.0273 7.29752 15.5657 6.9362 15.3111L0.426362 10.7248C-0.371638 10.1626 0.0261477 8.90729 1.00231 8.90729H9.11501C9.54486 8.90729 9.92663 8.63259 10.0632 8.225L12.5909 0.681353Z"
+                    fill="#FFD300"
+                  />
+                </svg>
+                <svg
+                  width="28"
+                  height="26"
+                  viewBox="0 0 28 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5909 0.681353C12.8957 -0.228364 14.1824 -0.228366 14.4872 0.681351L17.0149 8.225C17.1515 8.63258 17.5333 8.90729 17.9631 8.90729H26.0758C27.052 8.90729 27.4498 10.1626 26.6518 10.7248L20.1419 15.3111C19.7806 15.5657 19.6293 16.0273 19.7697 16.4463L22.2686 23.9042C22.5755 24.8201 21.5342 25.5958 20.7445 25.0394L14.115 20.3688C13.7696 20.1254 13.3085 20.1254 12.9631 20.3688L6.33364 25.0394C5.54396 25.5958 4.5026 24.8202 4.80951 23.9042L7.30845 16.4463C7.44887 16.0273 7.29752 15.5657 6.9362 15.3111L0.426362 10.7248C-0.371638 10.1626 0.0261477 8.90729 1.00231 8.90729H9.11501C9.54486 8.90729 9.92663 8.63259 10.0632 8.225L12.5909 0.681353Z"
+                    fill="#FFD300"
+                  />
+                </svg>
+                <svg
+                  width="28"
+                  height="26"
+                  viewBox="0 0 28 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5909 0.681353C12.8957 -0.228364 14.1824 -0.228366 14.4872 0.681351L17.0149 8.225C17.1515 8.63258 17.5333 8.90729 17.9631 8.90729H26.0758C27.052 8.90729 27.4498 10.1626 26.6518 10.7248L20.1419 15.3111C19.7806 15.5657 19.6293 16.0273 19.7697 16.4463L22.2686 23.9042C22.5755 24.8201 21.5342 25.5958 20.7445 25.0394L14.115 20.3688C13.7696 20.1254 13.3085 20.1254 12.9631 20.3688L6.33364 25.0394C5.54396 25.5958 4.5026 24.8202 4.80951 23.9042L7.30845 16.4463C7.44887 16.0273 7.29752 15.5657 6.9362 15.3111L0.426362 10.7248C-0.371638 10.1626 0.0261477 8.90729 1.00231 8.90729H9.11501C9.54486 8.90729 9.92663 8.63259 10.0632 8.225L12.5909 0.681353Z"
+                    fill="#FFD300"
+                  />
+                </svg>
+                <svg
+                  width="28"
+                  height="26"
+                  viewBox="0 0 28 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5909 0.681353C12.8957 -0.228364 14.1824 -0.228366 14.4872 0.681351L17.0149 8.225C17.1515 8.63258 17.5333 8.90729 17.9631 8.90729H26.0758C27.052 8.90729 27.4498 10.1626 26.6518 10.7248L20.1419 15.3111C19.7806 15.5657 19.6293 16.0273 19.7697 16.4463L22.2686 23.9042C22.5755 24.8201 21.5342 25.5958 20.7445 25.0394L14.115 20.3688C13.7696 20.1254 13.3085 20.1254 12.9631 20.3688L6.33364 25.0394C5.54396 25.5958 4.5026 24.8202 4.80951 23.9042L7.30845 16.4463C7.44887 16.0273 7.29752 15.5657 6.9362 15.3111L0.426362 10.7248C-0.371638 10.1626 0.0261477 8.90729 1.00231 8.90729H9.11501C9.54486 8.90729 9.92663 8.63259 10.0632 8.225L12.5909 0.681353Z"
+                    fill="#FFD300"
+                  />
+                </svg>
+                <svg
+                  width="28"
+                  height="26"
+                  viewBox="0 0 28 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5909 0.681353C12.8957 -0.228364 14.1824 -0.228366 14.4872 0.681351L17.0149 8.225C17.1515 8.63258 17.5333 8.90729 17.9631 8.90729H26.0758C27.052 8.90729 27.4498 10.1626 26.6518 10.7248L20.1419 15.3111C19.7806 15.5657 19.6293 16.0273 19.7697 16.4463L22.2686 23.9042C22.5755 24.8201 21.5342 25.5958 20.7445 25.0394L14.115 20.3688C13.7696 20.1254 13.3085 20.1254 12.9631 20.3688L6.33364 25.0394C5.54396 25.5958 4.5026 24.8202 4.80951 23.9042L7.30845 16.4463C7.44887 16.0273 7.29752 15.5657 6.9362 15.3111L0.426362 10.7248C-0.371638 10.1626 0.0261477 8.90729 1.00231 8.90729H9.11501C9.54486 8.90729 9.92663 8.63259 10.0632 8.225L12.5909 0.681353Z"
+                    fill="#FFD300"
+                  />
+                </svg>
+              </div>
+              <div class="full-review-modal__source">
+                <img
+                  src="./images/y-1.svg"
+                  alt=""
+                  class="full-review-modal__source-icon"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="full-review-modal__body">
+            <div class="full-review-modal__media">
+              <video
+                src="./images/video.mov"
+                class="full-review-modal__video"
+                controls
+              ></video>
+            </div>
+            <div class="full-review-modal__text-wrapper">
+              <p class="full-review-modal__text-2">
+                Отличная стоматология, хорошие врачи и стильный, уютный дизайн.
+                При оплате процедур в клинике, есть возможность получить
+                бесплатный массаж, что тоже очень порадовало!
+              </p>
+            </div>
+          </div>
+          <div class="full-review-modal__footer">
+            <div class="full-review-modal__doctor-info">
+              Отзыв о враче:
+              <a href="" class="full-review-modal__doctor-link"
+                >Агапова Марина Сергеевна</a
+              >
+            </div>
+            <div class="full-review-modal__appointment">
+              <a href="" class="full-review-modal__appointment-link">
+                <img
+                  src="./images/zap.svg"
+                  alt=""
+                  class="full-review-modal__appointment-icon"
+                />
+                <p class="full-review-modal__appointment-text">
+                  Записаться к этому врачу
+                </p>
+              </a>
+            </div>
+          </div>
+          <p class="full-review-modal__publish-date">16 февраля 2025</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -660,35 +660,41 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  const worksSlider2 = new Swiper(".swiper-photo", {
-    loop: true,
-    slidesPerView: 3,
-    slidesPerGroup: 2,
-    spaceBetween: 20,
-    navigation: {
-      nextEl: ".our-work__nav-button--next-2",
-      prevEl: ".our-work__nav-button--prev-2",
-    },
-    breakpoints: {
-      1133: {
-        slidesPerView: 3,
-        spaceBetween: 20,
+  const swiperContainer = document.querySelector(".swiper-photo");
+  if (swiperContainer) {
+    const worksSlider2 = new Swiper(".swiper-photo", {
+      loop: true,
+      slidesPerView: 3,
+      slidesPerGroup: 2,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: ".our-work__nav-button--next-2",
+        prevEl: ".our-work__nav-button--prev-2",
       },
-      770: {
-        slidesPerView: 2,
-        spaceBetween: 20,
+      breakpoints: {
+        1133: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        770: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
       },
-      0: {
-        slidesPerView: 1,
-        spaceBetween: 20,
-      },
-    },
-  });
+    });
+  }
 
-  const lightbox = GLightbox({
-    selector: ".gallery-item",
-    loop: true,
-  });
+  const galleryItemExists = document.querySelector(".gallery-item");
+  if (galleryItemExists) {
+    const lightbox = GLightbox({
+      selector: ".gallery-item",
+      loop: true,
+    });
+  }
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -742,39 +748,45 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  const worksSlider3 = new Swiper(".swiper-sertificate", {
-    loop: true,
-    slidesPerView: 4,
-    slidesPerGroup: 1,
-    spaceBetween: 20,
-    navigation: {
-      nextEl: ".our-preim__nav-button--next-22",
-      prevEl: ".our-preim__nav-button--prev-22",
-    },
-    breakpoints: {
-      1153: {
-        slidesPerView: 4,
-        spaceBetween: 20,
+  const swiperSertificate = document.querySelector(".swiper-sertificate");
+  if (swiperSertificate) {
+    const worksSlider3 = new Swiper(".swiper-sertificate", {
+      loop: true,
+      slidesPerView: 4,
+      slidesPerGroup: 1,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: ".our-preim__nav-button--next-22",
+        prevEl: ".our-preim__nav-button--prev-22",
       },
-      930: {
-        slidesPerView: 3,
-        spaceBetween: 10,
+      breakpoints: {
+        1153: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+        930: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+        655: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
       },
-      655: {
-        slidesPerView: 2,
-        spaceBetween: 10,
-      },
-      0: {
-        slidesPerView: 1,
-        spaceBetween: 10,
-      },
-    },
-  });
+    });
+  }
 
-  const lightbox = GLightbox({
-    selector: ".sertificate-link",
-    loop: true,
-  });
+  const sertificateLink = document.querySelector(".sertificate-link");
+  if (sertificateLink) {
+    const lightbox = GLightbox({
+      selector: ".sertificate-link",
+      loop: true,
+    });
+  }
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -859,31 +871,24 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const tabs = document.querySelectorAll(".about-gallery__tab");
+  const grids = document.querySelectorAll(".about-gallery__grid");
 
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      const target = document.querySelector(tab.dataset.tabTarget);
 
+      tabs.forEach((t) => t.classList.remove("about-gallery__tab--active"));
+      tab.classList.add("about-gallery__tab--active");
 
-
-
-
-document.addEventListener('DOMContentLoaded', function () {
-    const tabs = document.querySelectorAll('.about-gallery__tab');
-    const grids = document.querySelectorAll('.about-gallery__grid');
-
-    tabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-            const target = document.querySelector(tab.dataset.tabTarget);
-
-            tabs.forEach(t => t.classList.remove('about-gallery__tab--active'));
-            tab.classList.add('about-gallery__tab--active');
-
-            grids.forEach(grid => grid.classList.remove('about-gallery__grid--active'));
-            target.classList.add('about-gallery__grid--active');
-        });
+      grids.forEach((grid) =>
+        grid.classList.remove("about-gallery__grid--active")
+      );
+      target.classList.add("about-gallery__grid--active");
     });
+  });
 });
-
-
-
 
 document.addEventListener("DOMContentLoaded", () => {
   const questions = document.querySelectorAll(".faq__question");
@@ -911,5 +916,186 @@ document.addEventListener("DOMContentLoaded", () => {
         clickedAnswer.style.height = "0px";
       }
     });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const allDropdowns = document.querySelectorAll(".filter-dropdown2");
+
+  allDropdowns.forEach((dropdown) => {
+    const selected = dropdown.querySelector(".filter-dropdown__selected");
+    const textElement = dropdown.querySelector(".filter-dropdown__text");
+    const optionsContainer = dropdown.querySelector(
+      ".filter-dropdown__options"
+    );
+    const options = dropdown.querySelectorAll(".filter-dropdown__option");
+
+    selected.addEventListener("click", (event) => {
+      event.stopPropagation();
+      closeAllDropdowns(dropdown);
+      optionsContainer.classList.toggle("filter-dropdown__options--hidden");
+      selected.classList.toggle("filter-dropdown__selected--active");
+    });
+
+    options.forEach((option) => {
+      option.addEventListener("click", () => {
+        textElement.textContent = option.textContent;
+        selected.classList.add("filter-dropdown__selected--chosen");
+        optionsContainer.classList.add("filter-dropdown__options--hidden");
+        selected.classList.remove("filter-dropdown__selected--active");
+      });
+    });
+  });
+
+  function closeAllDropdowns(exceptThisOne = null) {
+    allDropdowns.forEach((dropdown) => {
+      if (dropdown !== exceptThisOne) {
+        dropdown
+          .querySelector(".filter-dropdown__options")
+          .classList.add("filter-dropdown__options--hidden");
+        dropdown
+          .querySelector(".filter-dropdown__selected")
+          .classList.remove("filter-dropdown__selected--active");
+      }
+    });
+  }
+
+  document.addEventListener("click", () => {
+    closeAllDropdowns();
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const addReviewButtons = document.querySelectorAll(".add-rev");
+  const reviewPopupOverlay = document.querySelector(".review-popup-overlay");
+  const reviewPopupCloseBtn = document.querySelector(
+    ".review-popup__close-btn"
+  );
+  const body = document.body;
+
+  if (addReviewButtons.length > 0 && reviewPopupOverlay) {
+    addReviewButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        reviewPopupOverlay.classList.remove("is-hidden");
+        body.classList.add("no-scroll");
+      });
+    });
+  }
+
+  function closePopup() {
+    if (reviewPopupOverlay) {
+      reviewPopupOverlay.classList.add("is-hidden");
+      body.classList.remove("no-scroll");
+    }
+  }
+
+  if (reviewPopupCloseBtn) {
+    reviewPopupCloseBtn.addEventListener("click", closePopup);
+  }
+
+  if (reviewPopupOverlay) {
+    reviewPopupOverlay.addEventListener("click", (event) => {
+      if (event.target === reviewPopupOverlay) {
+        closePopup();
+      }
+    });
+  }
+
+  const fileInput = document.getElementById("review-file-input");
+  const fileTextElement = document.querySelector(".review-popup__attach-text");
+
+  if (fileInput && fileTextElement) {
+    const originalText = fileTextElement.textContent;
+
+    fileInput.addEventListener("change", function () {
+      if (this.files && this.files.length > 0) {
+        fileTextElement.textContent = this.files[0].name;
+      } else {
+        fileTextElement.textContent = originalText;
+      }
+    });
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const readMoreButtons = document.querySelectorAll(".rev-grid__read-more");
+  const reviewOverlay = document.querySelector(".full-review-overlay");
+  const body = document.body;
+
+  if (!reviewOverlay || !readMoreButtons.length) {
+    return;
+  }
+
+  const closeButtons = reviewOverlay.querySelectorAll(
+    ".full-review-modal__close"
+  );
+
+  function closeAllReviewModals() {
+    reviewOverlay.classList.add("is-hidden");
+    reviewOverlay.querySelectorAll(".full-review-modal").forEach((modal) => {
+      modal.classList.add("is-hidden");
+    });
+    body.classList.remove("no-scroll");
+  }
+
+  readMoreButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const modalId = this.dataset.popupTarget;
+      if (!modalId) return;
+
+      const targetModal = document.querySelector(modalId);
+      if (!targetModal) return;
+
+      reviewOverlay.classList.remove("is-hidden");
+      targetModal.classList.remove("is-hidden");
+      body.classList.add("no-scroll");
+    });
+  });
+
+  closeButtons.forEach((button) => {
+    button.addEventListener("click", closeAllReviewModals);
+  });
+
+  reviewOverlay.addEventListener("click", function (event) {
+    if (event.target === reviewOverlay) {
+      closeAllReviewModals();
+    }
+  });
+
+  document.addEventListener("keydown", function (event) {
+    if (
+      event.key === "Escape" &&
+      !reviewOverlay.classList.contains("is-hidden")
+    ) {
+      closeAllReviewModals();
+    }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const reviewModals = document.querySelectorAll(".full-review-modal");
+
+  reviewModals.forEach((modal) => {
+    const sliderElement = modal.querySelector(".swiper-rev-343");
+
+    if (sliderElement) {
+      const prevButton = modal.querySelector(".swiper-rev-343-prev");
+      const nextButton = modal.querySelector(".swiper-rev-343-next");
+
+      const reviewSwiper = new Swiper(sliderElement, {
+        loop: true,
+        slidesPerView: 2,
+        spaceBetween: 20,
+        navigation: {
+          nextEl: nextButton,
+          prevEl: prevButton,
+        },
+
+        breakpoints: {
+          650: { slidesPerView: 2, spaceBetween: 15 },
+          0: { slidesPerView: 1, spaceBetween: 15 },
+        },
+      });
+    }
   });
 });
