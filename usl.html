@@ -428,7 +428,7 @@
             >
               <img src="./images/search.svg" alt="" />
             </button>
-            <button type="button" class="header__cta-btn btn">
+            <button type="button" class="header__cta-btn btn open-zap">
               Записаться на приём
             </button>
           </div>
@@ -1899,6 +1899,46 @@
         </div>
       </div>
     </footer>
+
+    <div class="zap-modal" id="zap-modal-appointment">
+      <div class="zap-modal__container">
+        <button
+          type="button"
+          class="zap-modal__close"
+          aria-label="Закрыть окно"
+        ></button>
+        <div class="zap-modal__content">
+          <h2 class="zap-modal__title">Записаться на приём</h2>
+          <p class="zap-modal__subtitle">
+            Заполните форму, и мы свяжемся с вами в ближайшее время!
+          </p>
+          <form class="zap-modal__form">
+            <input
+              type="text"
+              name="name"
+              class="zap-modal__input"
+              placeholder="Ваше имя"
+              required
+            />
+            <input
+              type="tel"
+              name="phone"
+              class="zap-modal__input"
+              placeholder="+7 (___) ___-__-__"
+              required
+            />
+            <button type="submit" class="zap-modal__button btn">
+              Отправить заявку
+            </button>
+            <p class="zap-modal__policy">
+              Нажимая кнопку, вы соглашаетесь с
+              <a href="#">политикой конфиденциальности</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./index.js"></script>
