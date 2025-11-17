@@ -1099,3 +1099,52 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  const popup = document.getElementById('zap-modal-appointment');
+  const triggerButtons = document.querySelectorAll('.open-zap');
+  
+  if (!popup) return;
+
+  const openPopup = () => {
+    popup.classList.add('is-open');
+    document.body.classList.add('zap-modal-is-open');
+  };
+
+  const closePopup = () => {
+    popup.classList.remove('is-open');
+    document.body.classList.remove('zap-modal-is-open');
+  };
+
+  triggerButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      openPopup();
+    });
+  });
+
+  popup.addEventListener('click', (e) => {
+    if (e.target.classList.contains('zap-modal') || e.target.closest('.zap-modal__close')) {
+      closePopup();
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && popup.classList.contains('is-open')) {
+      closePopup();
+    }
+  });
+
+});

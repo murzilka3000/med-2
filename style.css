@@ -10250,3 +10250,80 @@ strong {
     margin-bottom: 32px;
   }
 }
+
+/* 
+
+
+
+
+
+
+
+
+
+ */
+
+
+ body.zap-modal-is-open {
+  overflow: hidden;
+}
+
+.zap-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.3s ease-in-out;
+}
+
+.zap-modal.is-open {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.zap-modal.is-open .zap-modal__container {
+  transform: scale(1);
+}
+
+.zap-modal__close {
+  position: absolute;
+  top: 45px;
+  right: 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    .zap-modal__close {
+      top: 20px;
+      right: 20px;
+
+    }
+
+     .zap-modal__close img {
+      width: 24px;
+      height: 24px;
+     }
+}
+
+
+
+
+
+
+

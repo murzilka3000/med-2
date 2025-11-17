@@ -1901,41 +1901,95 @@
     </footer>
 
     <div class="zap-modal" id="zap-modal-appointment">
-      <div class="zap-modal__container">
+      <div class="review-popup">
         <button
           type="button"
           class="zap-modal__close"
           aria-label="Закрыть окно"
-        ></button>
-        <div class="zap-modal__content">
-          <h2 class="zap-modal__title">Записаться на приём</h2>
-          <p class="zap-modal__subtitle">
-            Заполните форму, и мы свяжемся с вами в ближайшее время!
-          </p>
-          <form class="zap-modal__form">
+        >
+          <img src="./images/clo.svg" alt="" />
+        </button>
+        <h2 class="review-popup__title">Записаться онлайн</h2>
+
+        <form action="#" class="review-popup__form">
+        
+
+          <div class="review-popup__group">
+            <div class="review-popup__field">
+              <input
+                type="text"
+                class="review-popup__input"
+                placeholder="Ваше Имя*"
+                required
+              />
+            </div>
+            <div class="review-popup__field">
+              <input
+                type="tel"
+                class="review-popup__input"
+                placeholder="Ваш телефон*"
+                required
+              />
+            </div>
+          </div>
+
+
+          <div class="review-popup__field filter-dropdown2">
+            <div class="filter-dropdown__selected">
+              <span class="filter-dropdown__text">ФИО врача</span>
+              <svg
+                class="filter-dropdown__arrow"
+                width="16"
+                height="9"
+                viewBox="0 0 16 9"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.2969 0.630111C15.2969 0.699985 15.2794 0.782336 15.2445 0.877165C15.2095 0.971994 15.1571 1.05434 15.0873 1.12422L8.04996 8.79038C7.98008 8.86025 7.89773 8.91266 7.8029 8.94759C7.70808 8.98253 7.62572 9 7.55585 9C7.48598 9 7.40612 8.98253 7.31628 8.94759C7.22644 8.91266 7.14659 8.86025 7.07672 8.79038L0.174176 1.25898C0.0344286 1.11923 -0.0229677 0.957021 0.00198721 0.772355C0.0269422 0.587688 0.109293 0.425481 0.249041 0.285733C0.388789 0.145986 0.550996 0.0885892 0.735663 0.113544C0.920329 0.138499 1.08254 0.22085 1.22228 0.360598L7.63071 7.32303L14.1889 0.225841C14.3186 0.0860931 14.4784 0.0112282 14.668 0.00124624C14.8577 -0.00873574 15.0224 0.0411741 15.1621 0.150976C15.1921 0.22085 15.222 0.293219 15.252 0.368084C15.2819 0.442949 15.2969 0.530291 15.2969 0.630111Z"
+                  fill="#333333"
+                ></path>
+              </svg>
+            </div>
+            <div
+              class="filter-dropdown__options filter-dropdown__options--hidden"
+            >
+              <div class="filter-dropdown__option">Врач 1</div>
+              <div class="filter-dropdown__option">Врач 2</div>
+              <div class="filter-dropdown__option">Врач 3</div>
+            </div>
+          </div>
+
+
+            <div class="review-popup__field">
+            <textarea
+              class="review-popup__textarea"
+              placeholder="Ваш комментарий*"
+              required
+            ></textarea>
+
+
+
+          </div>
+
+          
+
+          <label class="review-popup__agreement">
             <input
-              type="text"
-              name="name"
-              class="zap-modal__input"
-              placeholder="Ваше имя"
+              type="checkbox"
+              class="review-popup__checkbox-real"
               required
             />
-            <input
-              type="tel"
-              name="phone"
-              class="zap-modal__input"
-              placeholder="+7 (___) ___-__-__"
-              required
-            />
-            <button type="submit" class="zap-modal__button btn">
-              Отправить заявку
-            </button>
-            <p class="zap-modal__policy">
-              Нажимая кнопку, вы соглашаетесь с
-              <a href="#">политикой конфиденциальности</a>
-            </p>
-          </form>
-        </div>
+            <span class="review-popup__checkbox-fake"></span>
+            <span class="review-popup__agreement-text"
+              >Я согласен с политикой <a href="#">обработки данных</a></span
+            >
+          </label>
+
+          <button type="submit" class="review-popup__submit">
+            Оставить заявку
+          </button>
+        </form>
       </div>
     </div>
 
